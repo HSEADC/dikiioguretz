@@ -56,7 +56,7 @@ output: {
   },
   optimization: {
     minimizer: [
-      new CssMinimizerPlugin(),
+      // new CssMinimizerPlugin(),
     ],
   },
   plugins: [
