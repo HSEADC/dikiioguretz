@@ -41,7 +41,7 @@ output: {
         test: /\.(png|svg|jpg|jpeg|webp|gif)/,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][quert]'
+          filename: 'images/[hash][ext][query]'
         }
       },
 
