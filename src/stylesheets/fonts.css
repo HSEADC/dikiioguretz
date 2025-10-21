@@ -1,23 +1,23 @@
 @font-face {
-    font-family: 'PT Root UI';
-    src: url('../fonts/pt-root-ui_bold.ttf');
+    font-family: 'arial narrow';
+    src: url('../fonts/arialnarrow_bold.ttf');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'PT Root UI';
-    src: url('../fonts/pt-root-ui_medium.ttf');
-    font-weight: 500;
+    font-family: 'arial narrow italic';
+    src: url('../fonts/arialnarrow_bolditalic.ttf');
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: 'PT Root UI';
-    src: url('../fonts/pt-root-ui_regular.ttf');
+    font-family: 'arial narrow';
+    src: url('../fonts/arialnarrow.ttf');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'PT Root UI';
-    src: url('../fonts/pt-root-ui_light.ttf');
-    font-weight: 300;
+    font-family: 'arial narrow italic';
+    src: url('../fonts/arialnarrow_italic.ttf');
+    font-weight: 400;
 }
