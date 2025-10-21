@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>главная</title>
-</head>
-<body>
-    <h1>главная test</h1>
+  </head>
+  <body>
+    <div class="zaglushka">
+      <div class="text">
+        <div class="text_wrapper">
+          <h1 class="name_1">стэш</h1>
+          <h1 class="name_2">архив старого интернета</h1>
+
+          <p>
+            вспомним всё, что ты хотел запомнить, и всё, что ты хотел забыть
+          </p>
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mldpkdbz"
+            method="POST"
+          >
+            <!-- <label>Email:</label> -->
+            <!-- <input type="email" name="email" /> -->
+            <!-- <label>Message:</label>-->
+            <input type="text" name="message" placeholder="ваш телеграм" />
+            <button id="my-form-button">отправить</button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./images/лимон4 1.svg" alt="cloude" class="lemon" />
+      </div>
+    </div>
+
+    <!-- Place this script at the end of the body tag -->
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'спасибо, оставайтесь с нами=)'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
+    <!-- <div class="routing">
+    <h1>главная</h1>
 
     <h2>категории</h2>
     <ul>
-        <li><a href="pages/articles.html">статьи</a></li>
-        <li><a href="pages/archive.html">архив</a></li>
-        <li><a href="pages/interact.html">интерактивная зона</a></li>
-        <li><a href="pages/about.html">о нас</a></li>
+      <li><a href="pages/articles.html">статьи</a></li>
+      <li><a href="pages/archive.html">архив</a></li>
+      <li><a href="pages/interact.html">интерактивная зона</a></li>
+      <li><a href="pages/about.html">о нас</a></li>
     </ul>
 
     <h3>статьи</h3>
-    <a href="pages/articles/art1.html">статья 1</a> <br>
+    <a href="pages/articles/art1.html">статья 1</a> <br />
     <a href="pages/articles/art2.html">статья 2</a>
 
     <h3>архив</h3>
-     <ul>
-        <li><a href="pages/archive/random.html">рандомная страница</a></li>
-        <li><a href="pages/archive/websites.html">сайты</a></li>
-        <li><a href="pages/archive/memes.html">челленджи, мемы</a></li>
-        <li><a href="pages/archive/hacks.html">взломы</a></li>
+    <ul>
+      <li><a href="pages/archive/random.html">рандомная diki страница</a></li>
+      <li><a href="pages/archive/websites.html">сайты</a></li>
+      <li><a href="pages/archive/memes.html">челленджи, мемы</a></li>
+      <li><a href="pages/archive/hacks.html">взломы</a></li>
     </ul>
 
     <h3>интерактивная зона</h3>
-     <ul>
-        <li><a href="pages/interact/games.html">игры</a></li>
-        <li><a href="pages/interact/tests.html">тесты</a></li>
+    <ul>
+      <li><a href="pages/interact/games.html">игры</a></li>
+      <li><a href="pages/interact/tests.html">тесты</a></li>
     </ul>
-</body>
+
+    </div> -->
+  </body>
 </html>
