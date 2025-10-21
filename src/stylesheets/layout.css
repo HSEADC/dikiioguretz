@@ -54,16 +54,16 @@ p {
 }
 
 .zaglushka > div {
-  width: 100%;
-}
-
-.image {
-  position: fixed;
-  z-index: -1;
+  width: 90%;
 }
 
 .zaglushka img {
   width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.image {
   position: relative;
   z-index: 10;
 }
