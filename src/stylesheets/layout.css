@@ -12,14 +12,19 @@ body {
   font-size: 16rem;
   margin: 0;
   height: 100vh;
-  background: radial-gradient(ellipse at center, #6872FF 0%, #6872FF 45%,#BA34FF)
+  background: radial-gradient(
+    ellipse at center,
+    #6872ff 0%,
+    #6872ff 45%,
+    #ba34ff
+  );
 }
 
 h1 {
   font-weight: 700;
 }
 
-h2{
+h2 {
   font-weight: 600;
 }
 
@@ -87,7 +92,7 @@ p {
   flex-direction: column;
   padding: 100rem 0 0 30rem;
   position: absolute;
-  z-index: 100.0;
+  z-index: 100;
   color: white;
 }
 
@@ -106,7 +111,7 @@ input[name='message'] {
   height: 56rem;
   border-radius: 10rem;
   outline: none;
-  border: 1rem solid black;
+  /* border: 1rem solid black; */
   padding: 0 20rem 4rem;
   color: black;
   transition: border ease 0.3s;
@@ -132,14 +137,14 @@ input[name='message'] {
   padding-left: 20;
 }
 
-.clouds{
+.clouds {
   width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: -1;
 }
 
-.cloud-1{
+.cloud-1 {
   position: absolute;
   width: 50%;
   bottom: 80%;
@@ -147,21 +152,21 @@ input[name='message'] {
   transform: rotate(180deg);
 }
 
-.cloud-2{
+.cloud-2 {
   position: absolute;
   width: 50%;
   bottom: 85%;
   left: 65%;
 }
 
-.cloud-3{
+.cloud-3 {
   position: absolute;
   width: 50%;
   top: 70%;
   left: 60%;
 }
 
-.cloud-4{
+.cloud-4 {
   position: absolute;
   width: 50%;
   top: 75%;
@@ -169,7 +174,7 @@ input[name='message'] {
   transform: rotate(180deg);
 }
 
-.socials{
+.socials {
   position: absolute;
   width: auto;
   height: auto;
@@ -181,10 +186,9 @@ input[name='message'] {
   justify-content: center;
   gap: 1rem;
   margin: 0 auto;
-
 }
 
-.socials a{
+.socials a {
   position: relative;
   display: block;
   align-items: center;
@@ -193,6 +197,6 @@ input[name='message'] {
   width: 80rem;
 }
 
-.socials a img{
+.socials a img {
   width: 80%;
 }
