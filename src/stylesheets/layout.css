@@ -65,10 +65,11 @@ p {
   margin-bottom: 26rem;
 }
 
-.zaglushka p {
+.zaglushka h3 {
   font-size: 42rem;
   line-height: 44rem;
   margin-bottom: 26rem;
+  -webkit-text-stroke: none;
   font-weight: 400;
 }
 
@@ -111,7 +112,8 @@ input[name='message'] {
   height: 56rem;
   border-radius: 10rem;
   outline: none;
-  /* border: 1rem solid black; */
+  border: 1rem solid black;
+  -webkit-text-stroke: none;
   padding: 0 20rem 4rem;
   color: black;
   transition: border ease 0.3s;
@@ -126,6 +128,7 @@ input[name='message'] {
   outline: none;
   background-color: #0540f2;
   border: 1rem solid black;
+  -webkit-text-stroke: none;
   color: white;
   font-size: 35rem;
   cursor: pointer;
@@ -180,7 +183,7 @@ input[name='message'] {
   height: auto;
   align-items: center;
   left: 65rem;
-  top: 435rem;
+  top: 445rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,8 +196,16 @@ input[name='message'] {
   display: block;
   align-items: center;
   justify-content: center;
-  height: auto;
-  width: 80rem;
+  height: 80rem;
+  width: auto;
+}
+
+.vk {
+  height: 40rem;
+}
+
+.tgg {
+  margin-left: 4.5rem;
 }
 
 .socials a img {
