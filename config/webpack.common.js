@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
-// const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const htmlPages = require('./webpack.pages')
 //const CopyPlugin = require("copy-webpack-plugin");
@@ -55,7 +55,7 @@ module.exports = {
     ]
   },
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    // minimizer: [new CssMinimizerPlugin()]
   },
   plugins: [
     new MiniCssExtractPlugin(),
