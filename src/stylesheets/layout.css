@@ -211,6 +211,7 @@ input[name='message'] {
 
 .inst {
   height: 46rem;
+  padding-bottom: 4rem;
 }
 
 .socials a img {
