@@ -111,7 +111,7 @@ input[name='message'] {
   height: 56rem;
   border-radius: 10rem;
   outline: none;
-  /* border: 1rem solid black; */
+  border: 1rem solid black;
   padding: 0 20rem 4rem;
   color: black;
   transition: border ease 0.3s;
