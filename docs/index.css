@@ -277,6 +277,11 @@ input[name='message'] {
 
 .tgg {
   margin-left: 4.5rem;
+  height: 40rem;
+}
+
+.inst {
+  height: 46rem;
 }
 
 .socials a img {
