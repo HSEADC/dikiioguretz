@@ -1,35 +1,35 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
-const path = require('path');
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
+const path = require('path')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const htmlPages = require('./webpack.pages')
 //const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
- entry: {
-  index: './src/js/index.js'
- },
-output: {
- path: path.resolve(__dirname, 'docs'),
- filename: '[name].js',
- },
- module: {
+  entry: {
+    index: './src/js/index.js'
+  },
+  output: {
+    path: path.resolve(__dirname, 'docs'),
+    filename: '[name].js'
+  },
+  module: {
     rules: [
       {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env', '@babel/preset-react']
-            }
-        },
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
 
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       },
 
       {
@@ -41,7 +41,7 @@ output: {
         test: /\.(png|svg|jpg|jpeg|webp|gif)/,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][quert]'
+          filename: 'images/[hash][ext][query]'
         }
       },
 
@@ -51,13 +51,11 @@ output: {
         generator: {
           filename: 'fonts/[hash][ext][query]'
         }
-      },
-    ],
+      }
+    ]
   },
   optimization: {
-    minimizer: [
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [new CssMinimizerPlugin()]
   },
   plugins: [
     new MiniCssExtractPlugin(),
@@ -68,5 +66,5 @@ output: {
     //     { from: "other", to: "public" },
     //   ],
     // }),
-  ],
-};
+  ]
+}
