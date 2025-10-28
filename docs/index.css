@@ -327,7 +327,7 @@ input[name='message'] {
     width: 100%;
     height: 70rem;
     font-size: 36rem;
-    margin-top: 1190rem;
+    margin-top: 800rem;
   }
   #my-form-button {
     width: 30%;
@@ -366,7 +366,7 @@ input[name='message'] {
   }
   .socials {
     left: 60rem;
-    top: 2180rem;
+    top: 1700rem;
     gap: 5rem;
     margin: 100rem auto;
   }
