@@ -1,3 +1,1 @@
-console.log('helllo');
-
-import '../stylesheets/style.css';
+import '../stylesheets/style.css'
