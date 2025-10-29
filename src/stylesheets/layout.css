@@ -253,7 +253,7 @@ a {
   line-height: 50rem;
   text-align: center;
   margin: 0 100rem;
-  top: 110vh;
+  top: 900rem;
 }
 
 .dolphin {
@@ -293,6 +293,44 @@ a {
   width: 100%;
   height: 100vh;
 }
+
+a {
+  display: contents;
+}
+.articles1 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  left: 10%;
+  z-index: 100;
+}
+
+.articles2 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  left: 32%;
+}
+.articles3 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  right: 32%;
+}
+.articles4 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  right: 10%;
+}
 .articles-pl,
 .articles-png {
   display: flex;
@@ -305,21 +343,153 @@ a {
   top: 1100rem;
   max-width: none;
 }
+.about1 {
+  display: flex;
+  position: absolute;
+  width: 24%;
+  height: auto;
+  top: 1490rem;
+  left: 8%;
+}
 .about-pl,
 .about-png {
+  display: flex;
+  position: absolute;
   width: 40vw;
   height: auto;
-  position: absolute;
   top: 1320rem;
   right: 62%;
-  /* transform: translate(-130%, -50%); */
+}
+.archive1 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 1510rem;
+  right: 34%;
+}
+.archive2 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 1500rem;
+  right: 10%;
 }
 .archive-pl,
 .archive-png {
-  width: 93vw;
   position: absolute;
+  width: 93vw;
+  height: auto;
   top: 1135rem;
   left: 22%;
-  /* transform: translateY(-50%); */
   height: auto;
+}
+.interactive1 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 2050rem;
+  left: 14%;
+}
+.interactive2 {
+  display: flex;
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 2050rem;
+  right: 40%;
+}
+.interactive3 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 2050rem;
+  right: 14%;
+}
+.interactive-pl,
+.interactive-png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2135rem;
+  max-width: none;
+}
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2530rem;
+  max-width: none;
+}
+.main-logo {
+  position: absolute;
+  height: auto;
+  top: 1320rem;
+  left: 2%;
+  width: 20%;
+  top: 2510rem;
+  max-width: none;
+  z-index: 2;
+}
+.main-socials {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 45%;
+  top: 3030rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 18rem;
+}
+
+.main-socials a {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 80rem;
+  width: auto;
+}
+
+.main-vk {
+  height: 50rem;
+}
+
+.main-tgg {
+  margin-left: 4.5rem;
+  height: 50rem;
+}
+
+.main-inst {
+  height: 56rem;
+  padding-bottom: 4rem;
+}
+
+.main-socials a img {
+  width: 80%;
+}
+.main-info h4 {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 36rem;
+  right: 60rem;
+  text-align: center;
+  top: 2930rem;
+  line-height: 50rem;
+  z-index: 100;
 }
