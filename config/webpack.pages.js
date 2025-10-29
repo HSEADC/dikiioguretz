@@ -9,7 +9,6 @@ function createPages(template, filename) {
 
 const htmlPages = [
   createPages('./src/index.html', './index.html'),
-  createPages('./src/pages/main.html', './pages/main.html'),
   createPages('./src/pages/articles.html', './pages/articles.html'),
   createPages('./src/pages/about.html', './pages/about.html'),
   createPages('./src/pages/archive.html', './pages/archive.html'),
