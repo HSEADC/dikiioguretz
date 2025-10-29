@@ -259,7 +259,8 @@ input[name='message'] {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 18rem;
 }
 
 .socials a {
@@ -288,6 +289,19 @@ input[name='message'] {
 .socials a img {
   width: 80%;
 }
+
+a {
+  position: absolute;
+  top: 20rem;
+  right: 20rem;
+  z-index: 100;
+  font-size: 30rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* about media  */
 
 @media screen and (max-width: 600px) {
   html {
