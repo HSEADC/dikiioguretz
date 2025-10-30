@@ -307,7 +307,6 @@ a {
   height: 3096px;
   background-image: url(images/4e0471131f52a3195ab5.svg);
   background-repeat: no-repeat;
-  background-size: auto;
   background-size: cover;
 }
 .main-text h1 {
@@ -737,42 +736,97 @@ a {
   .socials a img {
     width: 80%;
   }
-}
+  a {
+    font-size: 60rem;
+  }
+  .main {
+    height: 1440px;
+  }
+  .main-text h1 {
+    font-size: 450rem;
+    font-weight: 150;
+    margin-top: 180rem;
+  }
+  .main-info h3 {
+    font-size: 50rem;
+    line-height: 55rem;
+    top: 1250rem;
+  }
 
-a {
-  font-size: 60rem;
-}
-.main {
-  height: 1440px;
-}
-.main-text h1 {
-  font-size: 450rem;
-  font-weight: 150;
-}
-.main-info h3 {
-  font-size: 50rem;
-  line-height: 55rem;
-  top: 1000rem;
-}
+  .dolphin {
+    width: 100%;
+    height: 700rem;
+    top: 480rem;
+  }
 
-.dolphin {
-  width: 100%;
-  height: 700rem;
-  top: 300rem;
-}
+  .main-menu a {
+    font-size: 60rem;
+  }
+  .articles2,
+  .articles1-link,
+  .articles3,
+  .articles4 {
+    top: 1325rem;
+  }
+  .articles-pl,
+  .articles-png {
+    top: 1400rem;
+  }
+  .about1 {
+    top: 1730rem;
+  }
+  .about-pl,
+  .about-png {
+    top: 1600rem;
+  }
+  .archive1 {
+    top: 1750rem;
+  }
+  .archive2 {
+    top: 1740rem;
+  }
+  .archive-pl,
+  .archive-png {
+    top: 1460rem;
+  }
+  .interactive1,
+  .interactive3 {
+    top: 2160rem;
+  }
+  .interactive2 {
+    top: 2165rem;
+  }
+  .interactive-pl,
+  .interactive-png {
+    top: 2235rem;
+  }
+  .main-socials {
+    top: 3250rem;
+  }
 
-.main-menu a {
-  font-size: 60rem;
-}
-.articles2,
-.articles1-link,
-.articles3,
-.articles4 {
-  top: 1225rem;
-}
-.articles-pl,
-.articles-png {
-  top: 1300rem;
+  .main-socials a {
+    height: 80rem;
+    left: 85%;
+  }
+
+  .main-vk {
+    height: 80rem;
+  }
+
+  .main-tgg {
+    height: 80rem;
+  }
+
+  .main-inst {
+    height: 86rem;
+  }
+
+  .main-socials a img {
+    width: 70%;
+  }
+  .main-info h4 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -874,12 +928,12 @@ a {
   .socials a img {
     width: 80%;
   }
-}
-a {
-  font-size: 50rem;
-}
-.main {
-  height: 2048px;
+  a {
+    font-size: 50rem;
+  }
+  .main {
+    height: 2048px;
+  }
 }
 
 
