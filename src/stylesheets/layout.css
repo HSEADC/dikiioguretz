@@ -517,6 +517,9 @@ a {
 
 .art1-simp,
 .art1-simple {
+  display: none;
+}
+.simple-desktop {
   display: flex;
   justify-content: center;
   align-items: center;
