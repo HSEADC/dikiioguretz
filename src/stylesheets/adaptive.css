@@ -34,13 +34,13 @@
   }
   input[name='message'] {
     width: 100%;
-    height: 70rem;
+    height: 80rem;
     font-size: 36rem;
     margin-top: 700rem;
   }
   #my-form-button {
-    width: 30%;
-    height: 70rem;
+    width: 35%;
+    height: 80rem;
     font-size: 36rem;
   }
   .clouds {
@@ -74,7 +74,7 @@
     transform: rotate(180deg);
   }
   .socials {
-    left: 60rem;
+    left: 80rem;
     top: 1560rem;
     gap: 5rem;
     margin: 100rem auto;
@@ -97,6 +97,42 @@
   .socials a img {
     width: 80%;
   }
+}
+
+a {
+  font-size: 60rem;
+}
+.main {
+  height: 1440px;
+}
+.main-text h1 {
+  font-size: 450rem;
+  font-weight: 150;
+}
+.main-info h3 {
+  font-size: 50rem;
+  line-height: 55rem;
+  top: 1000rem;
+}
+
+.dolphin {
+  width: 100%;
+  height: 700rem;
+  top: 300rem;
+}
+
+.main-menu a {
+  font-size: 60rem;
+}
+.articles2,
+.articles1-link,
+.articles3,
+.articles4 {
+  top: 1225rem;
+}
+.articles-pl,
+.articles-png {
+  top: 1300rem;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -125,7 +161,7 @@
   }
 
   .zaglushka img {
-    width: 90%;
+    width: 80%;
   }
 
   form {
@@ -135,13 +171,13 @@
   }
   input[name='message'] {
     width: 100%;
-    height: 70rem;
+    height: 75rem;
     font-size: 36rem;
-    margin-top: 690rem;
+    margin-top: 450rem;
   }
   #my-form-button {
     width: 30%;
-    height: 70rem;
+    height: 75rem;
     font-size: 36rem;
   }
   .clouds {
@@ -175,8 +211,8 @@
     transform: rotate(180deg);
   }
   .socials {
-    left: 60rem;
-    top: 1230rem;
+    left: 70rem;
+    top: 1000rem;
     gap: 5rem;
     margin: 100rem auto;
   }
@@ -198,4 +234,10 @@
   .socials a img {
     width: 80%;
   }
+}
+a {
+  font-size: 50rem;
+}
+.main {
+  height: 2048px;
 }
