@@ -236,7 +236,6 @@ a {
   height: 3096px;
   background-image: url(../images/main-bg.svg);
   background-repeat: no-repeat;
-  background-size: auto;
   background-size: cover;
 }
 .main-text h1 {
