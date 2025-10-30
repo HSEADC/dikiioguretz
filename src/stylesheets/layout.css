@@ -501,9 +501,67 @@ a {
 .article1 {
   position: relative;
   width: 100%;
-  height: 3560px;
+  height: 4200px;
   background-color: #00ff00;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .art-image {
-  width: 10%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.art1-simp,
+.art1-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2000rem;
+  max-width: none;
+}
+
+.my-world {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 250rem;
+  right: 8%;
+}
+
+.ok {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 1300rem;
+  right: 8%;
+}
+.vk1 {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 2240rem;
+  right: 8%;
+}
+.art-info h3 {
+  color: white;
+  width: 50%;
+  position: absolute;
+  display: flex;
+  font-size: 34rem;
+  line-height: 52rem;
+  text-align: justify;
+  margin: 0 120rem;
+  top: 290rem;
+  z-index: 2;
 }
