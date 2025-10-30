@@ -223,7 +223,8 @@ a {
   top: 20rem;
   right: 20rem;
   z-index: 100;
-  font-size: 30rem;
+  font-size: 40rem;
+  font-style: italic;
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -280,8 +281,8 @@ a {
 
 .main-menu a {
   position: relative;
-  font-size: 40rem;
   display: inline-block;
+  font-size: 40rem;
   font-style: italic;
 }
 .art1 {
