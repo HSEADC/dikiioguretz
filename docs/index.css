@@ -1,0 +1,944 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+    font-family: 'arial narrow';
+    src: url(fonts/f955bf9c1916545f4f8e.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'arial narrow italic';
+    src: url(fonts/c599e2aafc499a21372d.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'arial narrow';
+    src: url(fonts/4cad86aa05f7286be068.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'arial narrow italic';
+    src: url(fonts/465dc0649679f65097f5.ttf);
+    font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(1vw / 14.4);
+  height: 100vh;
+}
+
+body {
+  font-family: 'arial narrow', Arial, Helvetica, sans-serif;
+  font-size: 16rem;
+  margin: 0;
+  background: radial-gradient(
+    ellipse at center,
+    #6872ff 0%,
+    #6872ff 45%,
+    #ba34ff
+  );
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+}
+
+.zaglushka {
+  color: bisque;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.zaglushka h1 {
+  font-size: 100rem;
+  font-weight: 400;
+  line-height: 60rem;
+  -webkit-text-stroke: 2rem black;
+  margin-bottom: 26rem;
+}
+
+.zaglushka h2 {
+  font-size: 100rem;
+  font-weight: 400;
+  line-height: 60rem;
+  -webkit-text-stroke: 2rem black;
+  margin-bottom: 26rem;
+}
+
+.zaglushka h3 {
+  font-size: 42rem;
+  line-height: 44rem;
+  margin-bottom: 26rem;
+  -webkit-text-stroke: none;
+  font-weight: 400;
+}
+
+.zaglushka img {
+  width: 48%;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100rem 0 0 30rem;
+  position: absolute;
+  z-index: 100;
+  color: white;
+}
+
+.text_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30rem;
+  border-radius: 30rem;
+}
+
+input[name='message'] {
+  width: 33%;
+  font-family: 'arial narrow', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  height: 56rem;
+  border-radius: 10rem;
+  outline: none;
+  border: 1rem solid black;
+  -webkit-text-stroke: none;
+  padding: 0 20rem 4rem;
+  color: black;
+  transition: border ease 0.3s;
+  font-size: 35rem;
+}
+
+#my-form-button {
+  width: 15%;
+  height: 56rem;
+  border-radius: 10rem;
+  padding: 0 20rem 4rem;
+  outline: none;
+  background-color: #0540f2;
+  border: 1rem solid black;
+  -webkit-text-stroke: none;
+  color: white;
+  font-size: 35rem;
+  cursor: pointer;
+  font-family: 'arial narrow', Arial, Helvetica, sans-serif;
+}
+
+#my-form-status {
+  font-size: 30rem;
+  padding-left: 20;
+}
+
+.clouds {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.cloud-1 {
+  position: absolute;
+  width: 50%;
+  bottom: 80%;
+  right: 80%;
+  transform: rotate(180deg);
+}
+
+.cloud-2 {
+  position: absolute;
+  width: 50%;
+  bottom: 85%;
+  left: 65%;
+}
+
+.cloud-3 {
+  position: absolute;
+  width: 50%;
+  top: 70%;
+  left: 60%;
+}
+
+.cloud-4 {
+  position: absolute;
+  width: 50%;
+  top: 75%;
+  right: 70%;
+  transform: rotate(180deg);
+}
+
+.socials {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 65rem;
+  top: 445rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 18rem;
+}
+
+.socials a {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 80rem;
+  width: auto;
+}
+
+.vk {
+  height: 40rem;
+}
+
+.tgg {
+  margin-left: 4.5rem;
+  height: 40rem;
+}
+
+.inst {
+  height: 46rem;
+  padding-bottom: 4rem;
+}
+
+.socials a img {
+  width: 80%;
+}
+
+a {
+  position: absolute;
+  cursor: pointer;
+  top: 20rem;
+  right: 20rem;
+  z-index: 100;
+  font-size: 40rem;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* about media  */
+.main {
+  width: 100%;
+  height: 3096px;
+  background-image: url(images/4e0471131f52a3195ab5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-text h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 350rem;
+  font-weight: 150;
+}
+.main-info h3 {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 38rem;
+  line-height: 50rem;
+  text-align: center;
+  margin: 0 100rem;
+  top: 900rem;
+}
+
+.dolphin {
+  display: flex;
+  width: 100%;
+  height: 700rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 180rem;
+}
+.main-menu {
+  width: 90%;
+  text-align: center;
+  cursor: default;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu a {
+  position: relative;
+  display: inline-block;
+  font-size: 40rem;
+  font-style: italic;
+}
+.art1 {
+  display: none;
+}
+.items {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.articles1-link {
+  position: absolute;
+  top: 1000rem;
+  left: 10%;
+  width: 14%;
+  z-index: 100;
+  display: block;
+}
+
+.articles1-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.articles2 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  left: 32%;
+}
+.articles3 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  right: 32%;
+}
+.articles4 {
+  display: flex;
+  position: absolute;
+  width: 14%;
+  height: auto;
+  top: 1000rem;
+  right: 10%;
+}
+.articles-pl,
+.articles-png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 1100rem;
+  max-width: none;
+}
+.about1 {
+  display: flex;
+  position: absolute;
+  width: 24%;
+  height: auto;
+  top: 1490rem;
+  left: 8%;
+}
+.about-pl,
+.about-png {
+  display: flex;
+  position: absolute;
+  width: 40vw;
+  height: auto;
+  top: 1320rem;
+  right: 62%;
+}
+.archive1 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 1510rem;
+  right: 34%;
+}
+.archive2 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 1500rem;
+  right: 10%;
+}
+.archive-pl,
+.archive-png {
+  position: absolute;
+  width: 93vw;
+  height: auto;
+  top: 1135rem;
+  left: 22%;
+  height: auto;
+}
+.interactive1 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 2050rem;
+  left: 14%;
+}
+.interactive2 {
+  display: flex;
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 2050rem;
+  right: 40%;
+}
+.interactive3 {
+  display: flex;
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 2050rem;
+  right: 14%;
+}
+.interactive-pl,
+.interactive-png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2135rem;
+  max-width: none;
+}
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2530rem;
+  max-width: none;
+}
+.main-logo {
+  position: absolute;
+  height: auto;
+  top: 1320rem;
+  left: 2%;
+  width: 20%;
+  top: 2510rem;
+  max-width: none;
+  z-index: 2;
+}
+.main-socials {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 45%;
+  top: 3030rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 18rem;
+}
+
+.main-socials a {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 80rem;
+  width: auto;
+}
+
+.main-vk {
+  height: 50rem;
+}
+
+.main-tgg {
+  margin-left: 4.5rem;
+  height: 50rem;
+}
+
+.main-inst {
+  height: 56rem;
+  padding-bottom: 4rem;
+}
+
+.main-socials a img {
+  width: 80%;
+}
+.main-info h4 {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 36rem;
+  right: 60rem;
+  text-align: center;
+  top: 2930rem;
+  line-height: 50rem;
+  z-index: 100;
+}
+
+/* article1  */
+.article1 {
+  position: relative;
+  width: 100%;
+  height: 4200px;
+  background-color: #00ff00;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.art-image {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.art1-simp,
+.art1-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 2000rem;
+  max-width: none;
+}
+
+.my-world {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 250rem;
+  right: 8%;
+}
+
+.ok {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 1300rem;
+  right: 8%;
+}
+.vk1 {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 2240rem;
+  right: 8%;
+}
+.art-info h3 {
+  color: white;
+  width: 50%;
+  position: absolute;
+  display: flex;
+  font-size: 34rem;
+  line-height: 52rem;
+  text-align: justify;
+  margin: 0 120rem;
+  top: 290rem;
+  z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: calc(0.35vw / 3.9);
+  }
+  body {
+    background: radial-gradient(
+      ellipse at center,
+      #6872ff 0%,
+      #6872ff 5%,
+      #ba34ff
+    );
+  }
+  .zaglushka {
+    flex-direction: column;
+  }
+
+  .zaglushka h3 {
+    font-size: 50rem;
+    padding-right: 240rem;
+  }
+  .text {
+    margin-top: 360rem;
+    padding: 20rem;
+  }
+
+  .zaglushka img {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+  }
+  input[name='message'] {
+    width: 100%;
+    height: 80rem;
+    font-size: 36rem;
+    margin-top: 700rem;
+  }
+  #my-form-button {
+    width: 35%;
+    height: 80rem;
+    font-size: 36rem;
+  }
+  .clouds {
+    width: 140vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    filter: blur(10rem);
+  }
+  .cloud-1 {
+    width: 80%;
+    bottom: 75%;
+    right: 60%;
+  }
+  .cloud-2 {
+    width: 80%;
+    bottom: 75%;
+    left: 40%;
+    rotate: 15deg;
+  }
+  .cloud-3 {
+    width: 80%;
+    top: 73%;
+    left: 35%;
+  }
+
+  .cloud-4 {
+    width: 80%;
+    top: 75%;
+    right: 65%;
+    transform: rotate(180deg);
+  }
+  .socials {
+    left: 80rem;
+    top: 1560rem;
+    gap: 5rem;
+    margin: 100rem auto;
+  }
+
+  .vk {
+    height: 80rem;
+  }
+
+  .tgg {
+    margin-left: 4.5rem;
+    height: 80rem;
+  }
+
+  .inst {
+    height: 86rem;
+    padding-bottom: 4rem;
+  }
+
+  .socials a img {
+    width: 80%;
+  }
+  a {
+    font-size: 60rem;
+  }
+  .main {
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    height: 150vh;
+  }
+  .main-text h1 {
+    font-size: 450rem;
+    font-weight: 150;
+    margin-top: 180rem;
+  }
+  .main-info h3 {
+    font-size: 50rem;
+    line-height: 55rem;
+    top: 1250rem;
+  }
+
+  .dolphin {
+    width: 100%;
+    height: 700rem;
+    top: 480rem;
+  }
+
+  .main-menu a {
+    font-size: 60rem;
+  }
+  .articles2,
+  .articles1-link,
+  .articles3,
+  .articles4 {
+    top: 1325rem;
+  }
+  .articles-pl,
+  .articles-png {
+    top: 1400rem;
+  }
+  .about1 {
+    top: 1730rem;
+  }
+  .about-pl,
+  .about-png {
+    top: 1600rem;
+  }
+  .archive1 {
+    top: 1750rem;
+  }
+  .archive2 {
+    top: 1740rem;
+  }
+  .archive-pl,
+  .archive-png {
+    top: 1460rem;
+  }
+  .interactive1,
+  .interactive3 {
+    top: 2160rem;
+  }
+  .interactive2 {
+    top: 2165rem;
+  }
+  .interactive-pl,
+  .interactive-png {
+    top: 2235rem;
+  }
+  .main-socials {
+    top: 3250rem;
+  }
+
+  .main-socials a {
+    height: 80rem;
+    left: 85%;
+  }
+
+  .main-vk {
+    height: 80rem;
+  }
+
+  .main-tgg {
+    height: 80rem;
+  }
+
+  .main-inst {
+    height: 86rem;
+  }
+
+  .main-socials a img {
+    width: 70%;
+  }
+  .main-info h4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  html {
+    font-size: calc(0.35vw / 3.9);
+  }
+  body {
+    background: radial-gradient(
+      ellipse at center,
+      #6872ff 0%,
+      #6872ff 5%,
+      #ba34ff
+    );
+  }
+  .zaglushka {
+    flex-direction: column;
+  }
+
+  .zaglushka h3 {
+    font-size: 50rem;
+    padding-right: 240rem;
+  }
+  .text {
+    margin-top: 100rem;
+    padding: 20rem;
+  }
+
+  .zaglushka img {
+    width: 80%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+  }
+  input[name='message'] {
+    width: 100%;
+    height: 75rem;
+    font-size: 36rem;
+    margin-top: 450rem;
+  }
+  #my-form-button {
+    width: 30%;
+    height: 75rem;
+    font-size: 36rem;
+  }
+  .clouds {
+    width: 140vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    filter: blur(10rem);
+  }
+  .cloud-1 {
+    width: 80%;
+    bottom: 75%;
+    right: 60%;
+  }
+  .cloud-2 {
+    width: 80%;
+    bottom: 70%;
+    left: 40%;
+    rotate: 15deg;
+  }
+  .cloud-3 {
+    width: 80%;
+    top: 70%;
+    left: 35%;
+  }
+
+  .cloud-4 {
+    width: 80%;
+    top: 75%;
+    right: 65%;
+    transform: rotate(180deg);
+  }
+  .socials {
+    left: 70rem;
+    top: 1000rem;
+    gap: 5rem;
+    margin: 100rem auto;
+  }
+
+  .vk {
+    height: 80rem;
+  }
+
+  .tgg {
+    margin-left: 4.5rem;
+    height: 80rem;
+  }
+
+  .inst {
+    height: 86rem;
+    padding-bottom: 4rem;
+  }
+
+  .socials a img {
+    width: 80%;
+  }
+  a {
+    font-size: 50rem;
+  }
+  .main {
+    height: 2048px;
+  }
+}
+
+
+
