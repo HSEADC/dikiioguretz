@@ -298,7 +298,6 @@ a {
   font-style: italic;
   text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
 /* about media  */
@@ -340,7 +339,6 @@ a {
 .main-menu {
   width: 90%;
   text-align: center;
-  cursor: default;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -355,6 +353,7 @@ a {
   display: inline-block;
   font-size: 40rem;
   font-style: italic;
+  cursor: default;
 }
 .art1 {
   display: none;
