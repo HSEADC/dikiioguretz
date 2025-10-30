@@ -745,8 +745,10 @@ a {
   }
   .main {
     width: 100%;
-    height: 1400px;
-    background-repeat: repeat-x;
+    height: 1500px;
+    background-image: url(images/90a6d0e1f66a9dbb64a3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .main-text h1 {
     font-size: 450rem;
@@ -836,7 +838,7 @@ a {
   /* article1  */
   .article1 {
     width: 100%;
-    height: 2900px;
+    height: 2200px;
   }
 
   .art1-simp,
