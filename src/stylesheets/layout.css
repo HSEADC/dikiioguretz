@@ -237,7 +237,6 @@ a {
   background-image: url(../images/main-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 .main-text h1 {
   color: white;
@@ -434,9 +433,11 @@ a {
   width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* top: 2530rem; */
+  top: 2530rem;
   max-width: none;
-  bottom: 0;
+}
+.mobile-footer {
+  display: none;
 }
 .main-logo {
   position: absolute;
