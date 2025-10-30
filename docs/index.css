@@ -505,8 +505,9 @@ a {
   width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 2530rem;
+  /* top: 2530rem; */
   max-width: none;
+  bottom: 0;
 }
 .main-logo {
   position: absolute;
@@ -836,6 +837,7 @@ a {
   .main-info h4 {
     display: none;
   }
+
   /* article1  */
   .article1 {
     width: 100%;
