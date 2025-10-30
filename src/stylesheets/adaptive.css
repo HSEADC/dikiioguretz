@@ -101,8 +101,10 @@
     font-size: 60rem;
   }
   .main {
-    height: 1440px;
+    background-size: cover;
+    background-position: center;
     overflow-x: hidden;
+    height: 150vh;
   }
   .main-text h1 {
     font-size: 450rem;
