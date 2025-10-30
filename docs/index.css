@@ -827,32 +827,10 @@ a {
     z-index: 100;
   }
 
-  .main-socials {
-    top: 3250rem;
-    left: 70%;
-  }
-
-  .main-socials a {
-    height: 80rem;
-    right: 10%;
-  }
-
-  .main-vk {
-    height: 80rem;
-  }
-
-  .main-tgg {
-    height: 80rem;
-  }
-
-  .main-inst {
-    height: 86rem;
-  }
-
-  .main-socials a img {
-    width: 70%;
-  }
-  .main-info h4 {
+  .main-socials,
+  .main-socials a,
+  .main-info h4,
+  .main-logo {
     display: none;
   }
 
