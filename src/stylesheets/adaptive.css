@@ -102,6 +102,7 @@
   }
   .main {
     height: 1440px;
+    overflow-x: hidden;
   }
   .main-text h1 {
     font-size: 450rem;
