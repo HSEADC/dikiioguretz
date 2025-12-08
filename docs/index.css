@@ -289,13 +289,13 @@ input[name='message'] {
 }
 
 a {
-  /* position: absolute;
+  position: absolute;
   cursor: pointer;
   top: 20rem;
   right: 20rem;
   z-index: 100;
   font-size: 40rem;
-  font-style: italic; */
+  font-style: italic;
   text-decoration: none;
   color: white;
 }
@@ -982,9 +982,21 @@ a {
 }
 
 
+.int-links a {
+  position: static;
+  font-size: small;
+}
 
 
+.art-links a {
+  position: static;
+  font-size: small;
+}
 
+.arch a {
+  position: static;
+  font-size: small;
+}
 
 
 
