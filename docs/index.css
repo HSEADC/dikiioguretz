@@ -289,16 +289,15 @@ input[name='message'] {
 }
 
 a {
-  position: absolute;
+  /* position: absolute;
   cursor: pointer;
   top: 20rem;
   right: 20rem;
   z-index: 100;
   font-size: 40rem;
-  font-style: italic;
+  font-style: italic; */
   text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
 /* about media  */
@@ -308,7 +307,6 @@ a {
   background-image: url(images/4e0471131f52a3195ab5.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 .main-text h1 {
   color: white;
@@ -341,7 +339,6 @@ a {
 .main-menu {
   width: 90%;
   text-align: center;
-  cursor: default;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -356,6 +353,7 @@ a {
   display: inline-block;
   font-size: 40rem;
   font-style: italic;
+  cursor: default;
 }
 .art1 {
   display: none;
@@ -507,6 +505,9 @@ a {
   transform: translate(-50%, -50%);
   top: 2530rem;
   max-width: none;
+}
+.mobile-footer {
+  display: none;
 }
 .main-logo {
   position: absolute;
@@ -746,10 +747,11 @@ a {
   }
   .main {
     width: 100%;
-    height: 1300px;
+    height: 1390px;
     background-image: url(images/90a6d0e1f66a9dbb64a3.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
   }
   .main-text h1 {
     font-size: 450rem;
@@ -809,33 +811,28 @@ a {
   .interactive-png {
     top: 2235rem;
   }
-  .main-socials {
-    top: 3250rem;
-  }
-
-  .main-socials a {
-    height: 80rem;
-    right: 10%;
-  }
-
-  .main-vk {
-    height: 80rem;
-  }
-
-  .main-tgg {
-    height: 80rem;
-  }
-
-  .main-inst {
-    height: 86rem;
-  }
-
-  .main-socials a img {
-    width: 70%;
-  }
-  .main-info h4 {
+  .main-footer {
     display: none;
   }
+  .mobile-footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 100;
+  }
+
+  .main-socials,
+  .main-socials a,
+  .main-info h4,
+  .main-logo {
+    display: none;
+  }
+
   /* article1  */
   .article1 {
     width: 100%;
@@ -983,6 +980,11 @@ a {
     height: 2048px;
   }
 }
+
+
+
+
+
 
 
 
