@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   html {
     font-size: calc(0.35vw / 3.9);
   }
@@ -187,9 +187,9 @@
   .main-logo {
     display: none;
   }
-
-  /* article1  */
-  .article1 {
+ */
+/* article1  */
+/* .article1 {
     width: 100%;
     height: 2200px;
   }
@@ -226,8 +226,8 @@
     line-height: 54rem;
     top: 300rem;
     margin: 0 110rem;
-  }
-}
+  } */
+/* }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   html {
@@ -334,4 +334,4 @@
   .main {
     height: 2048px;
   }
-}
+} */

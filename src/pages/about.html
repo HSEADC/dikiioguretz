@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -43,141 +43,86 @@
     <title>о медиа</title>
   </head>
   <body>
-    <a href="pages/articles/art1.html" class="art1">статья 1</a>
-    <div class="main">
-      <div class="main-text">
-        <ul class="main-menu">
-          <li><a href="./about.html">о медиа</a></li>
-          <li><a href="./articles.html">статьи</a></li>
-          <li><a href="./archive.html">архив</a></li>
-          <li><a href="./interact.html">интерактив</a></li>
-          <li><a href="./aboutUs.html">о нас</a></li>
-        </ul>
-
-        <h1>стэш</h1>
-      </div>
-      <img src="../images/dolphin.svg" alt="dolphin" class="dolphin" />
-      <div class="main-info">
-        <h3>
-          архив старого интернета. место, в&nbsp;котором собраны артефакты
-          прошлого: сайты, культовые моменты, интерфейсы, игры, гифки, мемы
-          и&nbsp;многое другое.&nbsp;мы&nbsp;собираем фрагменты прошлого
-          и&nbsp;создаем из&nbsp;них портал в&nbsp;мир забытого интернета, чтобы
-          вспомнить, какой была сеть до&nbsp;фильтров, алгоритмов
-          и&nbsp;перенасыщения контентом, и&nbsp;чтобы немного заглянуть туда,
-          куда уже не&nbsp;заходят
-        </h3>
-        <h4>
-          Алина<br />
-          Элина<br />
-          Соня
-        </h4>
-      </div>
-      <div class="main-socials">
+    <header>
+      <nav>
+        <a href="../index.html">на главную</a>
+        <a href="about.html">о медиа</a>
+        <a href="aboutUs.html">о нас</a>
+        <a href="articles.html">статьи</a>
+        <a href="archive.html">архив</a>
+        <a href="interact.html">интерактив</a>
+      </nav>
+    </header>
+    <main>
+      <h1>о медиа</h1>
+    </main>
+    <footer>
+      <div class="socials-icons">
         <a href="https://vk.com/archive_stash?from=groups" target="_blank">
-          <img src="../images/vk_icon.svg" alt="vk" class="main-vk" />
+          <img src="../images/vk-icon.webp" alt="vk" class="vk" width="100px" />
         </a>
         <a
           href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
           target="_blank"
         >
-          <img src="../images/inst_icon.svg" alt="inst" class="main-inst" />
-        </a>
-        <a href="https://t.me/oldweb_core" target="_blank">
-          <img src="../images/tg_icon.svg" alt="tgg" class="main-tgg" />
-        </a>
-      </div>
-      <div class="items">
-        <!-- articles -->
-
-        <img
-          src="../images/articles-png.png"
-          alt="articles-png"
-          class="articles-png"
-        />
-        <img
-          src="../images/articles-pl.svg"
-          alt="articles-pl"
-          class="articles-pl"
-        />
-
-        <a href="../pages/articles/art1.html" class="articles1-link">
           <img
-            src="../images/articles1.svg"
-            alt="articles1"
-            class="articles1"
+            src="../images/inst-icon.webp"
+            alt="inst"
+            class="inst"
+            width="100px"
           />
         </a>
-        <img src="../images/articles2.svg" alt="articles2" class="articles2" />
-        <img src="../images/articles-3.svg" alt="articles3" class="articles3" />
-        <img src="../images/articles4.svg" alt="articles4" class="articles4" />
-        <img src="../images/about-png.png" alt="about-png" class="about-png" />
-        <img src="../images/about-pl.svg" alt="about-pl" class="about-pl" />
-        <img src="../images/about1.svg" alt="about1" class="about1" />
-
-        <!-- archive  -->
-
-        <img
-          src="../images/archive-png.png"
-          alt="archive-png"
-          class="archive-png"
-        />
-        <img
-          src="../images/archive-pl.svg"
-          alt="archive-pl"
-          class="archive-pl"
-        />
-        <img src="../images/archive1.svg" alt="archive1" class="archive1" />
-        <img src="../images/archive2.svg" alt="archive2" class="archive2" />
-
-        <!-- interactive  -->
-
-        <img
-          src="../images/interactive-png.png"
-          alt="interactive-png"
-          class="interactive-png"
-        />
-        <img
-          src="../images/interactive-pl.svg"
-          alt="interactive-pl"
-          class="interactive-pl"
-        />
-        <img
-          src="../images/interactive1.svg"
-          alt="interactive1"
-          class="interactive1"
-        />
-        <img
-          src="../images/interactive2.svg"
-          alt="interactive2"
-          class="interactive2"
-        />
-        <img
-          src="../images/interactive3.svg"
-          alt="interactive3"
-          class="interactive3"
-        />
-
-        <!-- main footer  -->
-
-        <img src="../images/main-logo.svg" alt="main-logo" class="main-logo" />
-        <img
-          src="../images/main-footer.svg"
-          alt="main-footer"
-          class="main-footer"
-        />
-        <img
-          src="../images/mobile-footer.png"
-          alt="mobile-footer"
-          class="mobile-footer"
-        />
-        <img
-          src="../images/mobile-footer.svg"
-          alt="mobile-footer"
-          class="mobile-footer"
-        />
+        <a href="https://t.me/oldweb_core" target="_blank">
+          <img
+            src="../images/tg-icon.webp"
+            alt="tgg"
+            class="tgg"
+            width="100px"
+          />
+        </a>
       </div>
-    </div>
+      <form id="my-form" action="https://formspree.io/f/mldpkdbz" method="POST">
+        <input type="text" name="message" placeholder="tg user" />
+        <button id="my-form-button">отправить</button>
+        <p id="my-form-status"></p>
+      </form>
+    </footer>
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'спасибо, оставайтесь с нами=)'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
-  <!-- <div id="footer"></div> -->
 </html>
