@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -42,11 +42,90 @@
     <title>статьи</title>
   </head>
   <body>
-    <h1>статьи</h1>
-    <nav class="art-links">
-      <a href="./about.html">на главную</a><br />
-      <a href="articles/art1.html">art1</a><br />
-      <a href="articles/art2.html">art2</a>
-    </nav>
+    <header>
+      <nav>
+        <a href="../index.html">на главную</a>
+        <a href="about.html">о медиа</a>
+        <a href="aboutUs.html">о нас</a>
+        <a href="articles.html">статьи</a>
+        <a href="archive.html">архив</a>
+        <a href="interact.html">интерактив</a>
+      </nav>
+    </header>
+    <main>
+      <h1>статьи</h1>
+      <nav class="art-links">
+        <a href="articles/art1.html">статья 1</a>
+        <a href="articles/art2.html">статья 2</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="socials-icons">
+        <a href="https://vk.com/archive_stash?from=groups" target="_blank">
+          <img src="../images/vk-icon.webp" alt="vk" class="vk" width="100px" />
+        </a>
+        <a
+          href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
+          target="_blank"
+        >
+          <img
+            src="../images/inst-icon.webp"
+            alt="inst"
+            class="inst"
+            width="100px"
+          />
+        </a>
+        <a href="https://t.me/oldweb_core" target="_blank">
+          <img
+            src="../images/tg-icon.webp"
+            alt="tgg"
+            class="tgg"
+            width="100px"
+          />
+        </a>
+      </div>
+      <form id="my-form" action="https://formspree.io/f/mldpkdbz" method="POST">
+        <input type="text" name="message" placeholder="tg user" />
+        <button id="my-form-button">отправить</button>
+        <p id="my-form-status"></p>
+      </form>
+    </footer>
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'спасибо, оставайтесь с нами=)'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
 </html>
