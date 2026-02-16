@@ -1,4 +1,5 @@
-import { document } from "postcss"
+// import { document } from "postcss"
+
 
 let currentStage = 0
 let resultCount = 0
