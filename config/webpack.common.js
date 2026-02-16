@@ -1,10 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
-const path = require('path')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const htmlPages = require('./webpack.pages')
+const htmlPages = require('./webpack.pages.js')
+// const htmlPages = require('./webpack.pages')
 //const CopyPlugin = require("copy-webpack-plugin");
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: {
@@ -12,16 +13,23 @@ module.exports = {
     tests: './src/js/tests.js',
     test1: './src/js/test1.js'
   },
+  output: {
+    filename: '[name].js',
+    path: path.resolve('.', 'docs')
+  },
+
   // output: {
   //   path: path.resolve(__dirname, 'docs'),
   //   filename: '[name].js'
   // },
-  output: {
-  path: path.resolve(__dirname, 'docs'),
-  filename: '[name].[contenthash].js',
-  chunkFilename: '[name].[contenthash].js',
-  clean: true
-},
+
+
+//   output: {
+//   path: path.resolve(__dirname, 'docs'),
+//   filename: '[name].[contenthash].js',
+//   chunkFilename: '[name].[contenthash].js',
+//   clean: true
+// },
 
   module: {
     rules: [
@@ -35,11 +43,15 @@ module.exports = {
           }
         }
       },
-
       {
-        test: /\.s?css$/,
+        test: /\.css$/,
+        exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       },
+      // {
+      //   test: /\.s?css$/,
+      //   use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      // },
 
       {
         test: /\.html$/i,
@@ -63,17 +75,22 @@ module.exports = {
       }
     ]
   },
-  optimization: {
-    // minimizer: [new CssMinimizerPlugin()]
-  },
   plugins: [
     new MiniCssExtractPlugin(),
     ...htmlPages
     // new CopyPlugin({
-    //   patterns: [
-    //     { from: "source", to: "dest" },
-    //     { from: "other", to: "public" },
-    //   ],
-    // }),
-  ]
+      //   patterns: [
+        //     { from: "source", to: "dest" },
+        //     { from: "other", to: "public" },
+        //   ],
+        // }),
+      ],
+      optimization: {
+            minimizer: [new CssMinimizerPlugin()]
+      },
+        resolve: {
+    fallback: {
+      stream: require.resolve('stream-browserify')
+    }
+  }
 }
