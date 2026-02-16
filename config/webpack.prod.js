@@ -4,9 +4,9 @@ const path = require('path');
 
 module.exports = merge(common, {
     mode: 'production',
-    output: {
-        path: path.resolve('.', 'docs'),
-        filename: 'index.js',
-        clean: true
-    },
+    // output: {
+    //     path: path.resolve('.', 'docs'),
+    //     filename: 'index.js',
+    //     clean: true
+    // },
 })
