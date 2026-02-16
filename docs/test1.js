@@ -66,11 +66,11 @@ function showResult(results) {
   // resultImage.classList.add('A_TestResultImage')
   // resultImage.src = results[0].image
 
-  if (resultCount == 4) {
+  if (resultCount == 9 || resultCount == 7) {
     resultHeader.innerText = results[0].header;
     resultParagraph.innerText = results[0].paragraph;
     // resultImage.src = results[0].image
-  } else if (resultCount == 3 || resultCount == 2) {
+  } else if (resultCount == 6 || resultCount == 4) {
     resultHeader.innerText = results[1].header;
     resultParagraph.innerText = results[1].paragraph;
     // resultImage.src = results[1].image
@@ -144,7 +144,7 @@ console.clear();
 // import imgBad from '../images/results/result_bad'
 
 var stages = [{
-  question: 'что такое хомяк??',
+  question: 'что такое "хомяк"?',
   answers: [{
     text: 'домашнее животное',
     count: 0
@@ -152,56 +152,116 @@ var stages = [{
     text: 'домашняя страница',
     count: 1
   }, {
-    text: 'сервер',
+    text: 'главный экран',
+    count: 0
+  }, {
+    text: 'сервер для хранения файлов',
     count: 0
   }]
 }, {
-  question: 'кого называют люркер?',
+  question: 'что значит "я в танке"?',
   answers: [{
-    text: 'модератор',
+    text: 'я играю в танки',
     count: 0
   }, {
-    text: 'чел, который вечно начинает споры',
+    text: 'у меня все под контролем',
     count: 0
   }, {
-    text: 'чел, который все читает, но ничего не пишет',
+    text: 'я не в курсе происходящего',
     count: 1
+  }, {
+    text: 'я игнориирую разговор специально',
+    count: 0
   }]
 }, {
-  question: 'как расшифровывается з.ы.??',
+  question: 'расшифруй фразу "ку кд чд"',
+  answers: [{
+    text: 'привет, как дела, что делаешь',
+    count: 1
+  }, {
+    text: 'куда ушел, когда вернешься, чего делать',
+    count: 0
+  }, {
+    text: 'как у тебя, когда домой, что делаешь',
+    count: 0
+  }, {
+    text: 'куратор кафедры, часы дисциплины',
+    count: 0
+  }]
+}, {
+  question: 'что называли "холиваром"?',
+  answers: [{
+    text: 'затяжной спор',
+    count: 1
+  }, {
+    text: 'массовый бан пользователей',
+    count: 0
+  }, {
+    text: 'рекламную войну сайтов',
+    count: 0
+  }, {
+    text: 'сбой сервера',
+    count: 0
+  }]
+}, {
+  question: 'кто такой "люркер"?',
+  answers: [{
+    text: 'модератор форума',
+    count: 0
+  }, {
+    text: 'тот, кто провоцирует конфликты',
+    count: 0
+  }, {
+    text: 'пользователь, который читает, но не пишет',
+    count: 1
+  }, {
+    text: 'администратор сайта',
+    count: 0
+  }]
+}, {
+  question: 'кого называли "ньюфаг"?',
+  answers: [{
+    text: 'администратор форума',
+    count: 0
+  }, {
+    text: 'новый пользователь сообщества',
+    count: 1
+  }, {
+    text: 'спамер',
+    count: 0
+  }, {
+    text: 'старожил сайта',
+    count: 0
+  }]
+}, {
+  question: 'что значит "з.ы."?',
   answers: [{
     text: 'постскриптум',
     count: 1
   }, {
-    text: 'зюзя',
+    text: 'заметка',
     count: 0
   }, {
     text: 'закрытая запись',
     count: 0
-  }]
-}, {
-  question: 'что такое башорг??',
-  answers: [{
-    text: 'платеж за интернет',
-    count: 0
   }, {
-    text: 'сайт со смешными цитатами из рунета',
-    count: 1
-  }, {
-    text: 'сайт организаторов мероприятий Башкиртостана',
+    text: 'заголовок сообщения',
     count: 0
   }]
 }, {
-  question: 'что значит ЖЖ?',
+  question: 'что называли "дровами"?',
   answers: [{
-    text: 'сервис онлайн-дневников',
+    text: 'временные файлы',
+    count: 0
+  }, {
+    text: 'вирусы',
+    count: 0
+  }, {
+    text: 'бесполезные комментарии',
+    count: 0
+  }, {
+    text: 'драйверы устройств',
     count: 1
-  }, {
-    text: 'душнила',
-    count: 0
-  }, {
-    text: 'карта интернета по часам',
-    count: 0
   }]
 }];
 var results = [{
