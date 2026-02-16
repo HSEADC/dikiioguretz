@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'arial narrow', Arial, Helvetica, sans-serif;
+  font-size: 14rem;
+}
+.swiper {
+  width: 100%;
+  max-height: 40vw;
+}
+.swiper-pagination-bullet-active {
+  background: #3a7bd5;
+}
