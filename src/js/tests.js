@@ -1,4 +1,5 @@
-import { document } from "postcss"
+// import { document } from "postcss"
+
 
 let currentStage = 0
 let resultCount = 0
@@ -50,11 +51,11 @@ function showResult(results) {
     resultWrapper.classList.add('M_TestResult')
 
     const resultCnt = document.createElement('p')
-    resultCnt.classList.add(A_TestResultCount)
+    resultCnt.classList.add('A_TestResultCount')
     resultCnt.innerText = `итог: ${resultCount}`
 
     const resultHeader = document.createElement('h2')
-    resultHeader.classList.add(A_TestResultHeader)
+    resultHeader.classList.add('A_TestResultHeader')
     resultHeader.innerText = results[0].header
 
     const resultParagraph = document.createElement('p')
