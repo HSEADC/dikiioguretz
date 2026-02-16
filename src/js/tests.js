@@ -66,12 +66,12 @@ function showResult(results) {
     // resultImage.classList.add('A_TestResultImage')
     // resultImage.src = results[0].image
 
-    if (resultCount == 4){
+    if (resultCount == 9 || resultCount == 7){
         resultHeader.innerText = results[0].header
         resultParagraph.innerText = results[0].paragraph
         // resultImage.src = results[0].image
 
-    } else if (resultCount == 3 || resultCount == 2) {
+    } else if (resultCount == 6 || resultCount == 4) {
         resultHeader.innerText = results[1].header
         resultParagraph.innerText = results[1].paragraph
         // resultImage.src = results[1].image
