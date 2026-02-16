@@ -55,12 +55,12 @@ function showResult(results) {
     resultCnt.innerText = `итог: ${resultCount}`
 
     const resultHeader = document.createElement('h2')
-    resultHeader.classList.add('A_TestResultHeader')
+    resultHeader.classList.add(A_TestResultHeader)
     resultHeader.innerText = results[0].header
 
     const resultParagraph = document.createElement('p')
     resultParagraph.classList.add('A_TestResultParagraph')
-    resultParagraph.innerText = results[0].paragraph
+    // resultParagraph.innerText = results[0].paragraph
 
     // const resultImage = document.createElement('img')
     // resultImage.classList.add('A_TestResultImage')
