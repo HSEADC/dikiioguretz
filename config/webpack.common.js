@@ -12,10 +12,17 @@ module.exports = {
     tests: './src/js/tests.js',
     test1: './src/js/test1.js'
   },
+  // output: {
+  //   path: path.resolve(__dirname, 'docs'),
+  //   filename: '[name].js'
+  // },
   output: {
-    path: path.resolve(__dirname, 'docs'),
-    filename: '[name].js'
-  },
+  path: path.resolve(__dirname, 'docs'),
+  filename: '[name].[contenthash].js',
+  chunkFilename: '[name].[contenthash].js',
+  clean: true
+},
+
   module: {
     rules: [
       {
