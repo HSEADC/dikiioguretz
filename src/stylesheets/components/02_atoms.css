@@ -1,0 +1,97 @@
+
+.A_Question {
+    text-align: left;
+    font-size: 64rem;
+    font-weight: 700;
+    color: #0037FF;
+    background-image: url('../../images/questionCard.webp');
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+.M_AnswerMassage {
+    margin: 0;
+}
+.M_AnswerMassage input {
+    display: none;
+}
+.A_AnswerText {
+    display: block;
+    padding: 6%;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 36rem;
+    font-weight: 100;
+    color: #0037FF;
+}
+.A_AnswerText:hover {
+    transform: scale(1.03);
+}
+input[type="radio"]:checked + .A_AnswerText {
+    color: white;
+}
+.A_AnswerCard {
+    background-image: url('../../images/answerCard.webp');
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+}
+
+.A_BGRainbow {
+  width: 100%;
+}
+.A_NumberOfQuestion {
+    display: none;
+}
+.A_OverlayRect1{
+    position: absolute;
+    width: 83.5%;
+    left: 8.7%;         
+    position: center;          
+    margin-top: 7%;
+    height: auto;
+    pointer-events: none; 
+    z-index: 10; 
+}
+.A_OverlayRect2{
+    position: absolute;
+    width: 83.5%;
+    left: 8.7%;         
+    position: center;          
+    margin-top: 17%;
+    height: auto;
+    pointer-events: none; 
+    z-index: 10; 
+}
+
+.M_TestResult {
+    max-width: 80%;           
+    padding-left: 2%;
+    padding: 2%;
+    text-align: left;     
+    color: #0037FF;
+}
+.A_TestResultHeader{
+    font-size: 42rem; 
+    font-weight: 700;
+}
+.A_TestResultCount{
+    font-size: 36rem; 
+    font-weight: 300;
+    margin-bottom: 2%
+}
+.A_TestResultParagraph{
+    font-size: 28rem; 
+    font-weight: 100;
+}
+
+.A_TestPageName{
+    font-size: 36rem;
+    font-weight: 600;
+    color:#011970;
+    text-align: center;
+    display: block;
+}
