@@ -150,12 +150,7 @@ function showResult(results) {
     resultCnt.innerText = `итог: ${resultCount}`
 
     const resultHeader = document.createElement('h2')
-<<<<<<< HEAD
-    resultHeader.classList.add(A_TestResultHeader)
-    resultHeader.innerText = results[0].header
-=======
     resultHeader.classList.add('A_TestResultHeader')
->>>>>>> main
 
     const resultParagraph = document.createElement('p')
     resultParagraph.classList.add('A_TestResultParagraph')
