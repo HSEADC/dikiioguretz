@@ -1,0 +1,7 @@
+.W_TestPage {
+    min-height: 100vh;
+    background-image: url('../../images/backgr(rainbow).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

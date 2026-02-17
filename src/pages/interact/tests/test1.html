@@ -6,6 +6,7 @@
     <title>тест 1</title>
   </head>
   <body>
+    <div class="W_TestPage">
     <header>
       <nav>
         <a href="../../../index.html">на главную</a>
@@ -15,35 +16,70 @@
         <a href="../../archive.html">архив</a>
         <a href="../../interact.html">интерактив </a>
       </nav>
-      <h1>Тест номер один слэнг</h1>
+      <h1 class="A_TestPageName">слэнг</h1>
     </header>
-    <main class="O_Test">
-      <p class="A_NumberOfQuestion">
-
-      </p>
-      <h2 class="A_Question"></h2>
-      <div class="C_Answers">
-        <div class="M_AnswerMassage">
-          <input type="checkbox">
-          <label class="A_AnswerText"></label>
-        </div>
-        <div class="M_AnswerMassage">
-          <input type="checkbox">
-          <label class="A_AnswerText"></label>
-        </div>
-        <div class="M_AnswerMassage">
-          <input type="checkbox">
-          <label class="A_AnswerText"></label>
-        </div>
-        <div class="M_AnswerMassage">
-          <input type="checkbox">
-          <label class="A_AnswerText"></label>
-        </div>
+       <!-- <article class="W_TestBG">
+      <div class="M_BGCircle">
+        <img class="A_BGRainbow" src="../../../images/backgr(rainbow).webp" alt="rainbow" />
       </div>
-      <nav class="int-links">
-        <a href="../tests.html">к тестам</a>
-      </nav>
-    </main>
+      <div class="M_BGCircle"></div>
+    </article> -->
+    <article class="W-Test">
+      <main class="O_Test">
+        <img src="../../../images/overlay-rect.webp" class="A_OverlayRect1" alt="">
+        <img src="../../../images/overlay-rect.webp" class="A_OverlayRect2" alt="">
+        <p class="A_NumberOfQuestion">
+  
+        </p>
+        <h2 class="A_Question"></h2>
+        <!-- <div class="C_Answers">
+          <div class="M_AnswerMassage">
+            <input type="radio" name="answer">
+            <label class="A_AnswerText" for="radio"></label>
+          </div>
+          <div class="M_AnswerMassage">
+            <input type="radio" name="answer">
+            <label class="A_AnswerText" for="radio"></label>
+          </div>
+          <div class="M_AnswerMassage">
+            <input type="radio" name="answer">
+            <label class="A_AnswerText" for="radio"></label>
+          </div>
+          <div class="M_AnswerMassage">
+            <input type="radio" name="answer">
+            <label class="A_AnswerText" for="radio"></label>
+          </div>
+        </div> -->
+  
+  <div class="C_Answers">
+    <div class="M_AnswerMassage">
+      <input type="radio" name="answer" id="a1">
+      <label class="A_AnswerText A_AnswerCard" for="a1"></label>
+    </div>
+  
+    <div class="M_AnswerMassage">
+      <input type="radio" name="answer" id="a2">
+      <label class="A_AnswerText A_AnswerCard" for="a2"></label>
+    </div>
+  
+    <div class="M_AnswerMassage">
+      <input type="radio" name="answer" id="a3">
+      <label class="A_AnswerText A_AnswerCard" for="a3"></label>
+    </div>
+  
+    <div class="M_AnswerMassage">
+      <input type="radio" name="answer" id="a4">
+      <label class="A_AnswerText A_AnswerCard" for="a4"></label>
+    </div>
+  </div>
+  
+  
+        <!-- <nav class="int-links">
+          <a href="../tests.html">к тестам</a>
+        </nav> -->
+      </main>
+    </article>
+
     <footer>
           <footer>
       <div class="socials-icons">
@@ -82,6 +118,8 @@
         <p id="my-form-status"></p>
       </form>
     </footer>
+        </div>
+
     <script>
       var form = document.getElementById('my-form')
 
