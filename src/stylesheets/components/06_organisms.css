@@ -1,7 +1,10 @@
 .O_Test {
-    max-width: 81%;
-    margin: 3% auto;
+    height: 420px;
+    max-width: 65%;
+    margin: 0 auto;
     margin-top: 10%;
-    background: linear-gradient(180deg, #e9ecff, #9db4ff);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background-image: url(../../images/W_OTestBG.webp);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 6%;
 }
