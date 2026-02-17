@@ -46,23 +46,24 @@ input[type="radio"]:checked + .A_AnswerText {
 .A_NumberOfQuestion {
     display: none;
 }
-.A_OverlayRect1{
+.A_OverlayRect1 {
     position: absolute;
-    width: 83.5%;
-    left: 8.7%;         
-    position: center;          
-    margin-top: 7%;
+    width: 67%;
     height: auto;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 7%; 
     pointer-events: none; 
     z-index: 10; 
 }
-.A_OverlayRect2{
+
+.A_OverlayRect2 {
     position: absolute;
-    width: 83.5%;
-    left: 8.7%;         
-    position: center;          
-    margin-top: 17%;
+    width: 67%;
     height: auto;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 17%;
     pointer-events: none; 
     z-index: 10; 
 }
