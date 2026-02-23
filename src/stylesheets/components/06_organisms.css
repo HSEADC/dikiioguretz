@@ -1,10 +1,18 @@
 .O_Test {
-    height: 420px;
-    max-width: 65%;
-    margin: 0 auto;
-    margin-top: 10%;
-    background-image: url(../../images/W_OTestBG.webp);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 6%;
+  height: 420px;
+  max-width: 65%;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-image: url(../../images/W_OTestBG.webp);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 6%;
+}
+.O_IndexAboutProject {
+  width: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
 }

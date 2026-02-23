@@ -1,3 +1,35 @@
 .M_AnswerMassage {
-    width: 100%;
+  width: 100%;
+}
+.M_MiniWindow {
+  background-image: url(../../images/mini-window.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  width: 60%;
+  aspect-ratio: 2/1;
+  padding: 2%;
+  box-sizing: border-box;
+  margin-top: 4%;
+}
+.M_MiniWindow h1 {
+  color: #0037ff;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: 'arial narrow';
+  padding: 1% 0 5%;
+}
+.M_MiniWindow p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  font-family: 'arial narrow';
+  color: #0037ff;
+  padding-right: 26%;
+}
+.pic-chick {
+  width: 28%;
+  height: auto;
+  bottom: 20%;
 }
