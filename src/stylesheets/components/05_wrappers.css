@@ -1,7 +1,29 @@
 .W_TestPage {
-    min-height: 100vh;
-    background-image: url('../../images/backgr(rainbow).webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  min-height: 100vh;
+  background-image: url('../../images/backgr(rainbow).webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.W_VideoCover {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.W_VideoCover video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+video::-webkit-media-controls {
+  display: none;
+}
+.start-line {
+  position: absolute;
+  bottom: -2%;
+  z-index: 3;
+  width: 100%;
+  display: block;
 }
