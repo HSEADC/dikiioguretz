@@ -8,6 +8,7 @@
   background-position: center;
   margin-bottom: 6%;
 }
+
 .O_IndexAboutProject {
   width: 90%;
   position: relative;
@@ -15,4 +16,40 @@
   left: 5%;
   display: flex;
   justify-content: space-between;
+}
+.O_IndexAboutArchive {
+  width: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.O_IndexCalendar {
+  width: 90%;
+  position: relative;
+  top: 10%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.O_IndexGallery {
+  width: 90%;
+  position: relative;
+  top: 12%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.O_Footer {
+  background-image: url(../../images/backgr-footer.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  height: 360rem;
+  margin-top: -2%;
+  position: relative;
+  z-index: 10;
 }
