@@ -15,13 +15,13 @@
 .M_MiniWindow h1 {
   color: #0037ff;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 40rem;
   font-family: 'arial narrow';
   padding: 1% 0 5%;
 }
 .M_MiniWindow p {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 18rem;
   line-height: 150%;
   letter-spacing: -1.1%;
   font-family: 'arial narrow';
@@ -30,6 +30,195 @@
 }
 .pic-chick {
   width: 28%;
-  height: auto;
+  height: 100%;
   bottom: 20%;
+}
+
+.M_NavigationIcons {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+}
+.M_NavigationIcons img {
+  width: 100%;
+  height: auto;
+}
+.M_SmallNote {
+  background-image: url(../../images/small-note.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  width: 60%;
+  aspect-ratio: 1.5/1;
+  padding: 2%;
+  box-sizing: border-box;
+  margin-top: 8%;
+}
+.M_SmallNote h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 40rem;
+  font-style: italic;
+  font-family: 'arial narrow italic';
+  padding: 0 0 7%;
+}
+.M_SmallNote p {
+  font-weight: 700;
+  font-size: 18rem;
+  line-height: 170%;
+  letter-spacing: -1.1%;
+  font-family: 'arial narrow italic';
+  font-style: italic;
+  color: black;
+  padding-right: 10%;
+}
+
+.M_IndexCalendar {
+  background-image: url(../../images/calendar.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  width: 60%;
+  aspect-ratio: 1.7/1;
+  padding-top: 2%;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 12.62px 12.62px 16.83px 0px #3921d6b2;
+  text-decoration: none;
+}
+.M_IndexCalendar h1 {
+  color: #0037ff;
+  font-weight: 400;
+  font-size: 40rem;
+  font-family: 'arial narrow';
+  text-align: center;
+}
+.pic-green {
+  width: 28%;
+  height: 100%;
+  padding-top: 2%;
+}
+.M_OurGalleryPhotos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
+}
+.M_OurGalleryPhotos img {
+  width: 100%;
+  height: auto;
+}
+.our-gallery {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.M_FooterContact {
+  width: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.M_SocialsIcons {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  margin-top: -5%;
+}
+.M_SocialsIcons img {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: -5%;
+}
+
+#my-form h1 {
+  color: #fff;
+  margin-bottom: 6%;
+  font-size: 50rem;
+  font-weight: 700;
+  font-family: 'arial narrow';
+}
+#my-form input[type='text'] {
+  font-family: 'arial narrow';
+  background-color: white;
+  width: 60%;
+  height: 50px;
+  border-radius: 14px;
+  margin-right: 2%;
+  border: none;
+  padding: 0 20px;
+  outline: none;
+  font-weight: 400;
+  font-size: 30rem;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 7px 0px #0037ff4f;
+}
+#my-form input[type='text']::placeholder {
+  color: #0037ff;
+  opacity: 0.8;
+}
+#my-form-button {
+  font-family: 'arial narrow';
+  background-color: #0037ff;
+  color: white;
+  opacity: 0.8;
+  width: 36%;
+  height: 50px;
+  border-radius: 14px;
+  font-size: 30rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  box-shadow: 7px 7px 7px 0px #0037ff4f;
+}
+#my-form-status {
+  color: #0037ff;
+  font-size: 18rem;
+  font-weight: 500;
+  margin-top: 3%;
+}
+.M_FooterInfo {
+  width: 90%;
+  position: relative;
+  top: 15%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.M_FooterInfo h1 {
+  font-size: 40rem;
+  font-weight: 700;
+  color: #0037ff;
+  margin-bottom: 8%;
+}
+.M_FooterInfo p {
+  font-size: 25rem;
+  font-family: 'arial narrow italic';
+  font-weight: 700;
+  color: #0037ff;
+}
+.footer-logo {
+  width: 16%;
+  height: 100%;
+  margin-top: -5%;
+}
+
+.line-left,
+.line-right {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 3%;
+  z-index: 10;
+}
+
+.line-left {
+  left: -0.6%;
+}
+
+.line-right {
+  right: -1%;
 }

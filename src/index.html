@@ -49,6 +49,9 @@
       </nav>
     </header>
     <article class="W_Index">
+      <img src="./images/line-left.webp" alt="line" class="line-left" />
+      <img src="./images/line-right.webp" alt="line" class="line-right" />
+
       <main class="S_Index">
         <section class="W_VideoCover" id="videoCover">
           <video
@@ -77,46 +80,128 @@
             <img src="./images/pic-chick.webp" alt="" class="pic-chick" />
           </div>
           <div class="O_IndexAboutArchive">
-            <div class="M_NavigationIcons"></div>
-            <div class="M_SmallNote"></div>
+            <div class="M_NavigationIcons">
+              <figure class="A_BigIcon">
+                <a href="pages/interact.html">
+                  <img src="./images/big-icon-interact.webp" alt="interact" />
+                  <figcaption>интерактив</figcaption>
+                </a>
+              </figure>
+              <figure class="A_BigIcon">
+                <a href="pages/archive.html">
+                  <img src="./images/big-icon-archive.webp" alt="archive" />
+                  <figcaption>архив</figcaption>
+                </a>
+              </figure>
+              <figure class="A_BigIcon">
+                <a href="pages/articles.html">
+                  <img src="./images/big-icon-articles.webp" alt="articles" />
+                  <figcaption>статьи</figcaption>
+                </a>
+              </figure>
+              <figure class="A_BigIcon">
+                <a href="pages/aboutUs.html">
+                  <img src="./images/big-icon-about-us.webp" alt="about-us" />
+                  <figcaption>о нас</figcaption>
+                </a>
+              </figure>
+              <figure class="A_BigIcon">
+                <a href="https://vaguesorrow.github.io/stash_webposter/">
+                  <img src="./images/big-icon-trash.webp" alt="trash" />
+                  <figcaption>дикая мусорка</figcaption>
+                </a>
+              </figure>
+            </div>
+            <div class="M_SmallNote">
+              <h1>Заметка про наш раздел «Архив»</h1>
+              <p>
+                Архив — это сердце нашего проекта и место, где можно пошуршать в
+                разных артефактах старого интернета. В архиве мы собираем
+                забытые мемы, странные челленджи тех времен, взломы и забытые
+                сайты, сохраняя дух эпохи 2000-х. Каждый элемент служит
+                маленьким фрагментом цифровой истории, который вы больше нигде
+                не увидите. Архив позволяет путешествовать по прошлому интернету
+                и сети, открывая случайные находки или забытые ностальгические
+                мотивы, с которыми вы уже сталкивались в старой сети интернет.
+              </p>
+            </div>
           </div>
           <div class="O_IndexCalendar">
-            <div class="A_IndexCalendar"></div>
+            <a
+              href="https://vaguesorrow.github.io/calendar_stash/"
+              class="M_IndexCalendar"
+            >
+              <h1>КАЛЕНДАРИК СТЭША</h1>
+            </a>
+            <img src="./images/pic-green.webp" alt="green" class="pic-green" />
           </div>
-          <div class="O_IndexGallery"></div>
+          <div class="O_IndexGallery">
+            <img
+              src="./images/our-gallery.webp"
+              alt="gallery"
+              class="our-gallery"
+            />
+            <div class="M_OurGalleryPhotos">
+              <img src="./images/pic-0.webp" alt="pic" />
+              <img src="./images/pic-1.webp" alt="pic" />
+              <img src="./images/pic-2.webp" alt="pic" />
+              <img src="./images/pic-3.webp" alt="pic" />
+              <img src="./images/pic-4.webp" alt="pic" />
+              <img src="./images/pic-5.webp" alt="pic" />
+            </div>
+          </div>
         </section>
       </main>
     </article>
-    <footer>
-      <div class="socials-icons">
-        <a href="https://vk.com/archive_stash?from=groups" target="_blank">
-          <img src="./images/vk-icon.webp" alt="vk" class="vk" width="100px" />
-        </a>
-        <a
-          href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
-          target="_blank"
+    <footer class="O_Footer">
+      <div class="M_FooterContact">
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mldpkdbz"
+          method="POST"
         >
-          <img
-            src="./images/inst-icon.webp"
-            alt="inst"
-            class="inst"
-            width="100px"
-          />
-        </a>
-        <a href="https://t.me/oldweb_core" target="_blank">
-          <img
-            src="./images/tg-icon.webp"
-            alt="tgg"
-            class="tgg"
-            width="100px"
-          />
-        </a>
+          <h1 class="form-title">Присоединяйся к нам!</h1>
+          <input type="text" name="message" placeholder="tg user..." />
+          <button id="my-form-button">отправить</button>
+          <p id="my-form-status"></p>
+        </form>
+        <div class="M_SocialsIcons">
+          <a href="https://vk.com/archive_stash?from=groups" target="_blank">
+            <img
+              src="./images/vk-icon.webp"
+              alt="vk"
+              class="vk"
+              width="100px"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
+            target="_blank"
+          >
+            <img
+              src="./images/inst-icon.webp"
+              alt="inst"
+              class="inst"
+              width="100px"
+            />
+          </a>
+          <a href="https://t.me/oldweb_core" target="_blank">
+            <img
+              src="./images/tg-icon.webp"
+              alt="tgg"
+              class="tgg"
+              width="100px"
+            />
+          </a>
+        </div>
       </div>
-      <form id="my-form" action="https://formspree.io/f/mldpkdbz" method="POST">
-        <input type="text" name="message" placeholder="tg user" />
-        <button id="my-form-button">отправить</button>
-        <p id="my-form-status"></p>
-      </form>
+      <div class="M_FooterInfo">
+        <div class="A_Names">
+          <h1>Команда СТЭШ</h1>
+          <p>Алина &nbsp;&nbsp;Элина&nbsp;&nbsp; Соня</p>
+        </div>
+        <img src="./images/footer-logo.webp" alt="logo" class="footer-logo" />
+      </div>
     </footer>
     <script>
       var form = document.getElementById('my-form')
