@@ -142,11 +142,11 @@
   font-weight: 700;
   font-family: 'arial narrow';
 }
-#my-form input[type='text'] {
+#my-form input {
   font-family: 'arial narrow';
   background-color: white;
   width: 60%;
-  height: 50px;
+  height: 40%;
   border-radius: 14px;
   margin-right: 2%;
   border: none;
@@ -156,9 +156,8 @@
   font-size: 30rem;
   box-sizing: border-box;
   box-shadow: 7px 7px 7px 0px #0037ff4f;
-  display: inline-block;
 }
-#my-form input[type='text']::placeholder {
+#my-form input::placeholder {
   color: #0037ff;
   opacity: 0.8;
 }
@@ -168,7 +167,7 @@
   color: white;
   opacity: 0.8;
   width: 36%;
-  height: 50px;
+  height: 40%;
   border-radius: 14px;
   font-size: 30rem;
   border: none;
