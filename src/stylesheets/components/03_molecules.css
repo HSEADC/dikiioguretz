@@ -49,11 +49,12 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
-  width: 60%;
+  width: 58%;
   aspect-ratio: 1.5/1;
   padding: 2%;
   box-sizing: border-box;
   margin-top: 8%;
+  /* margin-left: 5%; */
 }
 .M_SmallNote h1 {
   color: black;
@@ -61,7 +62,7 @@
   font-size: 40rem;
   font-style: italic;
   font-family: 'arial narrow italic';
-  padding: 0 0 7%;
+  padding: 0 0 6%;
 }
 .M_SmallNote p {
   font-weight: 700;
@@ -71,7 +72,7 @@
   font-family: 'arial narrow italic';
   font-style: italic;
   color: black;
-  padding-right: 10%;
+  padding-right: 14%;
 }
 
 .M_IndexCalendar {
@@ -155,6 +156,7 @@
   font-size: 30rem;
   box-sizing: border-box;
   box-shadow: 7px 7px 7px 0px #0037ff4f;
+  display: inline-block;
 }
 #my-form input[type='text']::placeholder {
   color: #0037ff;
@@ -221,4 +223,24 @@
 
 .line-right {
   right: -1%;
+}
+
+.M_ArchiveIcons {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+.M_ArchiveIcons img {
+  width: 90%;
+  height: auto;
+}
+.pic-pin {
+  /* position: absolute;
+  display: flex; */
+  width: 50%;
+  height: auto;
+  margin-left: -12%;
 }
