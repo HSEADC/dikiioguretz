@@ -41,57 +41,101 @@
     <title>архив</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="../index.html">на главную</a>
-        <a href="about.html">о медиа</a>
-        <a href="aboutUs.html">о нас</a>
-        <a href="articles.html">cтатьи</a>
-        <a href="archive.html">архив</a>
-        <a href="interact.html">интерактив</a>
-      </nav>
-    </header>
-    <main>
-      <h1>архив</h1>
-      <nav class="arch">
-        <a href="archive/hacks.html">взломы</a>
-        <a href="archive/memes.html">мемы</a>
-        <a href="archive/websites.html">сайты</a>
-        <a href="archive/random.html">рандом</a>
-      </nav>
-    </main>
-    <footer>
-      <div class="socials-icons">
-        <a href="https://vk.com/archive_stash?from=groups" target="_blank">
-          <img src="../images/vk-icon.webp" alt="vk" class="vk" width="100px" />
-        </a>
-        <a
-          href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
-          target="_blank"
+    <div class="W_ArchivePage">
+      <header>
+        <nav>
+          <a href="../index.html">на главную</a>
+          <a href="about.html">о медиа</a>
+          <a href="aboutUs.html">о нас</a>
+          <a href="articles.html">cтатьи</a>
+          <a href="archive.html">архив</a>
+          <a href="interact.html">интерактив</a>
+        </nav>
+      </header>
+      <main class="O_Archive">
+        <div class="M_SmallNote">
+          <h1>Заметка про наш раздел «Архив»</h1>
+          <p>
+            Архив — это сердце нашего проекта и место, где можно пошуршать в
+            разных артефактах старого интернета. В архиве мы собираем забытые
+            мемы, странные челленджи тех времен, взломы и забытые сайты,
+            сохраняя дух эпохи 2000-х. Каждый элемент служит маленьким
+            фрагментом цифровой истории, который вы больше нигде не увидите.
+            Архив позволяет путешествовать по прошлому интернету и сети,
+            открывая случайные находки или забытые ностальгические мотивы, с
+            которыми вы уже сталкивались в старой сети интернет.
+          </p>
+          <img src="../images/pic-pin.webp" alt="pin" class="pic-pin" />
+        </div>
+        <div class="M_ArchiveIcons">
+          <figure class="A_BigIconArchive">
+            <a href="../pages/archive/websites.html">
+              <img src="../images/icon-sites.webp" alt="interact" />
+              <figcaption>сайты</figcaption>
+            </a>
+          </figure>
+          <figure class="A_BigIconArchive">
+            <a href="../pages/archive/memes.html">
+              <img src="../images/icon-meme.webp" alt="archive" />
+              <figcaption>мемы</figcaption>
+            </a>
+          </figure>
+          <figure class="A_BigIconArchive">
+            <a href="../pages/archive/random.html">
+              <img src="../images/icon-other.webp" alt="articles" />
+              <figcaption>другое</figcaption>
+            </a>
+          </figure>
+          <figure class="A_BigIconArchive">
+            <a href="../pages/archive/hacks.html">
+              <img src="../images/icon-scammers.webp" alt="articles" />
+              <figcaption>взломы</figcaption>
+            </a>
+          </figure>
+        </div>
+      </main>
+      <!-- <footer>
+        <div class="socials-icons">
+          <a href="https://vk.com/archive_stash?from=groups" target="_blank">
+            <img
+              src="../images/vk-icon.webp"
+              alt="vk"
+              class="vk"
+              width="100px"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
+            target="_blank"
+          >
+            <img
+              src="../images/inst-icon.webp"
+              alt="inst"
+              class="inst"
+              width="100px"
+            />
+          </a>
+          <a href="https://t.me/oldweb_core" target="_blank">
+            <img
+              src="../images/tg-icon.webp"
+              alt="tgg"
+              class="tgg"
+              width="100px"
+            />
+          </a>
+        </div>
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mldpkdbz"
+          method="POST"
         >
-          <img
-            src="../images/inst-icon.webp"
-            alt="inst"
-            class="inst"
-            width="100px"
-          />
-        </a>
-        <a href="https://t.me/oldweb_core" target="_blank">
-          <img
-            src="../images/tg-icon.webp"
-            alt="tgg"
-            class="tgg"
-            width="100px"
-          />
-        </a>
-      </div>
-      <form id="my-form" action="https://formspree.io/f/mldpkdbz" method="POST">
-        <input type="text" name="message" placeholder="tg user" />
-        <button id="my-form-button">отправить</button>
-        <p id="my-form-status"></p>
-      </form>
-    </footer>
-    <script>
+          <input type="text" name="message" placeholder="tg user" />
+          <button id="my-form-button">отправить</button>
+          <p id="my-form-status"></p>
+        </form>
+      </footer> -->
+    </div>
+    <!-- <script>
       var form = document.getElementById('my-form')
 
       async function handleSubmit(event) {
@@ -127,6 +171,6 @@
           })
       }
       form.addEventListener('submit', handleSubmit)
-    </script>
+    </script> -->
   </body>
 </html>

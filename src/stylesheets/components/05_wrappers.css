@@ -27,3 +27,40 @@ video::-webkit-media-controls {
   width: 100%;
   display: block;
 }
+
+.W_GamesPage {
+  min-height: 130vh;
+  background-image: url('../../images/backgr-rainbow-games.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.W_AboutUsPage {
+  min-height: 350vh;
+  background-image: url('../../images/backgr-sea.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.W_ArchivePage {
+  min-height: 100vh;
+  background-image: url('../../images/backgr-grass.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.W_WebsitesPage {
+  min-height: 650vh;
+  background-image: url('../../images/backgr-grass1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.W_MemesPage {
+  min-height: 650vh;
+  background-image: url('../../images/backgr-grass1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
