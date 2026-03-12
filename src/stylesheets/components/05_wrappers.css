@@ -1,3 +1,13 @@
+/* _____________________________index page_____________________________ */
+
+.W_AboutProject {
+  width: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
 .W_TestPage {
   min-height: 100vh;
   background-image: url('../../images/backgr(rainbow).webp');
@@ -5,21 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.W_VideoCover {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-.W_VideoCover video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  pointer-events: none;
-}
-video::-webkit-media-controls {
-  display: none;
-}
+
 .start-line {
   position: absolute;
   bottom: -2%;
