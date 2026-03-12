@@ -1,3 +1,5 @@
+/* _____________________________index page_____________________________ */
+
 .A_Question {
   text-align: left;
   font-size: 64rem;
@@ -94,14 +96,4 @@ input[type='radio']:checked + .A_AnswerText {
   color: #011970;
   text-align: center;
   display: block;
-}
-
-.A_BigIconArchive {
-  text-align: center;
-}
-.A_BigIconArchive figcaption {
-  font-size: 40px;
-  font-weight: 400;
-  color: white;
-  text-decoration: none;
 }

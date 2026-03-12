@@ -1,0 +1,22 @@
+/* _____________________________index page_____________________________ */
+
+.Q_D1BGM {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.Q_D1BGM video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+video::-webkit-media-controls {
+  display: none;
+}
+
+.Q_D1Coco {
+  width: 28%;
+  height: auto;
+}
