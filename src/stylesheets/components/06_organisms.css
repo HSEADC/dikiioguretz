@@ -1,7 +1,7 @@
 /* _____________________________index page_____________________________ */
 
 .O_DAboutProject {
-  background-image: url(../../images/mini-window.webp);
+  background-image: url(../../images/Q.DMAINWINDOW.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
@@ -11,12 +11,13 @@
   box-sizing: border-box;
   margin-top: 4%;
 }
+
 .O_DAboutProject h1 {
   color: #0037ff;
   font-weight: 700;
   font-size: 40rem;
   font-family: 'arial narrow';
-  padding: 1% 0 5%;
+  padding: 0 0 4%;
 }
 .O_DAboutProject p {
   font-weight: 700;
@@ -29,12 +30,12 @@
 }
 
 .O_DYellowNote {
-  background-image: url(../../images/small-note.webp);
+  background-image: url(../../images/Q.DYELLOWNOTE.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
   width: 58%;
-  aspect-ratio: 1.5/1;
+  aspect-ratio: 1.6/1;
   padding: 2%;
   box-sizing: border-box;
   margin-top: 8%;
@@ -89,25 +90,11 @@
   left: 5%;
   display: flex;
   justify-content: space-between;
+
+  flex-direction: row;
+  align-items: first baseline;
 }
-.O_IndexCalendar {
-  width: 90%;
-  position: relative;
-  top: 10%;
-  left: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-.O_IndexGallery {
-  width: 90%;
-  position: relative;
-  top: 12%;
-  left: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .O_Footer {
   background-image: url(../../images/backgr-footer.webp);
   background-size: cover;
