@@ -1,5 +1,4 @@
 /* _____________________________index page_____________________________ */
-
 .Q_D1BGM {
   position: relative;
   height: 100vh;
@@ -19,4 +18,10 @@ video::-webkit-media-controls {
 .Q_D1Coco {
   width: 28%;
   height: auto;
+}
+
+.Q_D1Green {
+  width: 28%;
+  height: 100%;
+  padding-top: 2%;
 }

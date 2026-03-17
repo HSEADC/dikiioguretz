@@ -8,6 +8,14 @@
   display: flex;
   justify-content: space-between;
 }
+.W_IndexCalendar {
+  width: 90%;
+  position: relative;
+  top: 10%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
 .W_TestPage {
   min-height: 100vh;
   background-image: url('../../images/backgr(rainbow).webp');
