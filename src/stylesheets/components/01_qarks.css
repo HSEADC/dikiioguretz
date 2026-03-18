@@ -1,4 +1,16 @@
+/* _____________________________header_____________________________ */
+
+.Q_DMainGorLine {
+  width: 100%;
+  align-items: center;
+  position: relative;
+  z-index: 12;
+
+  box-shadow: 3px 4px 9px 1px #192966cc;
+}
+
 /* _____________________________index page_____________________________ */
+
 .Q_D1BGM {
   position: relative;
   height: 100vh;
