@@ -1,3 +1,53 @@
+/* _____________________________header_____________________________ */
+
+.MainMenuNav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+a.M_MainMenuDesktopMolecule,
+a.M_MainMenuDesktopMoleculeInteract {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -2px;
+}
+
+a.M_MainMenuDesktopMolecule {
+  background: linear-gradient(
+    180deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+  border-radius: 0 0 25px 25px;
+  width: 80%;
+  box-shadow: 3px 4px 9px 1px #192966cc;
+  cursor: pointer;
+}
+
+a.M_MainMenuDesktopMoleculeInteract {
+  background: linear-gradient(
+    180deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+  border-radius: 0 0 25px 25px;
+  box-shadow: 3px 4px 9px 1px #192966cc;
+  cursor: pointer;
+}
+
 /* _____________________________index page_____________________________ */
 /* .M_CrossName {
   justify-content: space-between;

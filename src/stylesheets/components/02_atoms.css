@@ -1,3 +1,15 @@
+/* _____________________________header_____________________________ */
+
+.A_MainMenuText {
+  color: #0037ff;
+  padding-bottom: 15px;
+  white-space: nowrap;
+}
+.A_MainMenuText,
+.MainMenuNav img {
+  margin: 0 3% 0;
+}
+
 /* _____________________________index page_____________________________ */
 
 .A_Question {
