@@ -96,108 +96,30 @@
         <div class="C_ArchiveIcons">
           <figure class="M_DArchiveIcon">
             <a href="../pages/archive/websites.html">
-              <img src="../images/A_DIconSites1.svg" alt="interact" />
+              <img src="../images/A_DIconSites1.webp" alt="interact" />
               <figcaption style="font-size: 40px">сайты</figcaption>
             </a>
           </figure>
           <figure class="M_DArchiveIcon">
             <a href="../pages/archive/memes.html">
-              <img src="../images/A_DIconSites4.svg" alt="archive" />
+              <img src="../images/A_DIconSites4.webp" alt="archive" />
               <figcaption style="font-size: 40px">мемы</figcaption>
             </a>
           </figure>
           <figure class="M_DArchiveIcon">
             <a href="../pages/archive/random.html">
-              <img src="../images/A_DIconSites2.svg" alt="articles" />
+              <img src="../images/A_DIconSites2.webp" alt="articles" />
               <figcaption style="font-size: 40px">другое</figcaption>
             </a>
           </figure>
           <figure class="M_DArchiveIcon">
             <a href="../pages/archive/hacks.html">
-              <img src="../images/A_DIconSites3.svg" alt="articles" />
+              <img src="../images/A_DIconSites3.webp" alt="articles" />
               <figcaption style="font-size: 40px">взломы</figcaption>
             </a>
           </figure>
         </div>
       </div>
     </section>
-    <!-- <footer>
-        <div class="socials-icons">
-          <a href="https://vk.com/archive_stash?from=groups" target="_blank">
-            <img
-              src="../images/vk-icon.webp"
-              alt="vk"
-              class="vk"
-              width="100px"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
-            target="_blank"
-          >
-            <img
-              src="../images/inst-icon.webp"
-              alt="inst"
-              class="inst"
-              width="100px"
-            />
-          </a>
-          <a href="https://t.me/oldweb_core" target="_blank">
-            <img
-              src="../images/tg-icon.webp"
-              alt="tgg"
-              class="tgg"
-              width="100px"
-            />
-          </a>
-        </div>
-        <form
-          id="my-form"
-          action="https://formspree.io/f/mldpkdbz"
-          method="POST"
-        >
-          <input type="text" name="message" placeholder="tg user" />
-          <button id="my-form-button">отправить</button>
-          <p id="my-form-status"></p>
-        </form>
-      </footer> -->
-
-    <!-- <script>
-      var form = document.getElementById('my-form')
-
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'спасибо, оставайтесь с нами=)'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script> -->
   </body>
 </html>

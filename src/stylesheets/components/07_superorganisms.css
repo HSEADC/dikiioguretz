@@ -19,20 +19,41 @@
   align-items: center;
 }
 
-/* _____________________________archive_____________________________ */
+/* _____________________________archive, interact_____________________________ */
 
 .S_DArchive {
   background-image: url(../../images/Q.D1BGA.png);
+  height: 92vh;
+}
+.S_DArchive,
+.S_DInteract {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 92vh;
 
   /* ??????? */
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: first baseline;
+}
+.S_DInteract {
+  background-image: url(../../images/Q.D1BGI.png);
+  height: 100vh;
+  margin-top: -5%;
+}
+
+/* _____________________________interact_____________________________ */
+
+.S_DInteractive {
+  position: relative;
+  display: flex;
+
+  top: -10%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
 }
 
 .S_Articles,

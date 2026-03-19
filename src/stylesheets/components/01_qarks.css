@@ -55,3 +55,23 @@ video::-webkit-media-controls {
   width: 100%;
   bottom: 0;
 }
+
+/* _____________________________interact_____________________________ */
+
+.Q_D3Green {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: -30% -5% 0 70%;
+  z-index: 12;
+}
+
+.Q_D2Burger {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: -8% 0 0 -12%;
+  z-index: 12;
+}

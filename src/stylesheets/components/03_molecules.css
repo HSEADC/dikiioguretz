@@ -49,13 +49,6 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 /* _____________________________index page, archive page_____________________________ */
-.M_DArchiveIcon {
-  text-align: center;
-}
-.M_DArchiveIcon a {
-  text-decoration: none;
-  display: block;
-}
 .M_DArchiveIcon figcaption {
   font-size: 40px;
 }
@@ -82,7 +75,7 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 .M_IndexCalendar {
-  background-image: url(../../images/Q.CALENDARS.svg);
+  background-image: url(../../images/Q.CALENDARS.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
@@ -203,4 +196,16 @@ a.M_MainMenuDesktopMoleculeInteract {
   right: -1%;
 }
 
-/* _____________________________archive_____________________________ */
+/* _____________________________interactive_____________________________ */
+.M_DInteractiveIcon figcaption {
+  margin-top: -2%;
+  margin-bottom: 12%;
+  font-size: 32px;
+  color: white;
+}
+.M_DInteractiveIcon a {
+  text-decoration: none;
+  display: block;
+  margin-top: -10%;
+  text-align: center;
+}
