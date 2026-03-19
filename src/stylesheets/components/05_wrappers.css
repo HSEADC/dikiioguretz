@@ -38,6 +38,12 @@
   position: relative;
   left: 5%;
 }
+/* _____________________________interactive_____________________________ */
+.W_Welcome {
+  position: relative;
+  margin-top: 10%;
+}
+
 /* .W_GamesPage {
   min-height: 130vh;
   background-image: url('../../images/backgr-rainbow-games.webp');

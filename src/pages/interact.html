@@ -64,91 +64,53 @@
         /></a>
       </nav>
     </header>
-    <article class="W_Interact">
-      <main>
-        <h1>интерактивная зона</h1>
-        <nav class="int-links">
-          <a href="interact/games.html">к играм</a>
-          <a href="interact/tests.html">к тестам</a>
-        </nav>
-      </main>
-    </article>
-    <!-- <footer>
-        <div class="socials-icons">
-          <a href="https://vk.com/archive_stash?from=groups" target="_blank">
-            <img
-              src="../images/vk-icon.webp"
-              alt="vk"
-              class="vk"
-              width="100px"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
-            target="_blank"
-          >
-            <img
-              src="../images/inst-icon.webp"
-              alt="inst"
-              class="inst"
-              width="100px"
-            />
-          </a>
-          <a href="https://t.me/oldweb_core" target="_blank">
-            <img
-              src="../images/tg-icon.webp"
-              alt="tgg"
-              class="tgg"
-              width="100px"
-            />
-          </a>
+    <img src="../images/Q.D1FRAME.svg" alt="frame" class="Q_D1Frame" />
+    <section class="S_DInteract">
+      <div class="O_InteractiveAbout">
+        <div class="W_Welcome">
+          <img src="../images/Q.D3GREEN.svg" alt="green" class="Q_D3Green" />
+          <div class="O_DMiniYellowNote">
+            <h1>Добро пожаловать в раздел «Интерактив»!</h1>
+          </div>
+          <img src="../images/Q.D2BURGER.svg" alt="burger" class="Q_D2Burger" />
         </div>
-        <form
-          id="my-form"
-          action="https://formspree.io/f/mldpkdbz"
-          method="POST"
-        >
-          <input type="text" name="message" placeholder="tg user" />
-          <button id="my-form-button">отправить</button>
-          <p id="my-form-status"></p>
-        </form>
-      </footer> -->
-    <!-- <script>
-      var form = document.getElementById('my-form')
-
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'спасибо, оставайтесь с нами=)'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script> -->
+        <div class="S_DInteractive">
+          <div class="O_DInteractiveWindows">
+            <div class="O_DInteractiveWindow1">
+              <h1>О ТЕСТАХ</h1>
+              <p>
+                Тесты о старом интернете отправят вас в путешествие по мемам,
+                вирусным видео и культурным кодам эпохи 2000-х. Можно проверить,
+                насколько хорошо вы помните легендарные сайты, героев и тренды
+                той эпохи.
+              </p>
+            </div>
+            <div class="O_DInteractiveWindow2">
+              <h1>ОБ ИГРАХ</h1>
+              <p>
+                В нашем разделе игр собраны простые, но очаровательные механики,
+                которые напоминают о ранних флеш-забавах. Здесь можно
+                расслабиться, поймать ностальгию и почувствовать себя
+                пользователем старого интернета.
+              </p>
+            </div>
+          </div>
+          <div class="C_InteractiveIcons">
+            <figure class="M_DInteractiveIcon">
+              <a href="../pages/interact/tests.html">
+                <img src="../images/A_DIconTests.svg" alt="interact" />
+                <figcaption>тесты</figcaption>
+              </a>
+            </figure>
+            <figure class="M_DInteractiveIcon">
+              <a href="../pages/interact/games.html">
+                <img src="../images/A_DIconGames.svg" alt="interact" />
+                <figcaption>игры</figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
