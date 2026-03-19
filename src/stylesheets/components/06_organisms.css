@@ -1,4 +1,4 @@
-/* _____________________________index page_____________________________ */
+/* _____________________________index page, archive page_____________________________ */
 
 .O_DAboutProject {
   background-image: url(../../images/Q.DMAINWINDOW.svg);
@@ -28,8 +28,12 @@
   color: #0037ff;
   padding-right: 26%;
 }
-
 .O_DYellowNote {
+  margin-top: 8%;
+}
+
+.O_DYellowNote,
+.O_DYellowNoteArch {
   background-image: url(../../images/Q.DYELLOWNOTE.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -38,21 +42,10 @@
   aspect-ratio: 1.6/1;
   padding: 2%;
   box-sizing: border-box;
-  margin-top: 8%;
 }
-/* .O_DYellowNote {
-  float: right;
-  background-image: url(../../images/small-note.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
-  width: 58%;
-  aspect-ratio: 1.6/1;
-  padding: 2%;
-  box-sizing: border-box;
-  margin-top: 20%;
-} */
-.O_DYellowNote h1 {
+
+.O_DYellowNote h1,
+.O_DYellowNoteArch h1 {
   color: black;
   font-weight: 700;
   font-size: 40rem;
@@ -60,7 +53,8 @@
   font-family: 'arial narrow italic';
   padding: 0 0 6%;
 }
-.O_DYellowNote p {
+.O_DYellowNote p,
+.O_DYellowNoteArch p {
   font-weight: 700;
   font-size: 18rem;
   line-height: 170%;
@@ -82,8 +76,7 @@
   margin-bottom: 6%;
 }
 
-.O_IndexAboutArchive,
-.O_Archive {
+.O_IndexAboutArchive {
   width: 90%;
   position: relative;
   top: 5%;
@@ -105,4 +98,16 @@
   margin-top: 0;
   z-index: 10;
   bottom: 0;
+}
+/* _____________________________archive_____________________________ */
+.O_ArchiveAbout {
+  width: 100%;
+  position: relative;
+  top: 5%;
+  margin: 0 5% 0;
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: row;
+  align-items: first baseline;
 }

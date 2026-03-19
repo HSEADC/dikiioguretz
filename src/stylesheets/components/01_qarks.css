@@ -13,8 +13,9 @@
 
 .Q_D1BGM {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
+  top: -20px;
 }
 .Q_D1BGM video {
   width: 100%;
@@ -36,4 +37,21 @@ video::-webkit-media-controls {
   width: 28%;
   height: 100%;
   padding-top: 2%;
+}
+
+/* _____________________________archive_____________________________ */
+
+.Q_D1Purple {
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: auto;
+  bottom: -20%;
+  left: -1%;
+}
+.Q_D1Frame {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
