@@ -48,24 +48,29 @@ a.M_MainMenuDesktopMoleculeInteract {
   cursor: pointer;
 }
 
-/* _____________________________index page_____________________________ */
-/* .M_CrossName {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  margin-top: -2%;
-}
-.M_CrossName img {
-  margin: 0 13% 5%;
-} */
-.M_DBigIcon {
+/* _____________________________index page, archive page_____________________________ */
+.M_DArchiveIcon {
   text-align: center;
 }
-.M_DBigIcon a {
+.M_DArchiveIcon a {
   text-decoration: none;
   display: block;
 }
-.M_DBigIcon figcaption {
+.M_DArchiveIcon figcaption {
+  font-size: 40px;
+}
+.M_DBigIcon,
+.M_DArchiveIcon {
+  text-align: center;
+  z-index: 12;
+}
+.M_DBigIcon a,
+.M_DArchiveIcon a {
+  text-decoration: none;
+  display: block;
+}
+.M_DBigIcon figcaption,
+.M_DArchiveIcon figcaption {
   font-size: 22px;
   font-weight: 400;
   color: white;
@@ -82,11 +87,11 @@ a.M_MainMenuDesktopMoleculeInteract {
   background-size: contain;
   background-position: left top;
   width: 60%;
-  aspect-ratio: 1.7/1;
+  aspect-ratio: 1.685/1;
   padding-top: 2%;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 12.62px 12.62px 16.83px 0px #3921d6b2;
+  box-shadow: 12px 12.62px 16.83px 0px #3921d6b2;
   text-decoration: none;
 }
 .M_IndexCalendar h1 {
@@ -198,22 +203,4 @@ a.M_MainMenuDesktopMoleculeInteract {
   right: -1%;
 }
 
-.M_ArchiveIcons {
-  width: 30%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1%;
-  margin-top: 10%;
-  margin-bottom: 20%;
-}
-.M_ArchiveIcons img {
-  width: 90%;
-  height: auto;
-}
-.pic-pin {
-  /* position: absolute;
-  display: flex; */
-  width: 50%;
-  height: auto;
-  margin-left: -12%;
-}
+/* _____________________________archive_____________________________ */

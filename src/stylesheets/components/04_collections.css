@@ -47,3 +47,18 @@
   justify-content: end;
   margin-top: -5%;
 }
+
+/* _____________________________archive_____________________________ */
+
+.C_ArchiveIcons {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+  position: relative;
+  top: 100px;
+}
+.C_ArchiveIcons img {
+  width: 100%;
+  height: auto;
+}

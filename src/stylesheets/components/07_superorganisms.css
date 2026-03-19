@@ -1,9 +1,12 @@
+/* _____________________________index page_____________________________ */
+
 .S_D1AboutMedia {
   background-image: url(../../images/Q.D2BGM.png);
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 430vh;
+  height: 420vh;
+  margin-top: -5%;
 }
 .S_D2AboutMedia {
   width: 90%;
@@ -15,6 +18,23 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* _____________________________archive_____________________________ */
+
+.S_DArchive {
+  background-image: url(../../images/Q.D1BGA.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 92vh;
+
+  /* ??????? */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: first baseline;
+}
+
 .S_Articles,
 .S_Art1,
 .S_Art2,
