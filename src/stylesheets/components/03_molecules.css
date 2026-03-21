@@ -197,6 +197,7 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 /* _____________________________interactive_____________________________ */
+
 .M_DInteractiveIcon figcaption {
   margin-top: -2%;
   margin-bottom: 12%;
@@ -208,4 +209,101 @@ a.M_MainMenuDesktopMoleculeInteract {
   display: block;
   margin-top: -10%;
   text-align: center;
+}
+
+/* _____________________________about us_____________________________ */
+.AboutUsSocials {
+  display: flex;
+  width: 100%;
+}
+
+a.M_AboutUsMenuLinks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1% 0 3%;
+  text-align: center;
+
+  position: relative;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+  border-radius: 0 0 25px 25px;
+  box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
+
+  cursor: pointer;
+}
+
+a.M_AboutUsMenuLinks {
+  color: #0037ff;
+  font-size: 27px;
+  font-weight: 400;
+}
+a.M_AboutUsMenuLinks img {
+  width: 32%;
+  position: absolute;
+  margin-top: 40%;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.M_TeamStash h2 {
+  font-size: 40px;
+  font-family: 'arial narrow';
+  font-weight: 400;
+  color: #0037ff;
+  text-align: center;
+
+  padding: 3% 0 4%;
+}
+.M_TeamStash {
+  flex-direction: row;
+  display: flex;
+
+  justify-content: center;
+  gap: 1%;
+
+  margin: -7% auto;
+}
+a.M_TeamLinks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 2% 0 4%;
+  text-align: center;
+
+  position: relative;
+
+  background: linear-gradient(
+    0deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+
+  border-radius: 25px 25px 0 0;
+  box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
+
+  color: #0037ff;
+  font-size: 27px;
+  font-weight: 400;
 }

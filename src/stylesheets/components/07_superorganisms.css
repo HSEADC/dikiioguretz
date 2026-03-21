@@ -56,6 +56,20 @@
   width: 80%;
 }
 
+/* _____________________________about us_____________________________ */
+
+.S_DAboutUs {
+  background-image: url(../../images/Q.D1BGUS.svg);
+  height: 300vh;
+  margin-top: -1%;
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  padding-top: 5%;
+}
+
 .S_Articles,
 .S_Art1,
 .S_Art2,
