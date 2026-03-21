@@ -75,3 +75,104 @@ video::-webkit-media-controls {
   margin: -8% 0 0 -12%;
   z-index: 12;
 }
+
+/* _____________________________about us_____________________________ */
+
+.Q_D3Bubles {
+  position: absolute;
+  z-index: 10;
+  left: 6%;
+  top: -18%;
+  width: 20%;
+}
+
+.Q_D2Red {
+  position: absolute;
+  z-index: 10;
+  right: 5%;
+  top: -16%;
+  width: 26%;
+}
+
+.Q_D2Orange {
+  position: absolute;
+  z-index: 10;
+  left: 5%;
+  bottom: -25%;
+  width: 24%;
+}
+
+.Q_D4Bubles {
+  position: absolute;
+  z-index: 10;
+  right: 2%;
+  bottom: -30%;
+  width: 32%;
+}
+
+.Q_D2Bubles {
+  position: absolute;
+  z-index: 10;
+  left: -12%;
+  bottom: -52%;
+  width: 34%;
+}
+.Q_0HorizontalLine {
+  width: 100%;
+  box-shadow: -2.77px -3.69px 8.31px 0.92px #192966cc;
+  z-index: 15;
+  position: relative;
+  transform: scaleY(-1);
+}
+.Q_02HorizontalLine {
+  width: 100%;
+  box-shadow: -2.77px -3.69px 8.31px 0.92px #192966cc;
+  z-index: 15;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+
+.Q_DQCodeVK {
+  box-shadow: 5.51px 5.51px 5.51px 0px #00000040;
+  border-radius: 33px;
+}
+.Q_DQCodeINST {
+  box-shadow: 5.51px 5.51px 5.51px 0px #00000040;
+  border-radius: 33px;
+}
+.Q_DQCodeTG {
+  box-shadow: 5.51px 5.51px 5.51px 0px #00000040;
+  border-radius: 33px;
+}
+
+.Q_D2Shuka {
+  position: absolute;
+  width: 38%;
+  right: 0;
+  top: -44%;
+  z-index: 15;
+}
+.Q_D2Clown {
+  position: absolute;
+  width: 48%;
+  z-index: 15;
+
+  left: -10%;
+  bottom: -44%;
+}
+
+.Q_D1Bubles {
+  position: absolute;
+  z-index: 15;
+  right: -12%;
+  bottom: -38%;
+  width: 30%;
+}
+.Q_D2GorizontalLine {
+  position: relative;
+  width: 100%;
+  z-index: 15;
+  bottom: 0;
+}

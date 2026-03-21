@@ -57,7 +57,7 @@
 
   line-height: 150%;
   letter-spacing: -1.1%;
-  padding: 10% 15% 0 5%;
+  padding: 10% 10% 0 5%;
 }
 .O_DYellowNote h1,
 .O_DYellowNoteArch h1 {
@@ -176,4 +176,80 @@
   line-height: 150%;
   letter-spacing: -1.1%;
   padding: 2% 5% 2% 2%;
+}
+
+/* _____________________________about us_____________________________ */
+
+.O_DBlueNote {
+  background-image: url(../../images/Q.DBLUENOTE.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  width: 62%;
+  aspect-ratio: 1.31/1;
+  margin: 5% auto 6%;
+
+  z-index: 2;
+}
+
+.O_DBlueNote h1 {
+  font-size: 50px;
+  font-family: 'arial narrow';
+  font-style: italic;
+  font-weight: 700;
+  color: #0037ff;
+
+  padding: 4% 4%;
+}
+.O_DBlueNote p {
+  font-size: 22px;
+  font-family: 'arial narrow';
+  font-style: italic;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  font-weight: 700;
+  color: #0037ff;
+
+  padding: 4% 30% 0 4%;
+}
+
+.O_DOurScoials {
+  background-image: url(../../images/Q.DSOCIALSWINDOW.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  width: 72%;
+  aspect-ratio: 1.77/1;
+  margin: 0 auto;
+
+  margin-bottom: 12%;
+
+  z-index: 2;
+}
+.O_DOurScoials h2 {
+  font-size: 40px;
+  font-family: 'arial narrow';
+  font-weight: 400;
+  color: #0037ff;
+  text-align: center;
+
+  padding: 3%;
+}
+
+.O_DTeam {
+  background-image: url(../../images/Q.DSOCIALSWINDOW.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  width: 72%;
+  aspect-ratio: 1.77/1;
+  margin: 0 auto;
+
+  z-index: 2;
 }

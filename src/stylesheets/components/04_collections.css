@@ -74,3 +74,46 @@
   width: 84%;
   height: auto;
 }
+
+/* _____________________________about us_____________________________ */
+
+.C_DSocials {
+  top: 0;
+  width: 100%;
+  position: relative;
+  z-index: 12;
+}
+.C_QR {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+.C_QR img {
+  width: 100%;
+  margin: 2%;
+  margin-top: 3%;
+}
+
+.C_Team {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+.C_Team img {
+  width: 100%;
+  margin: 1%;
+  margin-top: 8%;
+
+  box-shadow: 6.75px 6.75px 6.75px 0px #00000040;
+  border-radius: 38px;
+}
+.C_Names {
+  display: flex;
+  width: 100%;
+}
