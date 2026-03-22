@@ -31,12 +31,14 @@ video::-webkit-media-controls {
 .Q_D1Coco {
   width: 28%;
   height: auto;
+  margin-right: 5%;
 }
 
 .Q_D1Green {
   width: 28%;
   height: 100%;
   padding-top: 2%;
+  margin-right: 5%;
 }
 
 /* _____________________________archive_____________________________ */
@@ -112,9 +114,9 @@ video::-webkit-media-controls {
 
 .Q_D2Bubles {
   position: absolute;
-  z-index: 10;
-  left: -12%;
-  bottom: -52%;
+  z-index: 12;
+  left: -18%;
+  bottom: -56%;
   width: 34%;
 }
 .Q_0HorizontalLine {
@@ -149,9 +151,9 @@ video::-webkit-media-controls {
 
 .Q_D2Shuka {
   position: absolute;
-  width: 38%;
+  width: 34%;
   right: 0;
-  top: -44%;
+  top: -38%;
   z-index: 15;
 }
 .Q_D2Clown {
@@ -175,4 +177,22 @@ video::-webkit-media-controls {
   width: 100%;
   z-index: 15;
   bottom: 0;
+}
+
+/* _____________________________articles_____________________________ */
+
+.Q_Lemon1 {
+  position: absolute;
+  top: 16%;
+  left: -5%;
+}
+.Q_Lemon2 {
+  position: absolute;
+  top: -10%;
+  right: 15%;
+}
+.Q_Lemon3 {
+  position: absolute;
+  top: 64%;
+  right: 2%;
 }

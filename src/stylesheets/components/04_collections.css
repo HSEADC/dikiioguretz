@@ -117,3 +117,22 @@
   display: flex;
   width: 100%;
 }
+
+/* _____________________________articles_____________________________ */
+
+.C_FullMenuArticles {
+  position: sticky;
+  width: 50%;
+  height: fit-content;
+
+  top: 5%;
+  margin: 5% 1.5% 5% 3%;
+  padding: 1%;
+
+  background: linear-gradient(90.38deg, #ffffff 19.02%, #0037ff 118.42%);
+  box-shadow:
+    7px 7px 7px 0px #0037ff inset,
+    7px 7px 7px 0px #00000040;
+  border: 20px solid #dedcff;
+  border-radius: 36px;
+}

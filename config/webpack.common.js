@@ -12,6 +12,7 @@ module.exports = {
     index: './src/js/index.js',
     tests: './src/js/tests.js',
     test1: './src/js/test1.js',
+    articles: './src/js/articles.js',
     allStyles: './src/js/allStyles.js'
   },
   output: {
@@ -24,13 +25,12 @@ module.exports = {
   //   filename: '[name].js'
   // },
 
-
-//   output: {
-//   path: path.resolve(__dirname, 'docs'),
-//   filename: '[name].[contenthash].js',
-//   chunkFilename: '[name].[contenthash].js',
-//   clean: true
-// },
+  //   output: {
+  //   path: path.resolve(__dirname, 'docs'),
+  //   filename: '[name].[contenthash].js',
+  //   chunkFilename: '[name].[contenthash].js',
+  //   clean: true
+  // },
 
   module: {
     rules: [
@@ -80,16 +80,16 @@ module.exports = {
     new MiniCssExtractPlugin(),
     ...htmlPages
     // new CopyPlugin({
-      //   patterns: [
-        //     { from: "source", to: "dest" },
-        //     { from: "other", to: "public" },
-        //   ],
-        // }),
-      ],
-      optimization: {
-            minimizer: [new CssMinimizerPlugin()]
-      },
-        resolve: {
+    //   patterns: [
+    //     { from: "source", to: "dest" },
+    //     { from: "other", to: "public" },
+    //   ],
+    // }),
+  ],
+  optimization: {
+    minimizer: [new CssMinimizerPlugin()]
+  },
+  resolve: {
     fallback: {
       stream: require.resolve('stream-browserify')
     }

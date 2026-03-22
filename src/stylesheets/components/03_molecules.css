@@ -307,3 +307,90 @@ a.M_TeamLinks {
   font-size: 27px;
   font-weight: 400;
 }
+
+/* _____________________________articles_____________________________ */
+
+.M_D1ArticlesWindows,
+.M_D2ArticlesWindows,
+.M_D3ArticlesWindows,
+.M_D4ArticlesWindows,
+.M_D5ArticlesWindows,
+.M_D6ArticlesWindows,
+.M_D7ArticlesWindows,
+.M_D8ArticlesWindows,
+.M_D9ArticlesWindows,
+.M_D10ArticlesWindows,
+.M_D11ArticlesWindows,
+.M_D12ArticlesWindows {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 12% 2% 0;
+
+  text-align: center;
+  align-items: center;
+
+  box-shadow: 5px 5px 5px 0px #0037ff;
+  background-color: #dedcff;
+  border-radius: 12px;
+
+  margin-bottom: 5%;
+}
+.M_D1ArticlesWindows h5,
+.M_D2ArticlesWindows h5,
+.M_D3ArticlesWindows h5,
+.M_D4ArticlesWindows h5,
+.M_D5ArticlesWindows h5,
+.M_D6ArticlesWindows h5,
+.M_D7ArticlesWindows h5,
+.M_D8ArticlesWindows h5,
+.M_D9ArticlesWindows h5,
+.M_D10ArticlesWindows h5,
+.M_D11ArticlesWindows h5,
+.M_D12ArticlesWindows h5 {
+  font-size: 30px;
+  font-family: 'arial narrow';
+  font-weight: 400;
+  color: #0037ff;
+}
+
+.M_D2ArticlesWindows,
+.M_D7ArticlesWindows {
+  padding: 2% 3%;
+}
+.M_D3ArticlesWindows,
+.M_D4ArticlesWindows,
+.M_D5ArticlesWindows,
+.M_D6ArticlesWindows,
+.M_D8ArticlesWindows,
+.M_D9ArticlesWindows,
+.M_D10ArticlesWindows,
+.M_D11ArticlesWindows,
+.M_D12ArticlesWindows {
+  padding: 4% 3%;
+}
+
+.M_D8ArticlesWindows,
+.M_D9ArticlesWindows,
+.M_D10ArticlesWindows,
+.M_D11ArticlesWindows,
+.M_D12ArticlesWindows {
+  display: none;
+}
+.M_D8ArticlesWindows.visible,
+.M_D9ArticlesWindows.visible,
+.M_D10ArticlesWindows.visible,
+.M_D11ArticlesWindows.visible,
+.M_D12ArticlesWindows.visible {
+  display: flex;
+}
+
+.M_Lemons {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+
+  margin-bottom: 20%;
+}

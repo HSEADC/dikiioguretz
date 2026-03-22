@@ -253,3 +253,26 @@
 
   z-index: 2;
 }
+
+/* _____________________________articles_____________________________ */
+
+.O_ArticleRead {
+  position: relative;
+  width: 100%;
+
+  background: linear-gradient(90.04deg, #ffffff 30.93%, #0037ff 158.72%);
+  border: 20px solid #dedcff;
+  border-radius: 36px;
+
+  margin: 5% 3% 5% 0;
+  padding: 1.5% 3% 0 1.5%;
+
+  height: fit-content;
+}
+.O_ArticleRead h5 {
+  font-family: 'arial narrow';
+  color: #0037ff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 110%;
+}
