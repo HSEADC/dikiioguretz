@@ -337,6 +337,19 @@ a.M_TeamLinks {
 
   margin-bottom: 5%;
 }
+.M_D2ArticlesWindows,
+.M_D3ArticlesWindows,
+.M_D4ArticlesWindows,
+.M_D5ArticlesWindows,
+.M_D6ArticlesWindows,
+.M_D7ArticlesWindows,
+.M_D8ArticlesWindows,
+.M_D9ArticlesWindows,
+.M_D10ArticlesWindows,
+.M_D11ArticlesWindows,
+.M_D12ArticlesWindows {
+  cursor: pointer;
+}
 .M_D1ArticlesWindows h5,
 .M_D2ArticlesWindows h5,
 .M_D3ArticlesWindows h5,
@@ -384,6 +397,7 @@ a.M_TeamLinks {
 .M_D11ArticlesWindows.visible,
 .M_D12ArticlesWindows.visible {
   display: flex;
+  cursor: default;
 }
 
 .M_Lemons {

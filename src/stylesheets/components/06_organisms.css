@@ -265,7 +265,7 @@
   border-radius: 36px;
 
   margin: 5% 3% 5% 0;
-  padding: 1.5% 3% 0 1.5%;
+  padding: 1.5% 3% 3% 1.5%;
 
   height: fit-content;
 }
@@ -275,4 +275,15 @@
   font-size: 30px;
   font-weight: 400;
   line-height: 110%;
+}
+
+.O_ArticleRead2,
+.O_ArticleRead3,
+.O_ArticleRead4,
+.O_ArticleRead5 {
+  display: none;
+}
+
+.O_ArticleRead1 {
+  display: block;
 }
