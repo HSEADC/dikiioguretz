@@ -70,28 +70,17 @@
   padding-top: 5%;
 }
 
-.S_Articles,
-.S_Art1,
-.S_Art2,
-.S_Art3,
-.S_Art4 {
+/* _____________________________articles_____________________________ */
+
+.S_DArticles {
+  position: relative;
+  display: flex;
+
   background-color: #0037ff;
   background-size: cover;
   background-position: center;
   width: 100%;
-}
-.S_Articles {
-  height: 400vh;
-}
-.S_Art1 {
-  height: 500vh;
-}
-.S_Art2 {
-  height: 500vh;
-}
-.S_Art3 {
-  height: 700vh;
-}
-.S_Art4 {
-  height: 600vh;
+  margin-top: -2%;
+
+  height: fit-content;
 }
