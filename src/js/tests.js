@@ -109,7 +109,7 @@ function getTestsTeasers() {
 
     base('C_DTests')
       .select({
-        maxRecords: 50
+        maxRecords: 10
       })
       .firstPage()
       .then((result) => {
