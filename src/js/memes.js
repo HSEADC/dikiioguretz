@@ -1,4 +1,3 @@
-alert('JS работает!')
 import Airtable from 'airtable'
 
 const token =
@@ -11,15 +10,23 @@ Airtable.configure({
 
 var base = Airtable.base('app0vbth4eKDLaq0B')
 
-getMemes().then((content) => {
-  updateMemes(content)
-})
+// getMemes().then((content) => {
+//   updateMemes(content)
+// })
+let data
+getMemesTeasers().then((content) => {
+  data = content
 
-function getMemes() {
-  return new Promise((resolve) => {
+  updateInfo(data)
+})
+function getMemesTeasers() {
+  return new Promise((resolve, reject) => {
     const content = []
+
     base('C_DMemes')
-      .select({ maxRecords: 50 })
+      .select({
+        maxRecords: 50
+      })
       .firstPage()
       .then((result) => {
         result.forEach((record) => {
@@ -33,13 +40,13 @@ function getMemes() {
   })
 }
 
-function updateMemes(content) {
+function updateInfo(content) {
   content.forEach((stroke) => {
-    createMemeCard(stroke)
+    createMemesTeaserCard(stroke)
   })
 }
 
-function createMemeCard(stroke) {
+function createMemesTeaserCard(stroke) {
   let { image } = stroke
 
   const card = document.createElement('div')
