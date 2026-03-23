@@ -69,7 +69,7 @@ const htmlPages = [
   createPages(
     './src/pages/archive/websites.html',
     './pages/archive/websites.html',
-    ['allStyles']
+    ['websites', 'allStyles']
   ),
   createPages(
     './src/pages/archive/hacks/hack1.html',
