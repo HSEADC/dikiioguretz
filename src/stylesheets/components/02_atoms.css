@@ -142,3 +142,38 @@ input[type='radio']:checked + .A_AnswerText {
 
   padding: 3%;
 }
+
+/* _____________________________tests_____________________________ */
+.A_TestTeaserHeader {
+  color: #0037ff;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
+
+  padding: 5% 2% 3%;
+}
+
+.A_TestTeaserDescription {
+  color: #0037ff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  background: linear-gradient(179.98deg, #ffffff 30%, #0037ff 128.17%);
+  box-shadow: 8.24px 8.24px 10.99px 0px #3921d6b2;
+
+  padding: 3% 2% 10%;
+}
+
+.A_TestTeaserIcon {
+  width: 27%;
+  aspect-ratio: 1 / 1;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 6.56px 14.75px 1.64px #192966cc;
+  border-radius: 50%;
+
+  margin-left: -10%;
+}

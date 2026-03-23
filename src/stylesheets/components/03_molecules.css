@@ -476,3 +476,11 @@ a.M_TeamLinks {
   background-position: center;
   background-color: white;
 }
+
+/* _____________________________tests_____________________________ */
+
+.M_TestTeaserContent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
