@@ -450,7 +450,8 @@ a.M_TeamLinks {
   font-weight: 400;
 }
 
-.M_DSitesTeaserImage {
+.M_DSitesTeaserImage,
+.M_DMemesTeaserImage {
   box-sizing: border-box;
   display: flex;
   width: 95%;
@@ -466,7 +467,8 @@ a.M_TeamLinks {
   margin: 0 auto;
 }
 
-.M_DSitesTeaserImageInner {
+.M_DSitesTeaserImageInner,
+.M_DMemesTeaserImageInner {
   width: 100%;
   height: 100%;
   border-radius: 10%;
