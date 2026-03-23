@@ -3952,26 +3952,16 @@ function createTestsTeaserCard(stroke) {
     url = stroke.url;
   var card = document.createElement('a');
   card.href = url;
-<<<<<<< HEAD
-  card.classList.add('W_TestTeaser');
-  card.style.backgroundImage = "url(".concat(image, ")");
-=======
   card.target = '_blank';
   card.classList.add('W_TestTeaser');
   var textContent = document.createElement('div');
   textContent.classList.add('M_TestTeaserContent');
->>>>>>> main
   var header = document.createElement('h4');
   header.innerText = title;
   header.classList.add('A_TestTeaserHeader');
   var text = document.createElement('p');
   text.innerText = description;
   text.classList.add('A_TestTeaserDescription');
-<<<<<<< HEAD
-  card.appendChild(header);
-  card.appendChild(text);
-  document.querySelector('.O_ArticleTeasers').appendChild(card);
-=======
   var icon = document.createElement('div');
   icon.classList.add('A_TestTeaserIcon');
   var imageUrl = '';
@@ -3991,7 +3981,6 @@ function createTestsTeaserCard(stroke) {
   if (container) {
     container.appendChild(card);
   }
->>>>>>> main
 }
 })();
 
