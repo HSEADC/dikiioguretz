@@ -52,18 +52,33 @@ function createWebsitesTeaserCard(stroke) {
   const card = document.createElement('a')
   card.href = url
   card.target = '_blank'
-  card.classList.add('W_DSitesTeaser')
-  card.style.backgroundImage = `url(${image})`
+  card.rel = 'noopener noreferrer'
+  card.classList.add('M_DSitesTeaser')
 
-  const footer = document.createElement('h6')
+  const imageFrame = document.createElement('div')
+  imageFrame.classList.add('M_DSitesTeaserImage')
+
+  const imageInner = document.createElement('div')
+  imageInner.classList.add('M_DSitesTeaserImageInner')
+
+  let imageURl = ''
+  if (Array.isArray(image) && image.length > 0) {
+    imageURl = image[0].url
+  } else if (typeof image === 'string') {
+    imageURl = image
+  }
+
+  if (imageURl) {
+    imageInner.style.backgroundImage = `url(${imageURl})`
+  }
+
+  const footer = document.createElement('div')
   footer.innerText = title
   footer.classList.add('A_WebsitesTeaserFooter')
 
-  //   const websiteImage = document.createElement(img)
-  //   websiteImage.srd = image
-
+  imageFrame.appendChild(imageInner)
+  card.appendChild(imageFrame)
   card.appendChild(footer)
-  //   card.appendChild(websiteImage)
-  console.log('okay')
+
   document.querySelector('.C_DSitesTeasers').appendChild(card)
 }

@@ -417,7 +417,7 @@ a.M_TeamLinks {
 .M_DRubricators {
   width: 100%;
   height: fit-content;
-  /* height: auto; */
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -441,10 +441,36 @@ a.M_TeamLinks {
   color: #0037ff;
   font-size: 40px;
   font-weight: 400;
+  gap: 2%;
 }
 .M_DRubricators p {
   text-decoration: none;
   color: #0037ff;
   font-size: 40px;
   font-weight: 400;
+}
+
+.M_DSitesTeaserImage {
+  box-sizing: border-box;
+  display: flex;
+  width: 95%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12%;
+
+  background: linear-gradient(180deg, #f9fbfe 15.38%, #4267eb 82.69%);
+  box-shadow:
+    6.08px 6.08px 6.08px 0px #557aff inset,
+    8.52px 8.52px 8.52px 0px #00000040;
+
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.M_DSitesTeaserImageInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }

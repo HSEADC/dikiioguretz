@@ -161,51 +161,20 @@
 
 /* _____________________________websites_____________________________ */
 
-.menu-item {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4% 3%;
-  box-shadow: 5px 5px 5px 0px #0037ff;
-  background-color: #dedcff;
-  border-radius: 12px;
-  margin-bottom: 5%;
-  cursor: pointer;
+.C_DSitesTeasers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  width: 100%;
+  margin: 5% auto;
 }
 
-.menu-item img {
-  width: 40px;
-  height: auto;
-}
-
-.menu-item h5 {
-  font-size: 30px;
-  font-family: 'arial narrow';
-  color: #0037ff;
-}
-
-/* teasers */
-
-.C_DSitesTeaser {
-  width: 80%;
+.C_DSitesTeasers a {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-
-  gap: 10rem;
-}
-.A_WebsitesTeaserFooter {
-  width: 30%;
-  color: red;
-}
-
-.W_DSitesTeaser {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25%;
-
-  display: block;
+  align-items: center;
+  width: 100%;
 }

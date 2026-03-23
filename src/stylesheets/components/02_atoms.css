@@ -110,6 +110,8 @@ input[type='radio']:checked + .A_AnswerText {
   display: block;
 }
 
+/* rubricator websites */
+
 .A_DMobileRubricator {
   display: flex;
   flex-direction: row;
@@ -118,5 +120,25 @@ input[type='radio']:checked + .A_AnswerText {
   align-items: center;
 }
 .A_DMobileRubricator p {
-  padding-top: 1%;
+  padding-top: 2%;
+}
+
+.A_WebsitesTeaserFooter {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #7390f7 39.9%,
+    #0037ff 94.23%
+  );
+  border-radius: 20px;
+
+  font-size: 27px;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -8%;
+
+  padding: 3%;
 }
