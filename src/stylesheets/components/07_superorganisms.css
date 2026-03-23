@@ -97,8 +97,8 @@
   width: 100%;
   margin-top: -2%;
 
-  padding: 5% 5% 20%;
+  padding: 5% 5% 10%;
 
-  /* height: fit-content; */
-  height: 300vh;
+  min-height: 100vh;
+  height: fit-content;
 }
