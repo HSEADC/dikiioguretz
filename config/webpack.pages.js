@@ -59,6 +59,7 @@ const htmlPages = [
     'allStyles'
   ]),
   createPages('./src/pages/archive/memes.html', './pages/archive/memes.html', [
+    'memes',
     'allStyles'
   ]),
   createPages(
@@ -79,7 +80,7 @@ const htmlPages = [
   createPages(
     './src/pages/archive/memes/mem1.html',
     './pages/archive/memes/mem1.html',
-    ['memes', 'allStyles']
+    ['allStyles']
   ),
   createPages(
     './src/pages/archive/websites/website1.html',

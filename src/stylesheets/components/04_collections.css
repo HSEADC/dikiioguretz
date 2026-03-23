@@ -161,7 +161,8 @@
 
 /* _____________________________websites_____________________________ */
 
-.C_DSitesTeasers {
+.C_DSitesTeasers,
+.C_DMemesTeasers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
