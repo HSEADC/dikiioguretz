@@ -3878,6 +3878,7 @@ function createWebsitesTeaserCard(stroke) {
     url = stroke.url;
   var card = document.createElement('a');
   card.href = url;
+  card.target = '_blank';
   card.classList.add('W_DSitesTeaser');
   card.style.backgroundImage = "url(".concat(image, ")");
   var footer = document.createElement('h6');
@@ -3889,8 +3890,8 @@ function createWebsitesTeaserCard(stroke) {
 
   card.appendChild(footer);
   //   card.appendChild(websiteImage)
-
-  document.querySelector('.C_DSitesTeaser').appendChild(card);
+  console.log('okay');
+  document.querySelector('.C_DSitesTeasers').appendChild(card);
 }
 })();
 
