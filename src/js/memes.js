@@ -10,9 +10,6 @@ Airtable.configure({
 
 var base = Airtable.base('app0vbth4eKDLaq0B')
 
-// getMemes().then((content) => {
-//   updateMemes(content)
-// })
 let data
 getMemesTeasers().then((content) => {
   data = content
