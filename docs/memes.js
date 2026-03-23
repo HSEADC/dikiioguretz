@@ -3844,10 +3844,6 @@ airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
   apiKey: token
 });
 var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base('app0vbth4eKDLaq0B');
-
-// getMemes().then((content) => {
-//   updateMemes(content)
-// })
 var data;
 getMemesTeasers().then(function (content) {
   data = content;
