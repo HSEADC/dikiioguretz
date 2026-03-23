@@ -14,7 +14,8 @@ module.exports = {
     test1: './src/js/test1.js',
     articles: './src/js/articles.js',
     allStyles: './src/js/allStyles.js',
-    websites: './src/js/websites.js'
+    websites: './src/js/websites.js',
+    memes: './src/js/memes.js'
   },
   output: {
     filename: '[name].js',

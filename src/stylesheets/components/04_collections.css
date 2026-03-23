@@ -204,4 +204,6 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 25%;
+
+  display: block;
 }

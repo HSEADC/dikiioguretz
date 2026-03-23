@@ -51,6 +51,7 @@ function createWebsitesTeaserCard(stroke) {
 
   const card = document.createElement('a')
   card.href = url
+  card.target = '_blank'
   card.classList.add('W_DSitesTeaser')
   card.style.backgroundImage = `url(${image})`
 
@@ -63,6 +64,6 @@ function createWebsitesTeaserCard(stroke) {
 
   card.appendChild(footer)
   //   card.appendChild(websiteImage)
-
-  document.querySelector('.C_DSitesTeaser').appendChild(card)
+  console.log('okay')
+  document.querySelector('.C_DSitesTeasers').appendChild(card)
 }
