@@ -3952,17 +3952,46 @@ function createTestsTeaserCard(stroke) {
     url = stroke.url;
   var card = document.createElement('a');
   card.href = url;
+<<<<<<< HEAD
   card.classList.add('W_TestTeaser');
   card.style.backgroundImage = "url(".concat(image, ")");
+=======
+  card.target = '_blank';
+  card.classList.add('W_TestTeaser');
+  var textContent = document.createElement('div');
+  textContent.classList.add('M_TestTeaserContent');
+>>>>>>> main
   var header = document.createElement('h4');
   header.innerText = title;
   header.classList.add('A_TestTeaserHeader');
   var text = document.createElement('p');
   text.innerText = description;
   text.classList.add('A_TestTeaserDescription');
+<<<<<<< HEAD
   card.appendChild(header);
   card.appendChild(text);
   document.querySelector('.O_ArticleTeasers').appendChild(card);
+=======
+  var icon = document.createElement('div');
+  icon.classList.add('A_TestTeaserIcon');
+  var imageUrl = '';
+  if (Array.isArray(image) && image.length > 0) {
+    imageUrl = image[0].url;
+  } else if (typeof image === 'string') {
+    imageUrl = image;
+  }
+  if (imageUrl) {
+    icon.style.backgroundImage = "url(".concat(imageUrl, ")");
+  }
+  textContent.appendChild(header);
+  textContent.appendChild(text);
+  card.appendChild(textContent);
+  card.appendChild(icon);
+  var container = document.querySelector('.C_DTests');
+  if (container) {
+    container.appendChild(card);
+  }
+>>>>>>> main
 }
 })();
 

@@ -133,14 +133,16 @@ function updateInfo(content) {
     createTestsTeaserCard(stroke)
   })
 }
-
 function createTestsTeaserCard(stroke) {
   let { title, description, image, url } = stroke
 
   const card = document.createElement('a')
   card.href = url
+  card.target = '_blank'
   card.classList.add('W_TestTeaser')
-  card.style.backgroundImage = `url(${image})`
+
+  const textContent = document.createElement('div')
+  textContent.classList.add('M_TestTeaserContent')
 
   const header = document.createElement('h4')
   header.innerText = title
@@ -150,8 +152,26 @@ function createTestsTeaserCard(stroke) {
   text.innerText = description
   text.classList.add('A_TestTeaserDescription')
 
-  card.appendChild(header)
-  card.appendChild(text)
+  const icon = document.createElement('div')
+  icon.classList.add('A_TestTeaserIcon')
 
-  document.querySelector('.O_ArticleTeasers').appendChild(card)
+  let imageUrl = ''
+  if (Array.isArray(image) && image.length > 0) {
+    imageUrl = image[0].url
+  } else if (typeof image === 'string') {
+    imageUrl = image
+  }
+
+  if (imageUrl) {
+    icon.style.backgroundImage = `url(${imageUrl})`
+  }
+  textContent.appendChild(header)
+  textContent.appendChild(text)
+  card.appendChild(textContent)
+  card.appendChild(icon)
+
+  const container = document.querySelector('.C_DTests')
+  if (container) {
+    container.appendChild(card)
+  }
 }
