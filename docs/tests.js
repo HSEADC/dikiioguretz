@@ -3925,7 +3925,7 @@ function getTestsTeasers() {
   return new Promise(function (resolve, reject) {
     var content = [];
     base('C_DTests').select({
-      maxRecords: 50
+      maxRecords: 10
     }).firstPage().then(function (result) {
       result.forEach(function (record) {
         content.push({
