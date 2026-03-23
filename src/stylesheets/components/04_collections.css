@@ -71,8 +71,10 @@
   position: relative;
 }
 .C_InteractiveIcons img {
-  width: 84%;
+  width: 80%;
   height: auto;
+
+  margin-bottom: -2%;
 }
 
 /* _____________________________about us_____________________________ */
