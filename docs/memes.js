@@ -3837,7 +3837,6 @@ module.exports = Airtable;
 "use strict";
 /* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(airtable__WEBPACK_IMPORTED_MODULE_0__);
-alert('JS работает!');
 
 var token = 'patG14HvKR4J0SmjX.fb19163575d0f3e81d543098904dd27c220bfb4d0881cccb39ba12ebf73cf0c4';
 airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
@@ -3845,11 +3844,17 @@ airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
   apiKey: token
 });
 var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base('app0vbth4eKDLaq0B');
-getMemes().then(function (content) {
-  updateMemes(content);
+
+// getMemes().then((content) => {
+//   updateMemes(content)
+// })
+var data;
+getMemesTeasers().then(function (content) {
+  data = content;
+  updateInfo(data);
 });
-function getMemes() {
-  return new Promise(function (resolve) {
+function getMemesTeasers() {
+  return new Promise(function (resolve, reject) {
     var content = [];
     base('C_DMemes').select({
       maxRecords: 50
@@ -3864,12 +3869,12 @@ function getMemes() {
     });
   });
 }
-function updateMemes(content) {
+function updateInfo(content) {
   content.forEach(function (stroke) {
-    createMemeCard(stroke);
+    createMemesTeaserCard(stroke);
   });
 }
-function createMemeCard(stroke) {
+function createMemesTeaserCard(stroke) {
   var image = stroke.image;
   var card = document.createElement('div');
   card.classList.add('M_DMemesTeaser');
