@@ -109,3 +109,14 @@ input[type='radio']:checked + .A_AnswerText {
   text-align: center;
   display: block;
 }
+
+.A_DMobileRubricator {
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+  align-items: center;
+}
+.A_DMobileRubricator p {
+  padding-top: 1%;
+}

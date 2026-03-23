@@ -80,17 +80,6 @@
   padding-right: 14%;
 }
 
-.O_Test {
-  height: 420px;
-  max-width: 65%;
-  margin: 0 auto;
-  margin-top: 10%;
-  background-image: url(../../images/W_OTestBG.webp);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 6%;
-}
-
 .O_IndexAboutArchive {
   width: 90%;
   position: relative;
@@ -100,7 +89,9 @@
   justify-content: space-between;
 
   flex-direction: row;
-  align-items: first baseline;
+  align-items: center;
+
+  margin: 2% 0 10%;
 }
 
 .O_Footer {
@@ -119,7 +110,7 @@
   width: 100%;
   position: relative;
   top: 5%;
-  margin: 0 5% 0;
+  margin: 0 5% 15%;
   display: flex;
   justify-content: space-between;
 
@@ -137,15 +128,16 @@
   margin: 7% 2% 0 5%;
   display: flex;
   justify-content: space-between;
-  gap: 10%;
+  gap: 8%;
 
   z-index: 12;
   flex-direction: row;
-  align-items: first baseline;
+  align-items: center;
 }
 
 .O_DInteractiveWindows {
-  width: 75%;
+  width: 65%;
+  /* margin-top: 5%; */
 }
 .O_DInteractiveWindow1,
 .O_DInteractiveWindow2 {
@@ -155,14 +147,14 @@
   background-position: center;
 
   width: 100%;
-  height: auto;
-  margin-bottom: 10%;
+  height: fit-content;
+  margin-bottom: 14%;
 }
 .O_DInteractiveWindow1 h1,
 .O_DInteractiveWindow2 h1 {
   color: #0037ff;
   font-weight: 700;
-  font-size: 40rem;
+  font-size: 40px;
   font-family: 'arial narrow';
   padding: 2% 2% 4%;
 }
@@ -286,4 +278,17 @@
 
 .O_ArticleRead1 {
   display: block;
+}
+
+/* _____________________________tests_____________________________ */
+
+.O_Test {
+  height: 420px;
+  max-width: 65%;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-image: url(../../images/W_OTestBG.webp);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 6%;
 }
