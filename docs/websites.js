@@ -3879,18 +3879,27 @@ function createWebsitesTeaserCard(stroke) {
   var card = document.createElement('a');
   card.href = url;
   card.target = '_blank';
-  card.classList.add('W_DSitesTeaser');
-  card.style.backgroundImage = "url(".concat(image, ")");
-  var footer = document.createElement('h6');
+  card.rel = 'noopener noreferrer';
+  card.classList.add('M_DSitesTeaser');
+  var imageFrame = document.createElement('div');
+  imageFrame.classList.add('M_DSitesTeaserImage');
+  var imageInner = document.createElement('div');
+  imageInner.classList.add('M_DSitesTeaserImageInner');
+  var imageURl = '';
+  if (Array.isArray(image) && image.length > 0) {
+    imageURl = image[0].url;
+  } else if (typeof image === 'string') {
+    imageURl = image;
+  }
+  if (imageURl) {
+    imageInner.style.backgroundImage = "url(".concat(imageURl, ")");
+  }
+  var footer = document.createElement('div');
   footer.innerText = title;
   footer.classList.add('A_WebsitesTeaserFooter');
-
-  //   const websiteImage = document.createElement(img)
-  //   websiteImage.srd = image
-
+  imageFrame.appendChild(imageInner);
+  card.appendChild(imageFrame);
   card.appendChild(footer);
-  //   card.appendChild(websiteImage)
-  console.log('okay');
   document.querySelector('.C_DSitesTeasers').appendChild(card);
 }
 })();
