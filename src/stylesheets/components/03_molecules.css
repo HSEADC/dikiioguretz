@@ -70,10 +70,6 @@ a.M_MainMenuDesktopMoleculeInteract {
   text-decoration: none;
 }
 
-.M_AnswerMassage {
-  width: 100%;
-}
-
 .M_IndexCalendar {
   background-image: url(../../images/Q.CALENDARS.webp);
   background-repeat: no-repeat;
@@ -106,6 +102,8 @@ a.M_MainMenuDesktopMoleculeInteract {
   display: flex;
   justify-content: space-between;
 }
+
+/* _____________________________footer_____________________________ */
 
 #my-form h1 {
   color: #fff;
@@ -172,11 +170,6 @@ a.M_MainMenuDesktopMoleculeInteract {
   font-family: 'arial narrow italic';
   font-weight: 700;
   color: #0037ff;
-}
-.Q_Logo1 {
-  width: 16%;
-  height: 100%;
-  margin-top: -5%;
 }
 
 .line-left,
@@ -483,4 +476,67 @@ a.M_TeamLinks {
   width: 80%;
   display: flex;
   flex-direction: column;
+}
+
+/* _____________________________test_____________________________ */
+
+.M_DProgressBar {
+  width: 100%;
+  height: 100px;
+  background-color: #3c34db;
+  margin-bottom: 2%;
+}
+.M_AnswerMassage {
+  width: 100%;
+
+  border-bottom-right-radius: 28.66px;
+  border-bottom-left-radius: 28.66px;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+  box-shadow: 3.74px 4.98px 11.22px 1.25px #192966cc;
+}
+
+.M_TestResult {
+  max-width: 80%;
+  padding-left: 2%;
+  padding: 2%;
+  text-align: left;
+  color: #0037ff;
+
+  margin: 10% auto 0;
+  position: relative;
+}
+
+.M_TestResultCountMolecule {
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
+  padding: 1%;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.M_DProgressBar {
+  position: relative;
+  width: 90%;
+  margin: 0 auto 2%;
+  height: 60px;
+  background: linear-gradient(
+    90deg,
+    #ff0000 9.84%,
+    #ffa622 35.6%,
+    #ffea00 62.24%,
+    #00ff00 96.18%
+  );
+
+  border-radius: 50px;
+  margin-bottom: 7%;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
 }

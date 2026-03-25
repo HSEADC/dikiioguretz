@@ -41,6 +41,12 @@ video::-webkit-media-controls {
   margin-right: 5%;
 }
 
+.Q_Logo1 {
+  width: 16%;
+  height: 100%;
+  margin-top: -5%;
+}
+
 /* _____________________________archive_____________________________ */
 
 .Q_D1Purple {
@@ -195,4 +201,53 @@ video::-webkit-media-controls {
   position: absolute;
   top: 64%;
   right: 2%;
+}
+
+/* _____________________________test_____________________________ */
+
+.Q_DTestHLine {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5%;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+  box-shadow: 3.74px 4.98px 11.22px 1.25px #192966cc;
+  z-index: 100;
+}
+
+.Q_TestLemon1,
+.Q_TestLemon2,
+.Q_TestLemon3 {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.Q_TestLemon1 {
+  bottom: -65%;
+  left: -52%;
+  width: 120%;
+  height: 120%;
+}
+
+.Q_TestLemon2 {
+  top: -60%;
+  left: -10%;
+  width: 80%;
+  height: 80%;
+}
+
+.Q_TestLemon3 {
+  bottom: -35%;
+  right: -35%;
+  width: 80%;
+  height: 80%;
 }

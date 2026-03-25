@@ -54,7 +54,6 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  /* width: 80%; */
   width: 90%;
 }
 
@@ -111,7 +110,24 @@
   width: 100%;
   margin-top: -2%;
 
-  padding: 5% 4% 2% 5%;
+  padding: 8% 0 2% 1%;
   height: fit-content;
   min-height: 92vh;
+}
+
+/* _____________________________test_____________________________ */
+
+.S_DTest1 {
+  background-image: url(../../images/backgr\(rainbow\).webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: -2%;
+
+  height: fit-content;
+  min-height: 92vh;
+  padding: 5% 0;
+
+  position: relative;
+  overflow-x: hidden;
 }

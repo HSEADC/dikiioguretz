@@ -137,7 +137,6 @@
 
 .O_DInteractiveWindows {
   width: 65%;
-  /* margin-top: 5%; */
 }
 .O_DInteractiveWindow1,
 .O_DInteractiveWindow2 {
@@ -280,15 +279,11 @@
   display: block;
 }
 
-/* _____________________________tests_____________________________ */
+/* _____________________________test_____________________________ */
 
-.O_Test {
-  height: 420px;
-  max-width: 65%;
+.O_DTest {
+  position: relative;
+  width: 70%;
+
   margin: 0 auto;
-  margin-top: 10%;
-  background-image: url(../../images/W_OTestBG.webp);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 6%;
 }
