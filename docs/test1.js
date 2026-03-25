@@ -1,17 +1,33 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 53:
+/***/ 939:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   I: () => (/* binding */ chooseAnswer),
-/* harmony export */   v: () => (/* binding */ initTest)
-/* harmony export */ });
-/* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(airtable__WEBPACK_IMPORTED_MODULE_0__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  I: () => (/* binding */ chooseAnswer),
+  v: () => (/* binding */ initTest)
+});
+
+;// ./src/images/A.CROSS.svg
+const A_CROSS_namespaceObject = __webpack_require__.p + "images/85708b2e5978f84001b0.svg";
+;// ./src/images/Q.D1LEMON.svg
+const Q_D1LEMON_namespaceObject = __webpack_require__.p + "images/b6a27666d26d995fc0f3.svg";
+;// ./src/images/Q.D2LEMON.svg
+const Q_D2LEMON_namespaceObject = __webpack_require__.p + "images/e5a0150076bca6cff321.svg";
+;// ./src/images/Q.D3LEMON.svg
+const Q_D3LEMON_namespaceObject = __webpack_require__.p + "images/0402b5b0cdf7733b622e.svg";
+// EXTERNAL MODULE: ./node_modules/airtable/lib/airtable.umd.js
+var airtable_umd = __webpack_require__(997);
+var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
+;// ./src/js/tests.js
 // import { document } from "postcss"
+
+
+
 
 var answersInputs = document.querySelectorAll('input[type=radio]');
 var currentStage = 0;
@@ -21,12 +37,38 @@ function initTest(stages) {
   var question = document.querySelector('.A_Question');
   var answers = document.querySelectorAll('.A_AnswerText');
   var answersInputs = document.querySelectorAll('input[type=radio]');
+  var imageTop = document.querySelector('.A_DecorationTopRight');
+  var imageBottom = document.querySelector('.A_DecorationBottomLeft');
   numberOfQuestion.innerText = "\u0432\u043E\u043F\u0440\u043E\u0441 ".concat(currentStage + 1, " \u0438\u0437 ").concat(stages.length);
   question.innerText = stages[currentStage].question;
+  if (imageTop && stages[currentStage].imgTop) {
+    imageTop.style.backgroundImage = "url(".concat(stages[currentStage].imgTop, ")");
+  }
+  if (imageBottom && stages[currentStage].imgBottom) {
+    imageBottom.style.backgroundImage = "url(".concat(stages[currentStage].imgBottom, ")");
+  }
+  if (currentStage % 2 === 0) {
+    imageTop.style.left = 'auto';
+    imageTop.style.right = '-38%';
+    imageBottom.style.right = 'auto';
+    imageBottom.style.left = '0';
+  } else {
+    imageTop.style.right = 'auto';
+    imageTop.style.left = '1%';
+    imageBottom.style.left = 'auto';
+    imageBottom.style.right = '-48%';
+  }
   for (var i = 0; i < answers.length; i++) {
     answers[i].innerText = stages[currentStage].answers[i].text;
     answersInputs[i].dataset.count = stages[currentStage].answers[i].count;
     answersInputs[i].checked = false;
+  }
+  var indicator = document.querySelector('.A_ProgressBarIndicator');
+  if (indicator) {
+    var progressPercent = currentStage / (stages.length - 1) * 100;
+    if (progressPercent < 7) progressPercent = 7;
+    if (progressPercent > 93) progressPercent = 93;
+    indicator.style.left = progressPercent + '%';
   }
 }
 function chooseAnswer(stages, results) {
@@ -51,43 +93,59 @@ function updateStage(stages, results) {
   }
 }
 function showResult(results) {
-  var testContainer = document.querySelector('.O_Test');
+  var progressBar = document.querySelector('.M_DProgressBar');
+  if (progressBar) progressBar.style.display = 'none';
+  var testContainer = document.querySelector('.W_Test');
   testContainer.innerHTML = '';
   var resultWrapper = document.createElement('div');
   resultWrapper.classList.add('M_TestResult');
-  var resultCnt = document.createElement('p');
+  var lemonContainer = document.createElement('div');
+  lemonContainer.classList.add('M_LemonTest');
+  var lemon1 = document.createElement('div');
+  lemon1.classList.add('Q_TestLemon1');
+  lemon1.style.backgroundImage = "url(".concat(Q_D1LEMON_namespaceObject, ")");
+  var lemon2 = document.createElement('div');
+  lemon2.classList.add('Q_TestLemon2');
+  lemon2.style.backgroundImage = "url(".concat(Q_D2LEMON_namespaceObject, ")");
+  var lemon3 = document.createElement('div');
+  lemon3.classList.add('Q_TestLemon3');
+  lemon3.style.backgroundImage = "url(".concat(Q_D3LEMON_namespaceObject, ")");
+  var testResMolecule = document.createElement('div');
+  testResMolecule.classList.add('M_TestResultCountMolecule');
+  var resultCnt = document.createElement('h2');
   resultCnt.classList.add('A_TestResultCount');
-  resultCnt.innerText = "\u0438\u0442\u043E\u0433: ".concat(resultCount);
-  var resultHeader = document.createElement('h2');
-  resultHeader.classList.add('A_TestResultHeader');
+  resultCnt.innerText = "\u0418\u0442\u043E\u0433: ".concat(resultCount, "/8");
+  var crossImage = document.createElement('img');
+  crossImage.src = A_CROSS_namespaceObject;
+  crossImage.classList.add('A_TestResultCross');
   var resultParagraph = document.createElement('p');
   resultParagraph.classList.add('A_TestResultParagraph');
   if (resultCount >= 7) {
-    resultHeader.innerText = results[0].header;
     resultParagraph.innerText = results[0].paragraph;
   } else if (resultCount >= 4) {
-    resultHeader.innerText = results[1].header;
     resultParagraph.innerText = results[1].paragraph;
   } else {
-    resultHeader.innerText = results[2].header;
     resultParagraph.innerText = results[2].paragraph;
   }
-  resultWrapper.appendChild(resultCnt);
-  resultWrapper.appendChild(resultHeader);
+  testResMolecule.appendChild(resultCnt);
+  testResMolecule.appendChild(crossImage);
+  resultWrapper.appendChild(testResMolecule);
   resultWrapper.appendChild(resultParagraph);
+  resultWrapper.appendChild(lemon1);
+  resultWrapper.appendChild(lemon2);
+  resultWrapper.appendChild(lemon3);
   testContainer.appendChild(resultWrapper);
 }
-
 
 // ________________________airtable script_______________________________
 
 
 var token = 'patdXreHafdjmq3wj.ef812e3ea4fe39ed00b01b55308d5893ff0a20ad467ca49500324fb398a92a62';
-airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
+airtable_umd_default().configure({
   endpointUrl: 'https://api.airtable.com',
   apiKey: token
 });
-var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base('appI9JTrjB3ZBx6WZ');
+var base = airtable_umd_default().base('appI9JTrjB3ZBx6WZ');
 var data;
 getTestsTeasers().then(function (content) {
   data = content;
@@ -154,6 +212,7 @@ function createTestsTeaserCard(stroke) {
     container.appendChild(card);
   }
 }
+
 
 /***/ }),
 
@@ -3987,20 +4046,92 @@ module.exports = Airtable;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
-/* harmony import */ var _tests_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(53);
+
+// EXTERNAL MODULE: ./src/js/tests.js + 4 modules
+var tests = __webpack_require__(939);
+;// ./src/images/Q.D1BURGER.svg
+const Q_D1BURGER_namespaceObject = __webpack_require__.p + "images/e0220492aa219e843ad1.svg";
+;// ./src/images/Q.D2APPLE.svg
+const Q_D2APPLE_namespaceObject = __webpack_require__.p + "images/4201ee39e37189fe057f.svg";
+;// ./src/images/Q.D2GREEN.svg
+const Q_D2GREEN_namespaceObject = __webpack_require__.p + "images/d0ee5af1c962bdcd5e8a.svg";
+;// ./src/images/Q.D1SMILE.svg
+const Q_D1SMILE_namespaceObject = __webpack_require__.p + "images/996a0a98a6a35b190647.svg";
+;// ./src/images/Q.D1BIRD.svg
+const Q_D1BIRD_namespaceObject = __webpack_require__.p + "images/e72fd3d995bd4451bafc.svg";
+;// ./src/images/Q.D5LEMON.svg
+const Q_D5LEMON_namespaceObject = __webpack_require__.p + "images/28c2f7f8d83ea688c2a3.svg";
+;// ./src/images/Q.D2PURPLE.svg
+const Q_D2PURPLE_namespaceObject = __webpack_require__.p + "images/38e35b4c8e3edd7e2f5a.svg";
+;// ./src/images/Q.D2COCO.svg
+const Q_D2COCO_namespaceObject = __webpack_require__.p + "images/8a5753d690d4ed8977d4.svg";
+;// ./src/images/Q.D1RED.svg
+const Q_D1RED_namespaceObject = __webpack_require__.p + "images/1209a674136541700d3e.svg";
+;// ./src/images/Q.D1GIRL.svg
+const Q_D1GIRL_namespaceObject = __webpack_require__.p + "images/0107a563eca0f92ac4c4.svg";
+;// ./src/images/Q.D2TV.svg
+const Q_D2TV_namespaceObject = __webpack_require__.p + "images/a439d70a943ca7dc43d0.svg";
+;// ./src/images/Q.D1CLOWN.svg
+const Q_D1CLOWN_namespaceObject = __webpack_require__.p + "images/ba5f853728dd4ebb7ef9.svg";
+;// ./src/images/Q.D1SHUKA.svg
+const Q_D1SHUKA_namespaceObject = __webpack_require__.p + "images/1aa23473c12c1fa8fb86.svg";
+;// ./src/images/Q.D4LEMON.svg
+const Q_D4LEMON_namespaceObject = __webpack_require__.p + "images/7893f7a29939fdb782b5.svg";
+;// ./src/images/Q.D1ORANGE.svg
+const Q_D1ORANGE_namespaceObject = __webpack_require__.p + "images/0bd3fe3daa0a28bf03ac.svg";
+;// ./src/images/Q.D2WIZARD.svg
+const Q_D2WIZARD_namespaceObject = __webpack_require__.p + "images/c7fb222b105fbb799491.svg";
+;// ./src/js/test1.js
 console.clear();
 
-// import imgGood from '../images/results/result_good'
-// import imgOk from '../images/results/result_ok'
-// import imgBad from '../images/results/result_bad'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var stages = [{
-  question: 'что такое "хомяк"?',
+  question: 'Что такое "хомяк"?',
+  imgTop: Q_D2APPLE_namespaceObject,
+  imgBottom: Q_D1BURGER_namespaceObject,
   answers: [{
     text: 'домашнее животное',
     count: 0
@@ -4015,7 +4146,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'что значит "я в танке"?',
+  question: 'Что значит "я в танке"?',
+  imgTop: Q_D2GREEN_namespaceObject,
+  imgBottom: Q_D1SMILE_namespaceObject,
   answers: [{
     text: 'я играю в танки',
     count: 0
@@ -4030,7 +4163,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'расшифруй фразу "ку кд чд"',
+  question: 'Расшифруй фразу "ку кд чд"',
+  imgTop: Q_D1BIRD_namespaceObject,
+  imgBottom: Q_D5LEMON_namespaceObject,
   answers: [{
     text: 'привет, как дела, что делаешь',
     count: 1
@@ -4045,7 +4180,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'что называли "холиваром"?',
+  question: 'Что называли "холиваром"?',
+  imgTop: Q_D2PURPLE_namespaceObject,
+  imgBottom: Q_D2COCO_namespaceObject,
   answers: [{
     text: 'затяжной спор',
     count: 1
@@ -4060,7 +4197,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'кто такой "люркер"?',
+  question: 'Кто такой "люркер"?',
+  imgTop: Q_D1RED_namespaceObject,
+  imgBottom: Q_D1GIRL_namespaceObject,
   answers: [{
     text: 'модератор форума',
     count: 0
@@ -4075,7 +4214,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'кого называли "ньюфаг"?',
+  question: 'Кого называли "ньюфаг"?',
+  imgTop: Q_D2TV_namespaceObject,
+  imgBottom: Q_D1CLOWN_namespaceObject,
   answers: [{
     text: 'администратор форума',
     count: 0
@@ -4090,7 +4231,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'что значит "з.ы."?',
+  question: 'Что значит "з.ы."?',
+  imgTop: Q_D1SHUKA_namespaceObject,
+  imgBottom: Q_D4LEMON_namespaceObject,
   answers: [{
     text: 'постскриптум',
     count: 1
@@ -4105,7 +4248,9 @@ var stages = [{
     count: 0
   }]
 }, {
-  question: 'что называли "дровами"?',
+  question: 'Что называли "дровами"?',
+  imgTop: Q_D1ORANGE_namespaceObject,
+  imgBottom: Q_D2WIZARD_namespaceObject,
   answers: [{
     text: 'временные файлы',
     count: 0
@@ -4121,20 +4266,20 @@ var stages = [{
   }]
 }];
 var results = [{
-  header: 'ты крут',
-  paragraph: 'попробуй и другие тесты',
+  // header: 'ты крут',
+  paragraph: 'Ты крут! Попробуй и другие тесты',
   image: ""
 }, {
-  header: 'все забывается..',
-  paragraph: 'видно время оставляет свои следы',
+  // header: 'все забывается..',
+  paragraph: 'Все забывается.. Видно время оставляет свои следы',
   image: ""
 }, {
-  header: 'похоже ты зумер',
-  paragraph: 'иди листай тик ток',
+  // header: 'похоже ты зумер',
+  paragraph: 'Похоже, ты зумер.. Иди листай тик ток)',
   image: ""
 }];
-(0,_tests_js__WEBPACK_IMPORTED_MODULE_0__/* .initTest */ .v)(stages);
-(0,_tests_js__WEBPACK_IMPORTED_MODULE_0__/* .chooseAnswer */ .I)(stages, results);
+(0,tests/* initTest */.v)(stages);
+(0,tests/* chooseAnswer */.I)(stages, results);
 })();
 
 /******/ })()

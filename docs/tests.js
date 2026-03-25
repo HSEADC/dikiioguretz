@@ -3831,15 +3831,52 @@ module.exports = Airtable;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
-/* unused harmony exports initTest, chooseAnswer */
-/* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(airtable__WEBPACK_IMPORTED_MODULE_0__);
+
+// UNUSED EXPORTS: chooseAnswer, initTest
+
+;// ./src/images/A.CROSS.svg
+const A_CROSS_namespaceObject = __webpack_require__.p + "images/85708b2e5978f84001b0.svg";
+;// ./src/images/Q.D1LEMON.svg
+const Q_D1LEMON_namespaceObject = __webpack_require__.p + "images/b6a27666d26d995fc0f3.svg";
+;// ./src/images/Q.D2LEMON.svg
+const Q_D2LEMON_namespaceObject = __webpack_require__.p + "images/e5a0150076bca6cff321.svg";
+;// ./src/images/Q.D3LEMON.svg
+const Q_D3LEMON_namespaceObject = __webpack_require__.p + "images/0402b5b0cdf7733b622e.svg";
+// EXTERNAL MODULE: ./node_modules/airtable/lib/airtable.umd.js
+var airtable_umd = __webpack_require__(997);
+var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
+;// ./src/js/tests.js
 // import { document } from "postcss"
+
+
+
 
 var answersInputs = document.querySelectorAll('input[type=radio]');
 var currentStage = 0;
@@ -3849,12 +3886,38 @@ function initTest(stages) {
   var question = document.querySelector('.A_Question');
   var answers = document.querySelectorAll('.A_AnswerText');
   var answersInputs = document.querySelectorAll('input[type=radio]');
+  var imageTop = document.querySelector('.A_DecorationTopRight');
+  var imageBottom = document.querySelector('.A_DecorationBottomLeft');
   numberOfQuestion.innerText = "\u0432\u043E\u043F\u0440\u043E\u0441 ".concat(currentStage + 1, " \u0438\u0437 ").concat(stages.length);
   question.innerText = stages[currentStage].question;
+  if (imageTop && stages[currentStage].imgTop) {
+    imageTop.style.backgroundImage = "url(".concat(stages[currentStage].imgTop, ")");
+  }
+  if (imageBottom && stages[currentStage].imgBottom) {
+    imageBottom.style.backgroundImage = "url(".concat(stages[currentStage].imgBottom, ")");
+  }
+  if (currentStage % 2 === 0) {
+    imageTop.style.left = 'auto';
+    imageTop.style.right = '-38%';
+    imageBottom.style.right = 'auto';
+    imageBottom.style.left = '0';
+  } else {
+    imageTop.style.right = 'auto';
+    imageTop.style.left = '1%';
+    imageBottom.style.left = 'auto';
+    imageBottom.style.right = '-48%';
+  }
   for (var i = 0; i < answers.length; i++) {
     answers[i].innerText = stages[currentStage].answers[i].text;
     answersInputs[i].dataset.count = stages[currentStage].answers[i].count;
     answersInputs[i].checked = false;
+  }
+  var indicator = document.querySelector('.A_ProgressBarIndicator');
+  if (indicator) {
+    var progressPercent = currentStage / (stages.length - 1) * 100;
+    if (progressPercent < 7) progressPercent = 7;
+    if (progressPercent > 93) progressPercent = 93;
+    indicator.style.left = progressPercent + '%';
   }
 }
 function chooseAnswer(stages, results) {
@@ -3879,43 +3942,59 @@ function updateStage(stages, results) {
   }
 }
 function showResult(results) {
-  var testContainer = document.querySelector('.O_Test');
+  var progressBar = document.querySelector('.M_DProgressBar');
+  if (progressBar) progressBar.style.display = 'none';
+  var testContainer = document.querySelector('.W_Test');
   testContainer.innerHTML = '';
   var resultWrapper = document.createElement('div');
   resultWrapper.classList.add('M_TestResult');
-  var resultCnt = document.createElement('p');
+  var lemonContainer = document.createElement('div');
+  lemonContainer.classList.add('M_LemonTest');
+  var lemon1 = document.createElement('div');
+  lemon1.classList.add('Q_TestLemon1');
+  lemon1.style.backgroundImage = "url(".concat(testLemon1, ")");
+  var lemon2 = document.createElement('div');
+  lemon2.classList.add('Q_TestLemon2');
+  lemon2.style.backgroundImage = "url(".concat(testLemon2, ")");
+  var lemon3 = document.createElement('div');
+  lemon3.classList.add('Q_TestLemon3');
+  lemon3.style.backgroundImage = "url(".concat(testLemon3, ")");
+  var testResMolecule = document.createElement('div');
+  testResMolecule.classList.add('M_TestResultCountMolecule');
+  var resultCnt = document.createElement('h2');
   resultCnt.classList.add('A_TestResultCount');
-  resultCnt.innerText = "\u0438\u0442\u043E\u0433: ".concat(resultCount);
-  var resultHeader = document.createElement('h2');
-  resultHeader.classList.add('A_TestResultHeader');
+  resultCnt.innerText = "\u0418\u0442\u043E\u0433: ".concat(resultCount, "/8");
+  var crossImage = document.createElement('img');
+  crossImage.src = crossIcon;
+  crossImage.classList.add('A_TestResultCross');
   var resultParagraph = document.createElement('p');
   resultParagraph.classList.add('A_TestResultParagraph');
   if (resultCount >= 7) {
-    resultHeader.innerText = results[0].header;
     resultParagraph.innerText = results[0].paragraph;
   } else if (resultCount >= 4) {
-    resultHeader.innerText = results[1].header;
     resultParagraph.innerText = results[1].paragraph;
   } else {
-    resultHeader.innerText = results[2].header;
     resultParagraph.innerText = results[2].paragraph;
   }
-  resultWrapper.appendChild(resultCnt);
-  resultWrapper.appendChild(resultHeader);
+  testResMolecule.appendChild(resultCnt);
+  testResMolecule.appendChild(crossImage);
+  resultWrapper.appendChild(testResMolecule);
   resultWrapper.appendChild(resultParagraph);
+  resultWrapper.appendChild(lemon1);
+  resultWrapper.appendChild(lemon2);
+  resultWrapper.appendChild(lemon3);
   testContainer.appendChild(resultWrapper);
 }
-
 
 // ________________________airtable script_______________________________
 
 
 var token = 'patdXreHafdjmq3wj.ef812e3ea4fe39ed00b01b55308d5893ff0a20ad467ca49500324fb398a92a62';
-airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
+airtable_umd_default().configure({
   endpointUrl: 'https://api.airtable.com',
   apiKey: token
 });
-var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base('appI9JTrjB3ZBx6WZ');
+var base = airtable_umd_default().base('appI9JTrjB3ZBx6WZ');
 var data;
 getTestsTeasers().then(function (content) {
   data = content;
@@ -3982,6 +4061,7 @@ function createTestsTeaserCard(stroke) {
     container.appendChild(card);
   }
 }
+
 })();
 
 /******/ })()
