@@ -1,4 +1,8 @@
 // import { document } from "postcss"
+import crossIcon from '../images/A.CROSS.svg'
+import testLemon1 from '../images/Q.D1LEMON.svg'
+import testLemon2 from '../images/Q.D2LEMON.svg'
+import testLemon3 from '../images/Q.D3LEMON.svg'
 
 const answersInputs = document.querySelectorAll('input[type=radio]')
 
@@ -11,13 +15,47 @@ function initTest(stages) {
   const answers = document.querySelectorAll('.A_AnswerText')
   const answersInputs = document.querySelectorAll('input[type=radio]')
 
+  const imageTop = document.querySelector('.A_DecorationTopRight')
+  const imageBottom = document.querySelector('.A_DecorationBottomLeft')
+
   numberOfQuestion.innerText = `вопрос ${currentStage + 1} из ${stages.length}`
   question.innerText = stages[currentStage].question
+
+  if (imageTop && stages[currentStage].imgTop) {
+    imageTop.style.backgroundImage = `url(${stages[currentStage].imgTop})`
+  }
+  if (imageBottom && stages[currentStage].imgBottom) {
+    imageBottom.style.backgroundImage = `url(${stages[currentStage].imgBottom})`
+  }
+
+  if (currentStage % 2 === 0) {
+    imageTop.style.left = 'auto'
+    imageTop.style.right = '-38%'
+
+    imageBottom.style.right = 'auto'
+    imageBottom.style.left = '0'
+  } else {
+    imageTop.style.right = 'auto'
+    imageTop.style.left = '1%'
+
+    imageBottom.style.left = 'auto'
+    imageBottom.style.right = '-48%'
+  }
 
   for (let i = 0; i < answers.length; i++) {
     answers[i].innerText = stages[currentStage].answers[i].text
     answersInputs[i].dataset.count = stages[currentStage].answers[i].count
     answersInputs[i].checked = false
+  }
+  const indicator = document.querySelector('.A_ProgressBarIndicator')
+
+  if (indicator) {
+    let progressPercent = (currentStage / (stages.length - 1)) * 100
+
+    if (progressPercent < 7) progressPercent = 7
+    if (progressPercent > 93) progressPercent = 93
+
+    indicator.style.left = progressPercent + '%'
   }
 }
 
@@ -47,41 +85,64 @@ function updateStage(stages, results) {
 }
 
 function showResult(results) {
-  const testContainer = document.querySelector('.O_Test')
+  const progressBar = document.querySelector('.M_DProgressBar')
+  if (progressBar) progressBar.style.display = 'none'
+
+  const testContainer = document.querySelector('.W_Test')
   testContainer.innerHTML = ''
 
   const resultWrapper = document.createElement('div')
   resultWrapper.classList.add('M_TestResult')
 
-  const resultCnt = document.createElement('p')
-  resultCnt.classList.add('A_TestResultCount')
-  resultCnt.innerText = `итог: ${resultCount}`
+  const lemonContainer = document.createElement('div')
+  lemonContainer.classList.add('M_LemonTest')
 
-  const resultHeader = document.createElement('h2')
-  resultHeader.classList.add('A_TestResultHeader')
+  const lemon1 = document.createElement('div')
+  lemon1.classList.add('Q_TestLemon1')
+  lemon1.style.backgroundImage = `url(${testLemon1})`
+
+  const lemon2 = document.createElement('div')
+  lemon2.classList.add('Q_TestLemon2')
+  lemon2.style.backgroundImage = `url(${testLemon2})`
+
+  const lemon3 = document.createElement('div')
+  lemon3.classList.add('Q_TestLemon3')
+  lemon3.style.backgroundImage = `url(${testLemon3})`
+
+  const testResMolecule = document.createElement('div')
+  testResMolecule.classList.add('M_TestResultCountMolecule')
+
+  const resultCnt = document.createElement('h2')
+  resultCnt.classList.add('A_TestResultCount')
+  resultCnt.innerText = `Итог: ${resultCount}/8`
+
+  const crossImage = document.createElement('img')
+  crossImage.src = crossIcon
+  crossImage.classList.add('A_TestResultCross')
 
   const resultParagraph = document.createElement('p')
   resultParagraph.classList.add('A_TestResultParagraph')
 
   if (resultCount >= 7) {
-    resultHeader.innerText = results[0].header
     resultParagraph.innerText = results[0].paragraph
   } else if (resultCount >= 4) {
-    resultHeader.innerText = results[1].header
     resultParagraph.innerText = results[1].paragraph
   } else {
-    resultHeader.innerText = results[2].header
     resultParagraph.innerText = results[2].paragraph
   }
 
-  resultWrapper.appendChild(resultCnt)
-  resultWrapper.appendChild(resultHeader)
+  testResMolecule.appendChild(resultCnt)
+  testResMolecule.appendChild(crossImage)
+
+  resultWrapper.appendChild(testResMolecule)
   resultWrapper.appendChild(resultParagraph)
+
+  resultWrapper.appendChild(lemon1)
+  resultWrapper.appendChild(lemon2)
+  resultWrapper.appendChild(lemon3)
 
   testContainer.appendChild(resultWrapper)
 }
-
-export { initTest, chooseAnswer }
 
 // ________________________airtable script_______________________________
 
@@ -175,3 +236,4 @@ function createTestsTeaserCard(stroke) {
     container.appendChild(card)
   }
 }
+export { initTest, chooseAnswer }

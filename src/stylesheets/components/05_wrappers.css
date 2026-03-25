@@ -18,15 +18,6 @@
 
   margin: 0 0 8%;
 }
-/* _____________________________tests_____________________________ */
-
-.W_TestPage {
-  min-height: 100vh;
-  background-image: url('../../images/backgr(rainbow).webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .start-line {
   position: absolute;
@@ -35,12 +26,22 @@
   width: 100%;
   display: block;
 }
+/* _____________________________tests_____________________________ */
 
 .W_TestTeaser {
   display: flex;
   align-items: center;
   text-decoration: none;
   position: relative;
+}
+
+/* _____________________________test_____________________________ */
+
+.W_Test {
+  width: 90%;
+  position: relative;
+
+  margin: 0 auto;
 }
 
 /* _____________________________archive_____________________________ */
@@ -71,40 +72,3 @@
 }
 
 /* _____________________________articles_____________________________ */
-
-/* .W_GamesPage {
-  min-height: 130vh;
-  background-image: url('../../images/backgr-rainbow-games.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.W_AboutUsPage {
-  min-height: 350vh;
-  background-image: url('../../images/backgr-sea.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.W_ArchivePage {
-  min-height: 100vh;
-  background-image: url('../../images/backgr-grass.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.W_WebsitesPage {
-  min-height: 650vh;
-  background-image: url('../../images/backgr-grass1.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.W_MemesPage {
-  min-height: 650vh;
-  background-image: url('../../images/backgr-grass1.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
