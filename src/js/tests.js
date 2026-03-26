@@ -1,5 +1,5 @@
 // import { document } from "postcss"
-import crossIcon from '../images/A.CROSS.svg'
+import crossIcon from '../images/A.CROSS.webp'
 import testLemon1 from '../images/Q.D1LEMON.svg'
 import testLemon2 from '../images/Q.D2LEMON.svg'
 import testLemon3 from '../images/Q.D3LEMON.svg'
@@ -119,6 +119,8 @@ function showResult(results) {
   const crossImage = document.createElement('img')
   crossImage.src = crossIcon
   crossImage.classList.add('A_TestResultCross')
+  crossImage.classList.add('A_TestResultCross')
+  crossImage.onclick = () => (window.location.href = '../tests.html')
 
   const resultParagraph = document.createElement('p')
   resultParagraph.classList.add('A_TestResultParagraph')
@@ -199,7 +201,7 @@ function createTestsTeaserCard(stroke) {
 
   const card = document.createElement('a')
   card.href = url
-  card.target = '_blank'
+  // card.target = '_blank'
   card.classList.add('W_TestTeaser')
 
   const textContent = document.createElement('div')

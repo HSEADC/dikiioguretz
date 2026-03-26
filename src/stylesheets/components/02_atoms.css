@@ -9,8 +9,9 @@
 .MainMenuNav img {
   margin: 0 3% 0;
 }
-
-/* _____________________________index page_____________________________ */
+.MainMenuNav img {
+  width: 15%;
+}
 
 /* _____________________________websites_____________________________ */
 
@@ -117,6 +118,12 @@ input[type='radio']:checked + .A_AnswerText {
 
 .A_NumberOfQuestion {
   display: none;
+}
+.A_TestResultCross {
+  width: 15%;
+
+  z-index: 999;
+  cursor: pointer;
 }
 
 .A_TestResultCount {
