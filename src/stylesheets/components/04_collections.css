@@ -207,3 +207,17 @@
   display: flex;
   flex-direction: row;
 }
+
+/* _____________________________game_____________________________ */
+
+.C_MiniGames {
+  display: flex;
+  flex-direction: column;
+
+  width: 20%;
+  margin-right: 15%;
+
+  max-height: 75vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

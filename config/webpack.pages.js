@@ -48,7 +48,7 @@ const htmlPages = [
   createPages(
     './src/pages/interact/games/game1.html',
     './pages/interact/games/game1.html',
-    ['allStyles']
+    ['game', 'allStyles']
   ),
   createPages(
     './src/pages/interact/tests/test1.html',

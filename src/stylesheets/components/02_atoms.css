@@ -191,3 +191,21 @@ input[type='radio']:checked + .A_AnswerText {
   width: 70%;
   height: 70%;
 }
+
+/* _____________________________game_____________________________ */
+
+.A_D1PicGameplay,
+.A_D2PicGameplay,
+.A_D3PicGameplay,
+.A_D4PicGameplay,
+.A_D5PicGameplay {
+  background: linear-gradient(180deg, #f9fbfe 15.38%, #245bdc 82.69%);
+  box-shadow:
+    4.89px 4.89px 4.89px 0px #557aff inset,
+    6.84px 6.84px 6.84px 0px #00000040;
+
+  padding: 5% 3%;
+
+  border-radius: 35px;
+  margin-bottom: 10%;
+}
