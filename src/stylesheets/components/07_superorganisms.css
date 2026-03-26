@@ -160,7 +160,6 @@
 
   width: 100%;
   margin-top: -2%;
-
   height: fit-content;
 
   padding: 5% 5%;
@@ -168,4 +167,6 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
