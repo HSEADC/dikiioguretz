@@ -2,13 +2,7 @@
 @import 'fonts.css';
 @import 'basic.css';
 
-/* @import 'layout.css';
-@import 'adaptive.css';
-@import 'tests.css';
-@import 'interact.css';
-@import 'games.css';
-@import 'articles.css';
-@import 'archive.css'; */
+/* @import 'indez.css'; */
 
 @import 'components/01_qarks.css';
 @import 'components/02_atoms.css';

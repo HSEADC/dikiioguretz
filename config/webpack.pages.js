@@ -51,6 +51,11 @@ const htmlPages = [
     ['game', 'allStyles']
   ),
   createPages(
+    './src/pages/interact/games/game2.html',
+    './pages/interact/games/game2.html',
+    ['game', 'allStyles']
+  ),
+  createPages(
     './src/pages/interact/tests/test1.html',
     './pages/interact/tests/test1.html',
     ['test1', 'allStyles']

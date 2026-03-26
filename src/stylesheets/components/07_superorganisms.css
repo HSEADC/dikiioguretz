@@ -132,6 +132,25 @@
   overflow-x: hidden;
 }
 
+/* _____________________________games_____________________________ */
+
+.S_DGames {
+  background-image: url(../../images/backgr\(rainbow\).webp);
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  margin-top: -2%;
+
+  height: fit-content;
+
+  padding: 5% 5%;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
 /* _____________________________game_____________________________ */
 
 .S_GameplayWindow {

@@ -208,6 +208,21 @@
   flex-direction: row;
 }
 
+/* _____________________________games_____________________________ */
+
+.C_DGames {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  width: 100%;
+  margin: 5% auto 3%;
+
+  align-items: center;
+  text-align: center;
+}
+
 /* _____________________________game_____________________________ */
 
 .C_MiniGames {
@@ -218,6 +233,12 @@
   margin-right: 15%;
 
   max-height: 75vh;
-  overflow-y: hidden;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+
+  overflow-y: auto;
   overflow-x: hidden;
+
+  scrollbar-width: thin;
+  padding-right: 10px;
 }
