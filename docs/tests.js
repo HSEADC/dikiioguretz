@@ -3861,8 +3861,8 @@ module.exports = Airtable;
 
 // UNUSED EXPORTS: chooseAnswer, initTest
 
-;// ./src/images/A.CROSS.svg
-const A_CROSS_namespaceObject = __webpack_require__.p + "images/85708b2e5978f84001b0.svg";
+;// ./src/images/A.CROSS.webp
+const A_CROSS_namespaceObject = __webpack_require__.p + "images/c6ef64ee209aebbea188.webp";
 ;// ./src/images/Q.D1LEMON.svg
 const Q_D1LEMON_namespaceObject = __webpack_require__.p + "images/b6a27666d26d995fc0f3.svg";
 ;// ./src/images/Q.D2LEMON.svg
@@ -3967,6 +3967,10 @@ function showResult(results) {
   var crossImage = document.createElement('img');
   crossImage.src = crossIcon;
   crossImage.classList.add('A_TestResultCross');
+  crossImage.classList.add('A_TestResultCross');
+  crossImage.onclick = function () {
+    return window.location.href = '../tests.html';
+  };
   var resultParagraph = document.createElement('p');
   resultParagraph.classList.add('A_TestResultParagraph');
   if (resultCount >= 7) {
@@ -4031,7 +4035,7 @@ function createTestsTeaserCard(stroke) {
     url = stroke.url;
   var card = document.createElement('a');
   card.href = url;
-  card.target = '_blank';
+  // card.target = '_blank'
   card.classList.add('W_TestTeaser');
   var textContent = document.createElement('div');
   textContent.classList.add('M_TestTeaserContent');
