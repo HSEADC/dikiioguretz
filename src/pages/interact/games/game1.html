@@ -6,101 +6,96 @@
     <title>игра 1</title>
   </head>
   <body>
-    <div class="W_TestPage">
-      <header>
-        <nav>
-          <a href="../../../index.html">на главную</a>
-          <a href="../../about.html">о медиа</a>
-          <a href="../../aboutUs.html">о нас</a>
-          <a href="../../articles.html">cтатьи</a>
-          <a href="../../archive.html">архив</a>
-          <a href="../../interact.html">интерактив </a>
-        </nav>
-      </header>
-      <main>
-        <h1>игра номер один</h1>
-        <nav class="int-links">
-          <a href="../games.html">к играм</a>
-        </nav>
-      </main>
-      <footer>
-        <div class="socials-icons">
-          <a href="https://vk.com/archive_stash?from=groups" target="_blank">
-            <img
-              src="../../../images/vk-icon.webp"
-              alt="vk"
-              class="vk"
-              width="100px"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/stash_archive?igsh=MWlscWVjcTEzano5Mw=="
-            target="_blank"
-          >
-            <img
-              src="../../../images/inst-icon.webp"
-              alt="inst"
-              class="inst"
-              width="100px"
-            />
-          </a>
-          <a href="https://t.me/oldweb_core" target="_blank">
-            <img
-              src="../../../images/tg-icon.webp"
-              alt="tgg"
-              class="tgg"
-              width="100px"
-            />
-          </a>
+    <header class="C_MainMenu">
+      <img
+        src="../../../images/Q_MAINGORIZONTALLINE.svg"
+        alt="horizontal-line"
+        class="Q_DMainGorLine"
+      />
+      <nav class="MainMenuNav">
+        <a href="../../../index.html" class="M_MainMenuDesktopMolecule">
+          <span class="A_MainMenuText">о медиа</span>
+          <img src="../../../images/A_DMainIcon1.svg" alt="A_DMainIcon"
+        /></a>
+        <a href="../../archive.html" class="M_MainMenuDesktopMolecule">
+          <span class="A_MainMenuText">архив</span>
+          <img src="../../../images/A_DMainIcon2.svg" alt="A_DMainIcon"
+        /></a>
+        <a href="../../interact.html" class="M_MainMenuDesktopMoleculeInteract">
+          <span class="A_MainMenuText">интерактив</span>
+          <img src="../../../images/A_DMainIcon3.svg" alt="A_DMainIcon"
+        /></a>
+        <a href="../../aboutUs.html" class="M_MainMenuDesktopMolecule">
+          <span class="A_MainMenuText">о нас</span>
+          <img src="../../../images/A_DMainIcon4.svg" alt="A_DMainIcon"
+        /></a>
+        <a href="../../articles.html" class="M_MainMenuDesktopMolecule">
+          <span class="A_MainMenuText">статьи</span>
+          <img src="../../../images/A_DMainIcon5.svg" alt="A_DMainIcon"
+        /></a>
+      </nav>
+    </header>
+    <img src="../../../images/line-left.webp" alt="line" class="line-left" />
+    <img src="../../../images/line-right.webp" alt="line" class="line-right" />
+    <section class="S_GameplayWindow">
+      <div class="C_MiniGames">
+        <img
+          src="../../../images/A.D1PICGAMEPLAY.svg"
+          alt="game1"
+          class="A_D1PicGameplay"
+        />
+        <img
+          src="../../../images/A.D2PICGAMEPLAY.svg"
+          alt="game2"
+          class="A_D2PicGameplay"
+        />
+        <img
+          src="../../../images/A.D3PICGAMEPLAY.svg"
+          alt="game3"
+          class="A_D3PicGameplay"
+        />
+        <img
+          src="../../../images/A.D4PICGAMEPLAY.svg"
+          alt="game4"
+          class="A_D4PicGameplay"
+        />
+        <img
+          src="../../../images/A.D5PICGAMEPLAY.svg"
+          alt="game5"
+          class="A_D5PicGameplay"
+        />
+      </div>
+      <div class="O_PlayGame">
+        <div class="O_PlayGame1">
+          <div class="O_PlaygameFrame"></div>
+          <iframe
+            src="https://scratch.mit.edu/projects/1268527604/embed"
+            allowtransparency="true"
+            width="485"
+            height="402"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+          ></iframe>
         </div>
-
-        <form
-          id="my-form"
-          action="https://formspree.io/f/mldpkdbz"
-          method="POST"
-        >
-          <input type="text" name="message" placeholder="tg user" />
-          <button id="my-form-button">отправить</button>
-          <p id="my-form-status"></p>
-        </form>
-      </footer>
-    </div>
-    <script>
-      var form = document.getElementById('my-form')
-
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'спасибо, оставайтесь с нами=)'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Упс.. Что-то пошло не так. Попробуйте еще раз=)'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
+        <div class="O_PlayGame2">
+          <div class="O_PlaygameFrame"></div>
+          <iframe
+            src="https://scratch.mit.edu/projects/1268391548/embed"
+            allowtransparency="true"
+            width="485"
+            height="402"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <img
+      src="../../../images/Q.D2GORIZONTALLINE.svg"
+      alt="line"
+      class="Q_D2GorizontalLine"
+    />
   </body>
 </html>
