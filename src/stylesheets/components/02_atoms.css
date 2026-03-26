@@ -233,4 +233,5 @@ input[type='radio']:checked + .A_AnswerText {
 .A_D1PicGameplay,
 .A_D2PicGameplay {
   cursor: pointer;
+  width: 100%;
 }
