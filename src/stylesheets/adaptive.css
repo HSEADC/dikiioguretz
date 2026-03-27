@@ -201,7 +201,7 @@
     background-size: cover;
     background-position: center;
     width: 95%;
-    height: 60vh;
+    height: 63vh;
     padding: 2%;
   }
 
@@ -209,22 +209,23 @@
   .O_DYellowNoteArch h1 {
     font-size: 20px;
 
-    padding: 5% 3%;
+    padding: 3%;
   }
   .O_DYellowNote p,
   .O_DYellowNoteArch p {
     font-size: 14px;
 
     padding-right: 10%;
-    padding: 8% 12% 0 3%;
+    padding: 3% 12% 0 3%;
   }
   .Q_M2Coco {
     width: 40%;
     height: auto;
     display: flex;
     position: relative;
-    margin: -30% 0 10% 1%;
+    margin: -26% 0 5% 1%;
   }
+
   .W_IndexCalendar {
     width: 95%;
     left: 0;
