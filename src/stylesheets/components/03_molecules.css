@@ -53,6 +53,9 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 /* _____________________________index page, archive page_____________________________ */
+.M_MLettersPics {
+  display: none;
+}
 .M_DArchiveIcon figcaption {
   font-size: 40px;
 }
