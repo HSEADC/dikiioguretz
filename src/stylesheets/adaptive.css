@@ -204,7 +204,7 @@
     height: 63vh;
     padding: 2%;
 
-    margin-bottom: 10%;
+    margin-bottom: 8%;
   }
 
   .O_DYellowNote h1,
@@ -225,7 +225,7 @@
     height: auto;
     display: flex;
     position: relative;
-    margin: 15% 0 5% -5%;
+    margin: 15% 0 0 -5%;
   }
 
   .W_IndexCalendar {
@@ -243,6 +243,9 @@
     margin: 0 auto;
     box-shadow: 6px 6px 6px 0px #3921d6b2;
     text-align: center;
+
+    position: relative;
+    top: -5%;
   }
   .M_IndexCalendar h1 {
     font-size: 32px;
@@ -292,10 +295,13 @@
     display: none;
   }
   .S_D2AboutMedia {
-    padding: 10% 0;
+    padding: 2% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 2%;
+    left: auto;
+    margin-bottom: 5%;
   }
 
   .M_MLettersPics {
