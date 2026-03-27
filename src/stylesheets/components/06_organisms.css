@@ -1,5 +1,7 @@
 /* _____________________________index page, archive page, interactive_____________________________ */
-
+.O_MAboutProject {
+  display: none;
+}
 .O_DAboutProject {
   background-image: url(../../images/Q.DMAINWINDOW.svg);
   background-repeat: no-repeat;
@@ -15,13 +17,13 @@
 .O_DAboutProject h1 {
   color: #0037ff;
   font-weight: 700;
-  font-size: 40rem;
+  font-size: 40px;
   font-family: 'arial narrow';
   padding: 0 0 4%;
 }
 .O_DAboutProject p {
   font-weight: 700;
-  font-size: 18rem;
+  font-size: 18px;
   line-height: 150%;
   letter-spacing: -1.1%;
   font-family: 'arial narrow';
@@ -31,7 +33,9 @@
 .O_DYellowNote {
   margin-top: 8%;
 }
-
+.O_MYellowNote {
+  display: none;
+}
 .O_DYellowNote,
 .O_DYellowNoteArch,
 .O_DMiniYellowNote {

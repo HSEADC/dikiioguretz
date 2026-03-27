@@ -1,5 +1,7 @@
 /* _____________________________header_____________________________ */
-
+.MobileBurger {
+  display: none;
+}
 .MainMenuNav {
   display: flex;
   width: 100%;
@@ -34,6 +36,8 @@ a.M_MainMenuDesktopMolecule {
   width: 80%;
   box-shadow: 3px 4px 9px 1px #192966cc;
   cursor: pointer;
+
+  width: 100%;
 }
 
 a.M_MainMenuDesktopMoleculeInteract {
