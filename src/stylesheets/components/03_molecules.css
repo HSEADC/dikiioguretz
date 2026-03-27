@@ -272,6 +272,9 @@ a.M_AboutUsMenuLinks img {
 
   padding: 3% 0 4%;
 }
+.M_Names {
+  display: none;
+}
 .M_TeamStash {
   flex-direction: row;
   display: flex;

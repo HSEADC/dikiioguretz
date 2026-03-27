@@ -9,7 +9,8 @@
   box-shadow: 3px 4px 9px 1px #192966cc;
 }
 
-.Q_MobileIndexRect {
+.Q_MobileIndexRect,
+.Q_MobileRect {
   display: none;
 }
 
@@ -67,12 +68,12 @@ video::-webkit-media-controls {
   bottom: -20%;
   left: -1%;
 }
-.Q_D1Frame {
+/* .Q_D1Frame {
   z-index: 10;
   position: absolute;
   width: 100%;
   bottom: 0;
-}
+} */
 
 /* _____________________________interact_____________________________ */
 
@@ -95,7 +96,14 @@ video::-webkit-media-controls {
 }
 
 /* _____________________________about us_____________________________ */
-
+.Q_MQCodeVK,
+.Q_MQCodeINST,
+.Q_MQCodeTG,
+.Q_MAboutGL,
+.Q_MAboutVLL,
+.Q_MAboutVLR {
+  display: none;
+}
 .Q_D3Bubles {
   position: absolute;
   z-index: 10;
