@@ -18,7 +18,8 @@
   .C_QR,
   .Q_0HorizontalLine,
   .C_Team,
-  .Q_D1Bubles {
+  .Q_D1Bubles,
+  .C_MiniGames {
     display: none;
   }
   .MobileBurger {
@@ -47,7 +48,7 @@
 
   .C_MainMenu {
     position: relative;
-    z-index: 100;
+    z-index: 1000;
   }
   .MainMenuNav {
     display: none;
@@ -91,7 +92,8 @@
     margin-top: -12%;
   }
 
-  .Q_MobileIndexRect {
+  .Q_MobileIndexRect,
+  .Q_MobileRect {
     display: flex;
     position: absolute;
     width: 100%;
@@ -109,6 +111,10 @@
       #274aca 96.15%
     );
     box-shadow: 3px 4px 9px 1px #192966cc;
+  }
+
+  .Q_MobileRect {
+    margin-top: -2%;
   }
   .S_D1AboutMedia {
     background-image: url(../images/Q.M2BGM.svg);
@@ -159,9 +165,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-
     margin: 0 auto;
-
     position: static;
   }
 
@@ -197,20 +201,17 @@
     width: 95%;
     height: 63vh;
     padding: 2%;
-
     margin-bottom: 25%;
   }
 
   .O_DYellowNote h1,
   .O_DYellowNoteArch h1 {
     font-size: 20px;
-
     padding: 3%;
   }
   .O_DYellowNote p,
   .O_DYellowNoteArch p {
     font-size: 14px;
-
     padding-right: 10%;
     padding: 12% 12% 0 3%;
   }
@@ -237,7 +238,6 @@
     margin: 0 auto;
     box-shadow: 6px 6px 6px 0px #3921d6b2;
     text-align: center;
-
     position: relative;
     top: -5%;
   }
@@ -412,7 +412,8 @@
   .S_DInteract {
     background-image: url(../images/Q.M1BGI.svg);
   }
-  .O_ArchiveAbout {
+  .O_ArchiveAbout,
+  .O_InteractiveAbout {
     flex-direction: column;
     align-items: center;
     width: 95%;
@@ -421,12 +422,7 @@
     justify-content: center;
   }
   .O_InteractiveAbout {
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
     margin: 8% auto 5%;
-    position: static;
-    justify-content: center;
   }
 
   .Q_D1Purple {
@@ -444,27 +440,6 @@
     padding-bottom: 10%;
   }
 
-  .Q_MobileRect {
-    /* похожий на .Q_MobileIndexRect сделать общий */
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 8vh;
-
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-
-    border-radius: 25px 25px 0 0;
-    background: linear-gradient(
-      180deg,
-      #ffffff 41.83%,
-      #7390f7 80.77%,
-      #274aca 96.15%
-    );
-    box-shadow: 3px 4px 9px 1px #192966cc;
-    margin-top: -2%;
-  }
   .W_Welcome {
     width: 95%;
     margin-bottom: 20%;
@@ -717,5 +692,304 @@
     left: -5%;
     bottom: -12%;
   }
-  /* test */
+  /* _____________________________articles_____________________________ */
+
+  .S_DArticles {
+    padding: 5% 0;
+    flex-direction: column;
+  }
+  .C_FullMenuArticles {
+    position: relative;
+    width: 85%;
+    margin: 5% auto;
+    max-height: 80vh;
+  }
+  .M_D1ArticlesWindows {
+    padding: 2% 20% 0 0;
+  }
+  .M_D1ArticlesWindows img {
+    width: 70%;
+  }
+  .M_D1ArticlesWindows,
+  .M_D2ArticlesWindows,
+  .M_D3ArticlesWindows,
+  .M_D4ArticlesWindows,
+  .M_D5ArticlesWindows,
+  .M_D6ArticlesWindows,
+  .M_D7ArticlesWindows,
+  .M_D8ArticlesWindows,
+  .M_D9ArticlesWindows,
+  .M_D10ArticlesWindows,
+  .M_D11ArticlesWindows,
+  .M_D12ArticlesWindows {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .M_D1ArticlesWindows h5,
+  .M_D2ArticlesWindows h5,
+  .M_D3ArticlesWindows h5,
+  .M_D4ArticlesWindows h5,
+  .M_D5ArticlesWindows h5,
+  .M_D6ArticlesWindows h5,
+  .M_D7ArticlesWindows h5,
+  .M_D8ArticlesWindows h5,
+  .M_D9ArticlesWindows h5,
+  .M_D10ArticlesWindows h5,
+  .M_D11ArticlesWindows h5,
+  .M_D12ArticlesWindows h5 {
+    font-size: 25px;
+  }
+  .O_ArticleRead {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2% 3% 5%;
+  }
+  .O_ArticleRead h5 {
+    font-size: 18px;
+  }
+
+  .M_Lemons {
+    min-height: 20vh;
+  }
+  .Q_Lemon1 {
+    width: 60%;
+    top: 20%;
+    left: -5%;
+  }
+  .Q_Lemon2 {
+    width: 40%;
+    top: -10%;
+    right: 10%;
+  }
+  .Q_Lemon3 {
+    width: 50%;
+    top: 64%;
+    right: 2%;
+  }
+  [class^='C_Pic'] {
+    width: 40%;
+    gap: 10%;
+  }
+  [class^='Q_Pic'] {
+    width: 100%;
+  }
+
+  .O_ArticleRead2 img,
+  .O_ArticleRead3 img,
+  .O_ArticleRead4 img,
+  .O_ArticleRead5 img {
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  /* _____________________________websites, memes_____________________________ */
+  .S_DMainSites {
+    background-image: url(../images/Q.M2BGA.svg);
+    padding-top: 10%;
+  }
+  .M_DRubricators {
+    flex-direction: column;
+    background: none;
+    box-shadow: none;
+    padding: 0 5% 1%;
+  }
+  .M_DRubricators a {
+    width: 100%;
+    font-size: 30px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    justify-content: space-between;
+    padding: 3% 5%;
+  }
+  .M_DRubricators p {
+    font-size: 30px;
+  }
+  .A_DMobileRubricator {
+    margin-bottom: 4%;
+    border-radius: 30px;
+    box-shadow: 3px 4px 9px 1px #192966cc;
+  }
+
+  .A_WebsitesTeaserFooter {
+    width: 60%;
+    margin-top: -10%;
+  }
+
+  .C_DSitesTeasers,
+  .C_DMemesTeasers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* _____________________________tests, games_____________________________ */
+
+  .C_DTests,
+  .C_DGames {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+  }
+
+  .W_TestTeaser {
+    margin-bottom: 5%;
+  }
+  .M_TestTeaserContent {
+    width: 90%;
+  }
+
+  .A_TestTeaserHeader {
+    font-size: 18px;
+    padding: 3% 2%;
+  }
+
+  .A_TestTeaserDescription {
+    font-size: 15px;
+    padding: 3% 15% 8% 2%;
+    max-height: 7vh;
+  }
+
+  .A_TestTeaserIcon {
+    margin-left: -15%;
+  }
+
+  /* _____________________________test1, game1/2_____________________________ */
+  .S_DTest1 {
+    padding-top: 10%;
+    max-height: fit-content;
+  }
+  .M_DProgressBar {
+    height: 50px;
+    margin-bottom: 18%;
+  }
+  .A_ProgressBarIndicator {
+    font-size: 14px;
+    padding: 5% 3%;
+    left: 10%;
+    margin: 0 3%;
+  }
+  .A_DecorationTopRight {
+    top: -15%;
+    width: 40%;
+    height: 40%;
+    margin-right: 30%;
+  }
+  .A_DecorationBottomLeft {
+    bottom: -35%;
+    width: 50%;
+    height: 50%;
+    margin-right: 36%;
+    rotate: -20deg;
+  }
+  .O_DTest {
+    width: 100%;
+  }
+  .A_AnswerText {
+    font-size: 28px;
+    padding: 3% 2% 12%;
+  }
+  .A_Question {
+    font-size: 33px;
+    padding: 4% 2% 10%;
+  }
+  .C_Answers,
+  .C_Answers2 {
+    padding-bottom: 0;
+    background-color: #dedcff;
+  }
+  .C_Answers2 {
+    border-radius: 0 0 30px 30px;
+  }
+
+  .C_AnswersLine {
+    flex-direction: column;
+  }
+  .Q_MTestHLine {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5%;
+
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    box-shadow: 3.74px 4.98px 11.22px 1.25px #192966cc;
+    z-index: 100;
+  }
+
+  .Q_TestLemon1 {
+    width: 120%;
+    height: 120%;
+    left: -32%;
+    top: 50%;
+    bottom: 0;
+    rotate: 20deg;
+  }
+
+  .Q_TestLemon2 {
+    top: -55%;
+    rotate: 15deg;
+  }
+
+  .Q_TestLemon3 {
+    bottom: -25%;
+    right: -20%;
+    rotate: -20deg;
+  }
+  .M_TestResult {
+    max-width: 100%;
+    margin-top: 20%;
+  }
+
+  .A_TestResultCross {
+    z-index: 100;
+    width: 20%;
+  }
+
+  .A_TestResultCount {
+    font-size: 40px;
+  }
+  .A_TestResultParagraph {
+    font-size: 30px;
+    padding-bottom: 20%;
+  }
+
+  /* _____________________________game_____________________________ */
+
+  .S_GameplayWindow {
+    background-image: url(../images/Q.M1BGI.svg);
+    flex-direction: column;
+    align-items: center;
+    min-height: 88vh;
+    padding-top: 50%;
+  }
+
+  .O_PlayGame {
+    width: 100%;
+  }
+
+  .O_PlayGame1,
+  .O_PlayGame2 {
+    height: 38vh;
+    border-radius: 40px;
+  }
+
+  .O_PlayGame1 iframe,
+  .O_PlayGame2 iframe {
+    width: 95%;
+    height: 86%;
+    margin: 9% 3%;
+    padding: 0 5% 5% 5%;
+  }
+  .O_PlaygameFrame {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
 }
