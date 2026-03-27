@@ -222,7 +222,9 @@ video::-webkit-media-controls {
 }
 
 /* _____________________________test_____________________________ */
-
+.Q_MTestHLine {
+  display: none;
+}
 .Q_DTestHLine {
   width: 100%;
   margin: 0 auto;
@@ -269,5 +271,3 @@ video::-webkit-media-controls {
   width: 80%;
   height: 80%;
 }
-
-/* _____________________________game_____________________________ */
