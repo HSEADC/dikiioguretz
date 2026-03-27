@@ -14,6 +14,10 @@
 }
 
 /* _____________________________index page_____________________________ */
+
+.Q_MobileIndexRect {
+  display: none;
+}
 .Q_M2Coco {
   display: none;
 }
