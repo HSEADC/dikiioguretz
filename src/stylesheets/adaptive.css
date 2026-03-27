@@ -115,6 +115,8 @@
 
   .Q_MobileRect {
     margin-top: -2%;
+    bottom: 0 !important;
+    position: relative;
   }
   .S_D1AboutMedia {
     background-image: url(../images/Q.M2BGM.svg);
@@ -408,6 +410,7 @@
   .S_DInteract {
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
   }
   .S_DInteract {
     background-image: url(../images/Q.M1BGI.svg);
