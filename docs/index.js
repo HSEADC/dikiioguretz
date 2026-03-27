@@ -50,5 +50,14 @@ function _handleSubmit() {
   return _handleSubmit.apply(this, arguments);
 }
 form.addEventListener('submit', handleSubmit);
+document.addEventListener('DOMContentLoaded', function () {
+  var burgerButton = document.querySelector('.MobileBurger img:nth-child(2)');
+  var menu = document.querySelector('.MainMenuNav');
+  if (burgerButton && menu) {
+    burgerButton.onclick = function () {
+      menu.classList.toggle('active');
+    };
+  }
+});
 /******/ })()
 ;
