@@ -20,6 +20,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.SliderDots {
+  display: none;
+}
 
 /* _____________________________archive, interact_____________________________ */
 

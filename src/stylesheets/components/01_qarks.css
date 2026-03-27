@@ -9,8 +9,14 @@
   box-shadow: 3px 4px 9px 1px #192966cc;
 }
 
-/* _____________________________index page_____________________________ */
+.Q_MobileIndexRect {
+  display: none;
+}
 
+/* _____________________________index page_____________________________ */
+.Q_M2Coco {
+  display: none;
+}
 .Q_D1BGM {
   position: relative;
   height: 110vh;

@@ -1,0 +1,340 @@
+@media screen and (max-width: 440px) {
+  html {
+    font-size: calc(1vw / 4.4);
+    scroll-behavior: smooth;
+  }
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* _____________________________header_____________________________ */
+
+  .Q_DMainGorLine {
+    display: none;
+  }
+  .MobileBurger {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    padding: 0 3%;
+    border-radius: 0 0 25px 25px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    box-shadow: 3px 4px 9px 1px #192966cc;
+  }
+
+  .MobileBurger img {
+    height: 80%;
+    width: auto;
+  }
+
+  .C_MainMenu {
+    position: relative;
+    z-index: 100;
+  }
+  .MainMenuNav {
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    border-radius: 0 0 25px 25px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+  }
+
+  .MainMenuNav.active {
+    display: flex;
+  }
+
+  a.M_MainMenuDesktopMolecule {
+    width: 100%;
+  }
+  .A_MainMenuText {
+    padding-top: 15px;
+  }
+
+  /* _____________________________index page_____________________________ */
+
+  .Q_D1BGM {
+    display: none;
+  }
+  .S_MobileIndex {
+    background-image: url(../images/MAINABOUTMEDIA.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin-top: -15%;
+  }
+
+  .Q_MobileIndexRect {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    border-radius: 25px 25px 0 0;
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    box-shadow: 3px 4px 9px 1px #192966cc;
+  }
+  .S_D1AboutMedia {
+    background-image: url(../images/Q.M2BGM.svg);
+  }
+
+  .W_AboutProject {
+    display: none;
+  }
+  .O_MAboutProject {
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 6px 0px #3921d6b2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .M_MAboutProjectName {
+    color: #0037ff;
+    font-size: 27px;
+    font-weight: 700;
+
+    background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
+    padding: 2% 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .M_MAboutProjectName img {
+    width: 14%;
+  }
+  .M_MAboutProjectName h1 {
+    padding-top: 3%;
+  }
+  .O_MAboutProject p {
+    color: #0037ff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+
+    background: linear-gradient(179.98deg, #ffffff 63.37%, #0037ff 128.17%);
+    padding: 2% 5% 8% 2%;
+  }
+
+  .O_IndexAboutArchive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 auto;
+
+    position: static;
+  }
+
+  .C_DMainIcons {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7% 5%;
+    margin: 8% 0;
+  }
+
+  .M_DBigIcon {
+    width: 28%;
+    margin: 0;
+  }
+
+  .M_DBigIcon img {
+    width: 100%;
+    height: auto;
+  }
+
+  .M_DBigIcon figcaption {
+    font-size: 15px;
+    margin-top: 5%;
+  }
+
+  .O_DYellowNote,
+  .O_DYellowNoteArch {
+    background-image: url(../images/Q.YELLOWNOTES.svg);
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 60vh;
+    padding: 2%;
+  }
+
+  .O_DYellowNote h1,
+  .O_DYellowNoteArch h1 {
+    font-size: 20px;
+
+    padding: 5% 3%;
+  }
+  .O_DYellowNote p,
+  .O_DYellowNoteArch p {
+    font-size: 14px;
+
+    padding-right: 10%;
+    padding: 8% 12% 0 3%;
+  }
+  .Q_M2Coco {
+    width: 40%;
+    height: auto;
+    display: flex;
+    position: relative;
+    margin: -30% 0 10% 1%;
+  }
+  .W_IndexCalendar {
+    width: 95%;
+    left: 0;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .M_IndexCalendar {
+    background-image: url(../images/Q.MCALENDAR.svg);
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 50vh;
+    margin: 0 auto;
+    box-shadow: 6px 6px 6px 0px #3921d6b2;
+    text-align: center;
+  }
+  .M_IndexCalendar h1 {
+    font-size: 32px;
+  }
+  .Q_D1Green {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: 58%;
+  }
+
+  /* .M_MLettersPics {
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: -30% 0 10% 3%;
+    display: block;
+  }
+
+  .our-gallery {
+    display: none;
+  }
+
+  .C_OurPics {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0 10%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .C_OurPics::-webkit-scrollbar {
+    display: none;
+  }
+
+  .C_OurPics img {
+    flex: 0 0 80%;
+    width: 80%;
+    height: auto;
+    scroll-snap-align: center;
+  } */
+  .our-gallery {
+    display: none;
+  }
+  .S_D2AboutMedia {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .M_MLettersPics {
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: -30% 0 10% 3%;
+    display: block;
+  }
+
+  .C_OurPics {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    /* border-radius: 40px; */
+  }
+
+  .C_OurPics::-webkit-scrollbar {
+    display: none;
+  }
+
+  .C_OurPics img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: center;
+    object-fit: cover;
+  }
+
+  .SliderDots {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    justify-content: center;
+  }
+
+  .Dot {
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffffff 20.67%,
+      #cedeff 47.6%,
+      #274aca 76.44%
+    );
+
+    border-radius: 50%;
+  }
+
+  .Dot.active {
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+  }
+}
