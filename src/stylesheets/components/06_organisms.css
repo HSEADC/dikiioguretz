@@ -114,7 +114,7 @@
   width: 100%;
   position: relative;
   top: 5%;
-  margin: 0 5% 15%;
+  margin: 0 5% 11%;
   display: flex;
   justify-content: space-between;
 
@@ -126,10 +126,10 @@
 
 .O_InteractiveAbout {
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   position: relative;
   top: 5%;
-  margin: 7% 2% 0 5%;
+  margin: 10% 2% 0 5%;
   display: flex;
   justify-content: space-between;
   gap: 8%;

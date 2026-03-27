@@ -11,7 +11,14 @@
 
   /* _____________________________header_____________________________ */
 
-  .Q_DMainGorLine {
+  .Q_DMainGorLine,
+  .W_AboutProject,
+  .our-gallery,
+  .Q_D2GorizontalLine,
+  .C_QR,
+  .Q_0HorizontalLine,
+  .C_Team,
+  .Q_D1Bubles {
     display: none;
   }
   .MobileBurger {
@@ -83,18 +90,6 @@
     max-height: 100vh;
     margin-top: -12%;
   }
-  /* .S_MobileIndex {
-    background-image: url(../images/MAINABOUTMEDIA.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    max-height: 100vh;
-    height: auto;
-    width: 100%;
-    padding: 0;
-    margin-top: -15%;
-  } */
 
   .Q_MobileIndexRect {
     display: flex;
@@ -119,18 +114,17 @@
     background-image: url(../images/Q.M2BGM.svg);
     padding-top: 10%;
     height: fit-content !important;
+
+    margin: -5% auto 0;
+    padding-bottom: 20%;
   }
 
-  .W_AboutProject {
-    display: none;
-  }
   .O_MAboutProject {
     position: relative;
-    /* top: 5%; */
     display: flex;
     flex-direction: column;
     box-shadow: 6px 6px 6px 0px #3921d6b2;
-    margin: 0 auto 5%;
+    margin: 0 auto 1%;
     width: 90%;
   }
   .M_MAboutProjectName {
@@ -177,7 +171,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 7% 5%;
-    margin: 8% 0;
+    margin: 5% 0;
   }
 
   .M_DBigIcon {
@@ -204,7 +198,7 @@
     height: 63vh;
     padding: 2%;
 
-    margin-bottom: 8%;
+    margin-bottom: 25%;
   }
 
   .O_DYellowNote h1,
@@ -225,7 +219,7 @@
     height: auto;
     display: flex;
     position: relative;
-    margin: 15% 0 0 -5%;
+    margin: 20% 0 0 -5%;
   }
 
   .W_IndexCalendar {
@@ -249,6 +243,7 @@
   }
   .M_IndexCalendar h1 {
     font-size: 32px;
+    padding: 2%;
   }
   .Q_D1Green {
     width: 40%;
@@ -257,51 +252,15 @@
     left: 58%;
   }
 
-  /* .M_MLettersPics {
-    width: 80%;
-    height: auto;
-    position: relative;
-    margin: -30% 0 10% 3%;
-    display: block;
-  }
-
-  .our-gallery {
-    display: none;
-  }
-
-  .C_OurPics {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    padding: 0 10%;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .C_OurPics::-webkit-scrollbar {
-    display: none;
-  }
-
-  .C_OurPics img {
-    flex: 0 0 80%;
-    width: 80%;
-    height: auto;
-    scroll-snap-align: center;
-  } */
-  .our-gallery {
-    display: none;
-  }
   .S_D2AboutMedia {
     padding: 2% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     top: 2%;
-    left: auto;
+    left: 0;
     margin-bottom: 5%;
+    margin: 0 auto 5%;
   }
 
   .M_MLettersPics {
@@ -317,7 +276,6 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    /* border-radius: 40px; */
   }
 
   .C_OurPics::-webkit-scrollbar {
@@ -353,7 +311,410 @@
   }
 
   .Dot.active {
-    background: #fff;
-    box-shadow: 0 0 10px #fff;
+    width: 20px;
+    height: 20px;
+    background: white;
+
+    box-shadow: 0 0 10px white;
+  }
+
+  /* _____________________________footer_____________________________ */
+
+  .O_Footer {
+    background-image: none;
+    background: linear-gradient(
+      0deg,
+      #ffffff 23.08%,
+      #7390f7 58.17%,
+      #274aca 96.15%
+    );
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+    margin-top: -2%;
+
+    height: fit-content;
+    padding-bottom: 8%;
+  }
+  .M_FooterContact {
+    flex-direction: column-reverse;
+  }
+  .C_SocialsIcons {
+    width: 90%;
+    justify-content: center;
+    margin: -10% auto 8%;
+    gap: 8px;
+  }
+  .C_SocialsIcons img {
+    box-shadow: 0px 7.26px 16.33px 1.81px #192966cc;
+    justify-content: center;
+  }
+  .M_MFooterRect {
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    box-shadow: 3px 4px 9px 1px #192966cc;
+    width: 100%;
+    height: 2vh;
+
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  #my-form h1 {
+    font-size: 30px;
+    margin-bottom: 4%;
+  }
+  #my-form input {
+    padding: 2%;
+    font-size: 28px;
+  }
+  #my-form-button {
+    font-size: 28px;
+    padding: 2%;
+  }
+  #my-form-status {
+    font-size: 20px;
+    margin: 3% 1%;
+  }
+  .M_FooterInfo {
+    margin-top: 2%;
+  }
+  .M_FooterInfo h1 {
+    font-size: 24px;
+    padding: 2% 0;
+    margin: 0;
+  }
+  .M_FooterInfo p {
+    font-size: 15px;
+  }
+  .Q_Logo1 {
+    width: 16%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  /* _____________________________archive, interact_____________________________ */
+
+  .S_DArchive {
+    background-image: url(../images/Q.M1BGA.svg);
+  }
+  .S_DArchive,
+  .S_DInteract {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .S_DInteract {
+    background-image: url(../images/Q.M1BGI.svg);
+  }
+  .O_ArchiveAbout {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 8% auto;
+    position: static;
+    justify-content: center;
+  }
+  .O_InteractiveAbout {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 8% auto 5%;
+    position: static;
+    justify-content: center;
+  }
+
+  .Q_D1Purple {
+    width: 40%;
+    height: auto;
+    display: flex;
+    position: relative;
+    margin: 5% 0 0 -3%;
+  }
+  .C_ArchiveIcons {
+    width: 90%;
+    gap: 5%;
+    top: 0;
+    font-size: 33px;
+    padding-bottom: 10%;
+  }
+
+  .Q_MobileRect {
+    /* похожий на .Q_MobileIndexRect сделать общий */
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 8vh;
+
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    border-radius: 25px 25px 0 0;
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    box-shadow: 3px 4px 9px 1px #192966cc;
+    margin-top: -2%;
+  }
+  .W_Welcome {
+    width: 95%;
+    margin-bottom: 20%;
+    margin-left: 5%;
+  }
+
+  .Q_D3Green {
+    width: 30%;
+    margin: -10% -5% 0 70%;
+  }
+
+  .Q_D2Burger {
+    width: 50%;
+    margin: -8% 0 0 -10%;
+  }
+
+  .O_DMiniYellowNote {
+    width: 90%;
+    background-image: url(../images/Q.MMINIYELLOWNOTE.svg);
+    margin: 0 auto;
+  }
+  .O_DMiniYellowNote h1 {
+    font-size: 30px;
+    padding: 12% 10% 0 5%;
+  }
+  .S_DInteractive {
+    top: 0;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .O_DInteractiveWindows {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .O_DInteractiveWindow1,
+  .O_DInteractiveWindow2 {
+    background-image: none;
+    width: 95%;
+    margin: 0 auto 10%;
+  }
+  .O_DInteractiveWindow1 h1,
+  .O_DInteractiveWindow2 h1 {
+    font-size: 27px;
+    padding: 3% 2% 3%;
+    background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
+  }
+  .O_DInteractiveWindow1 p,
+  .O_DInteractiveWindow2 p {
+    font-size: 12px;
+    padding: 2% 5% 2% 2%;
+    background: linear-gradient(179.98deg, #ffffff 63.37%, #0037ff 128.17%);
+  }
+  .C_InteractiveIcons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 5%;
+  }
+  .C_InteractiveIcons img {
+    width: 100%;
+  }
+
+  /* _____________________________about us_____________________________ */
+
+  .S_DAboutUs {
+    background-image: url(../images/Q.M1BGUS.svg);
+    padding: 5% 0 20%;
+  }
+
+  .O_DBlueNote {
+    background-image: url(../images/Q.MBLUENOTE.svg);
+    background-size: cover;
+    width: 90%;
+    height: fit-content;
+    aspect-ratio: none;
+    min-height: 70vh;
+    margin-bottom: 20%;
+  }
+
+  .O_DBlueNote h1 {
+    font-size: 23px;
+    padding: 5% 4%;
+  }
+  .O_DBlueNote p {
+    font-size: 16px;
+    padding: 4% 5% 0 4%;
+  }
+  .Q_D3Bubles {
+    left: -3%;
+    top: -7%;
+  }
+
+  .Q_D2Red {
+    right: 2%;
+    top: -5%;
+    width: 30%;
+  }
+
+  .Q_D2Orange {
+    bottom: -10%;
+    width: 40%;
+  }
+
+  .Q_D4Bubles {
+    right: -5%;
+    bottom: -20%;
+    width: 38%;
+  }
+
+  .W_DManifest,
+  .W_DSocials,
+  .W_DTeam {
+    margin-bottom: 20%;
+  }
+
+  .O_DOurScoials,
+  .O_DTeam {
+    background-image: none;
+    background: linear-gradient(179.99deg, #ffffff 16.02%, #0037ff 128.19%);
+    width: 85%;
+    height: fit-content;
+  }
+  .O_DOurScoials h2,
+  .M_TeamStash {
+    background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
+    font-size: 32px;
+    padding: 4%;
+  }
+  .M_TeamStash h2 {
+    font-size: 32px;
+  }
+  .M_TeamStash img {
+    width: 20%;
+  }
+  .M_TeamStash {
+    justify-content: flex-start;
+    gap: 3%;
+  }
+
+  .AboutUsSocials {
+    flex-direction: column;
+    gap: 30%;
+  }
+  .C_Names {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Q_MAboutGL {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0;
+
+    width: 100%;
+    height: 1.5vh;
+    background: linear-gradient(
+      180deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+    box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
+    z-index: 20;
+  }
+  a.M_AboutUsMenuLinks,
+  a.M_TeamLinks {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 30%;
+    padding: 4% 0 5%;
+    box-shadow: 2.47px 3.3px 7.41px 0.82px #192966cc;
+    border-radius: 0 0 19px 19px;
+  }
+
+  a.M_AboutUsMenuLinks,
+  a.M_TeamLinks {
+    font-size: 25px;
+  }
+  a.M_AboutUsMenuLinks img {
+    width: 40%;
+    margin-top: 45%;
+  }
+  .Q_MQCodeVK,
+  .Q_MQCodeINST,
+  .Q_MQCodeTG,
+  .M_Names {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 4.85px 4.85px 4.85px 0px #00000040;
+    border-radius: 40px;
+    margin-bottom: 7%;
+  }
+  .M_Names {
+    margin-top: -20%;
+  }
+
+  .Q_MAboutVLL,
+  .Q_MAboutVLR {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1.5vw;
+    z-index: 1;
+  }
+
+  .Q_MAboutVLL {
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+
+    box-shadow: 3px 4px 9px 1px #192966cc;
+  }
+
+  .Q_MAboutVLR {
+    right: 0;
+    background: linear-gradient(
+      90deg,
+      #ffffff 41.83%,
+      #7390f7 80.77%,
+      #274aca 96.15%
+    );
+
+    box-shadow: -3px 4px 9px 1px #192966cc;
+  }
+  .Q_D2Bubles {
+    left: -3%;
+    bottom: -2%;
+    width: 34%;
+    rotate: -80deg;
+  }
+
+  .Q_D2Shuka {
+    width: 36%;
+    right: 0;
+    top: -5%;
+    rotate: 40deg;
+  }
+  .Q_D2Clown {
+    width: 80%;
+    left: -5%;
+    bottom: -12%;
   }
 }
