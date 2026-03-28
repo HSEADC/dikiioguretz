@@ -80,6 +80,10 @@
   }
 
   /* _____________________________index page_____________________________ */
+  .S_Page404 {
+    background-image: url(../images/M404.svg);
+    min-height: 88vh;
+  }
   .video {
     display: none !important;
   }

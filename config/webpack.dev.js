@@ -31,7 +31,7 @@ module.exports = merge(common, {
     static: './dev_build',
 
     historyApiFallback: {
-      rewrites: [{ from: /./, to: '/404.html' }]
+      rewrites: [{ from: /./, to: '/pages/404.html' }]
     }
   },
   output: {
