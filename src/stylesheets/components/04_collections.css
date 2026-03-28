@@ -15,7 +15,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 8%;
 }
-.C_DMainIcons img {
+.C_DMainIcons img,
+.C_OurPics img,
+.C_ArchiveIcons img {
   width: 100%;
   height: auto;
 }
@@ -26,10 +28,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3%;
 }
-.C_OurPics img {
-  width: 100%;
-  height: auto;
-}
+
 .C_SocialsIcons {
   width: 40%;
   display: flex;
@@ -55,10 +54,6 @@
   gap: 8%;
   position: relative;
   top: 100px;
-}
-.C_ArchiveIcons img {
-  width: 100%;
-  height: auto;
 }
 
 /* _____________________________interactive_____________________________ */
@@ -157,17 +152,21 @@
   gap: 2%;
 }
 
-/* _____________________________websites_____________________________ */
+/* _____________________________websites, games_____________________________ */
 
 .C_DSitesTeasers,
-.C_DMemesTeasers {
+.C_DMemesTeasers,
+.C_DGames {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 20px;
-
   width: 100%;
   margin: 5% auto;
+}
+.C_DGames {
+  margin: 5% auto 3%;
+  align-items: center;
+  text-align: center;
 }
 
 .C_DSitesTeasers a {
@@ -197,41 +196,21 @@
   background-color: #dedcff;
 }
 .C_Answers,
-.C_Answers2 {
+.C_Answers2,
+.C_MiniGames {
   gap: 0;
   display: flex;
   flex-direction: column;
 }
-.C_Answers2 {
-  display: flex;
-  flex-direction: column;
-}
+
 .C_AnswersLine {
   display: flex;
   flex-direction: row;
 }
 
-/* _____________________________games_____________________________ */
-
-.C_DGames {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 20px;
-
-  width: 100%;
-  margin: 5% auto 3%;
-
-  align-items: center;
-  text-align: center;
-}
-
 /* _____________________________game_____________________________ */
 
 .C_MiniGames {
-  display: flex;
-  flex-direction: column;
-
   width: 20%;
   margin-right: 15%;
 

@@ -1,5 +1,7 @@
 /* _____________________________index page, archive page, interactive_____________________________ */
-.O_MAboutProject {
+
+.O_MAboutProject,
+.O_MYellowNote {
   display: none;
 }
 .O_DAboutProject {
@@ -18,7 +20,6 @@
   color: #0037ff;
   font-weight: 700;
   font-size: 40px;
-  font-family: 'arial narrow';
   padding: 0 0 4%;
 }
 .O_DAboutProject p {
@@ -26,16 +27,13 @@
   font-size: 18px;
   line-height: 150%;
   letter-spacing: -1.1%;
-  font-family: 'arial narrow';
   color: #0037ff;
   padding-right: 26%;
 }
 .O_DYellowNote {
   margin-top: 8%;
 }
-.O_MYellowNote {
-  display: none;
-}
+
 .O_DYellowNote,
 .O_DYellowNoteArch,
 .O_DMiniYellowNote {
@@ -55,7 +53,7 @@
 .O_DMiniYellowNote h1 {
   color: black;
   font-weight: 700;
-  font-size: 40rem;
+  font-size: 40px;
   font-style: italic;
   font-family: 'arial narrow italic';
 
@@ -67,7 +65,7 @@
 .O_DYellowNoteArch h1 {
   color: black;
   font-weight: 700;
-  font-size: 40rem;
+  font-size: 40px;
   font-style: italic;
   font-family: 'arial narrow italic';
   padding: 0 0 6%;
@@ -75,7 +73,7 @@
 .O_DYellowNote p,
 .O_DYellowNoteArch p {
   font-weight: 700;
-  font-size: 18rem;
+  font-size: 18px;
   line-height: 170%;
   letter-spacing: -1.1%;
   font-family: 'arial narrow italic';
@@ -110,6 +108,7 @@
   bottom: 0;
 }
 /* _____________________________archive_____________________________ */
+
 .O_ArchiveAbout {
   width: 100%;
   position: relative;
@@ -165,7 +164,7 @@
 .O_DInteractiveWindow2 p {
   color: #0037ff;
   font-weight: 700;
-  font-size: 14rem;
+  font-size: 14px;
   font-family: 'arial narrow';
 
   line-height: 150%;

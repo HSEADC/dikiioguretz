@@ -1,6 +1,7 @@
 /* _____________________________index page_____________________________ */
 
-.W_AboutProject {
+.W_AboutProject,
+.W_IndexCalendar {
   width: 90%;
   position: relative;
   top: 5%;
@@ -9,13 +10,7 @@
   justify-content: space-between;
 }
 .W_IndexCalendar {
-  width: 90%;
-  position: relative;
   top: 10%;
-  left: 5%;
-  display: flex;
-  justify-content: space-between;
-
   margin: 0 0 8%;
 }
 
@@ -51,6 +46,7 @@
   left: 5%;
 }
 /* _____________________________interactive_____________________________ */
+
 .W_Welcome {
   position: relative;
   margin-bottom: 15%;

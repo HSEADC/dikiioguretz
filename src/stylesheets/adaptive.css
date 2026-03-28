@@ -80,6 +80,7 @@
   }
 
   /* _____________________________index page_____________________________ */
+
   .S_Page404 {
     background-image: url(../images/M404.svg);
     min-height: 88vh;
@@ -470,7 +471,7 @@
   }
   .O_DMiniYellowNote h1 {
     font-size: 30px;
-    padding: 12% 10% 0 5%;
+    padding: 9% 10% 0 5%;
   }
   .S_DInteractive {
     top: 0;
@@ -791,6 +792,7 @@
   }
 
   /* _____________________________websites, memes_____________________________ */
+
   .S_DMainSites {
     background-image: url(../images/Q.M2BGA.svg);
     padding-top: 10%;
@@ -865,6 +867,7 @@
   }
 
   /* _____________________________test1, game1/2_____________________________ */
+
   .S_DTest1 {
     padding-top: 10%;
     max-height: fit-content;
