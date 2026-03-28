@@ -3873,7 +3873,6 @@ const Q_D3LEMON_namespaceObject = __webpack_require__.p + "images/0402b5b0cdf773
 var airtable_umd = __webpack_require__(997);
 var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
 ;// ./src/js/tests.js
-// import { document } from "postcss"
 
 
 
@@ -4035,7 +4034,6 @@ function createTestsTeaserCard(stroke) {
     url = stroke.url;
   var card = document.createElement('a');
   card.href = url;
-  // card.target = '_blank'
   card.classList.add('W_TestTeaser');
   var textContent = document.createElement('div');
   textContent.classList.add('M_TestTeaserContent');
