@@ -92,7 +92,7 @@ const htmlPages = [
     './pages/archive/websites/website1.html',
     ['allStyles']
   ),
-  createPages('./src/pages/404.html', './src/pages/404.html', ['allStyles'])
+  createPages('./src/pages/404.html', './pages/404.html', ['allStyles'])
 ]
 
 module.exports = htmlPages
