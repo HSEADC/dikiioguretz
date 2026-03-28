@@ -28,7 +28,11 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: './dev_build'
+    static: './dev_build',
+
+    historyApiFallback: {
+      rewrites: [{ from: /./, to: '/404.html' }]
+    }
   },
   output: {
     path: path.resolve('.', 'dev_build'),

@@ -1,5 +1,18 @@
 /* _____________________________index page_____________________________ */
+.S_Page404 {
+  background-image: url(../../images/404.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: -2%;
 
+  height: fit-content;
+  min-height: 92vh;
+  padding: 0;
+
+  position: relative;
+  overflow-x: hidden;
+}
 .S_D1AboutMedia {
   background-image: url(../../images/Q.D2BGM.png);
   background-size: cover;
