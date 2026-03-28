@@ -68,12 +68,6 @@ video::-webkit-media-controls {
   bottom: -20%;
   left: -1%;
 }
-/* .Q_D1Frame {
-  z-index: 10;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-} */
 
 /* _____________________________interact_____________________________ */
 
@@ -96,6 +90,7 @@ video::-webkit-media-controls {
 }
 
 /* _____________________________about us_____________________________ */
+
 .Q_MQCodeVK,
 .Q_MQCodeINST,
 .Q_MQCodeTG,
@@ -222,6 +217,7 @@ video::-webkit-media-controls {
 }
 
 /* _____________________________test_____________________________ */
+
 .Q_MTestHLine {
   display: none;
 }

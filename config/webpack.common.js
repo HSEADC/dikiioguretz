@@ -2,8 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const htmlPages = require('./webpack.pages.js')
-// const htmlPages = require('./webpack.pages')
-//const CopyPlugin = require("copy-webpack-plugin");
+
 const webpack = require('webpack')
 const path = require('path')
 
@@ -23,18 +22,6 @@ module.exports = {
     path: path.resolve('.', 'docs')
   },
 
-  // output: {
-  //   path: path.resolve(__dirname, 'docs'),
-  //   filename: '[name].js'
-  // },
-
-  //   output: {
-  //   path: path.resolve(__dirname, 'docs'),
-  //   filename: '[name].[contenthash].js',
-  //   chunkFilename: '[name].[contenthash].js',
-  //   clean: true
-  // },
-
   module: {
     rules: [
       {
@@ -52,10 +39,6 @@ module.exports = {
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       },
-      // {
-      //   test: /\.s?css$/,
-      //   use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-      // },
 
       {
         test: /\.html$/i,
@@ -79,16 +62,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new MiniCssExtractPlugin(),
-    ...htmlPages
-    // new CopyPlugin({
-    //   patterns: [
-    //     { from: "source", to: "dest" },
-    //     { from: "other", to: "public" },
-    //   ],
-    // }),
-  ],
+  plugins: [new MiniCssExtractPlugin(), ...htmlPages],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
   },

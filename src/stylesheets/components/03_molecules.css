@@ -1,5 +1,8 @@
 /* _____________________________header_____________________________ */
-.MobileBurger {
+
+.MobileBurger,
+.M_MLettersPics,
+.M_Names {
   display: none;
 }
 .MainMenuNav {
@@ -26,21 +29,11 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 a.M_MainMenuDesktopMolecule {
-  background: linear-gradient(
-    180deg,
-    #ffffff 41.83%,
-    #7390f7 80.77%,
-    #274aca 96.15%
-  );
-  border-radius: 0 0 25px 25px;
-  width: 80%;
-  box-shadow: 3px 4px 9px 1px #192966cc;
-  cursor: pointer;
-
   width: 100%;
 }
 
-a.M_MainMenuDesktopMoleculeInteract {
+a.M_MainMenuDesktopMoleculeInteract,
+a.M_MainMenuDesktopMolecule {
   background: linear-gradient(
     180deg,
     #ffffff 41.83%,
@@ -53,9 +46,7 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 /* _____________________________index page, archive page_____________________________ */
-.M_MLettersPics {
-  display: none;
-}
+
 .M_DArchiveIcon figcaption {
   font-size: 40px;
 }
@@ -93,7 +84,7 @@ a.M_MainMenuDesktopMoleculeInteract {
 .M_IndexCalendar h1 {
   color: #0037ff;
   font-weight: 400;
-  font-size: 40rem;
+  font-size: 40px;
   font-family: 'arial narrow';
   text-align: center;
 }
@@ -115,7 +106,7 @@ a.M_MainMenuDesktopMoleculeInteract {
 #my-form h1 {
   color: #fff;
   margin-bottom: 6%;
-  font-size: 50rem;
+  font-size: 50px;
   font-weight: 700;
   font-family: 'arial narrow';
 }
@@ -130,7 +121,7 @@ a.M_MainMenuDesktopMoleculeInteract {
   padding: 0 20px;
   outline: none;
   font-weight: 400;
-  font-size: 30rem;
+  font-size: 30px;
   box-sizing: border-box;
   box-shadow: 7px 7px 7px 0px #0037ff4f;
 }
@@ -146,7 +137,7 @@ a.M_MainMenuDesktopMoleculeInteract {
   width: 36%;
   height: 40%;
   border-radius: 14px;
-  font-size: 30rem;
+  font-size: 30px;
   border: none;
   cursor: pointer;
   font-weight: 400;
@@ -154,7 +145,7 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 #my-form-status {
   color: #0037ff;
-  font-size: 18rem;
+  font-size: 18px;
   font-weight: 500;
   margin-top: 3%;
 }
@@ -167,13 +158,13 @@ a.M_MainMenuDesktopMoleculeInteract {
   justify-content: space-between;
 }
 .M_FooterInfo h1 {
-  font-size: 40rem;
+  font-size: 40px;
   font-weight: 700;
   color: #0037ff;
   margin-bottom: 8%;
 }
 .M_FooterInfo p {
-  font-size: 25rem;
+  font-size: 25px;
   font-family: 'arial narrow italic';
   font-weight: 700;
   color: #0037ff;
@@ -216,11 +207,23 @@ a.M_MainMenuDesktopMoleculeInteract {
 }
 
 /* _____________________________about us_____________________________ */
+
 .AboutUsSocials {
   display: flex;
   width: 100%;
 }
 
+a.M_TeamLinks {
+  padding: 2% 0 4%;
+  background: linear-gradient(
+    0deg,
+    #ffffff 41.83%,
+    #7390f7 80.77%,
+    #274aca 96.15%
+  );
+  border-radius: 25px 25px 0 0;
+}
+a.M_TeamLinks,
 a.M_AboutUsMenuLinks {
   display: flex;
   flex-direction: row;
@@ -232,11 +235,17 @@ a.M_AboutUsMenuLinks {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 1% 0 3%;
   text-align: center;
-
   position: relative;
+  box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
+  cursor: pointer;
+  color: #0037ff;
+  font-size: 27px;
+  font-weight: 400;
+}
 
+a.M_AboutUsMenuLinks {
+  padding: 1% 0 3%;
   background: linear-gradient(
     180deg,
     #ffffff 41.83%,
@@ -244,21 +253,12 @@ a.M_AboutUsMenuLinks {
     #274aca 96.15%
   );
   border-radius: 0 0 25px 25px;
-  box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
-
-  cursor: pointer;
 }
 
-a.M_AboutUsMenuLinks {
-  color: #0037ff;
-  font-size: 27px;
-  font-weight: 400;
-}
 a.M_AboutUsMenuLinks img {
   width: 32%;
   position: absolute;
   margin-top: 40%;
-
   left: 50%;
   transform: translateX(-50%);
 }
@@ -269,50 +269,15 @@ a.M_AboutUsMenuLinks img {
   font-weight: 400;
   color: #0037ff;
   text-align: center;
-
   padding: 3% 0 4%;
 }
-.M_Names {
-  display: none;
-}
+
 .M_TeamStash {
   flex-direction: row;
   display: flex;
-
   justify-content: center;
   gap: 1%;
-
   margin: -7% auto;
-}
-a.M_TeamLinks {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 2% 0 4%;
-  text-align: center;
-
-  position: relative;
-
-  background: linear-gradient(
-    0deg,
-    #ffffff 41.83%,
-    #7390f7 80.77%,
-    #274aca 96.15%
-  );
-
-  border-radius: 25px 25px 0 0;
-  box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
-
-  color: #0037ff;
-  font-size: 27px;
-  font-weight: 400;
 }
 
 /* _____________________________articles_____________________________ */
@@ -417,6 +382,7 @@ a.M_TeamLinks {
 }
 
 /* _____________________________websites_____________________________ */
+
 .M_DRubricators {
   width: 100%;
   height: fit-content;
@@ -440,13 +406,10 @@ a.M_TeamLinks {
 }
 .M_DRubricators a {
   width: 20%;
-  text-decoration: none;
-  color: #0037ff;
-  font-size: 40px;
-  font-weight: 400;
   gap: 2%;
 }
-.M_DRubricators p {
+.M_DRubricators p,
+.M_DRubricators a {
   text-decoration: none;
   color: #0037ff;
   font-size: 40px;

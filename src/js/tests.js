@@ -1,4 +1,3 @@
-// import { document } from "postcss"
 import crossIcon from '../images/A.CROSS.webp'
 import testLemon1 from '../images/Q.D1LEMON.svg'
 import testLemon2 from '../images/Q.D2LEMON.svg'
@@ -201,7 +200,6 @@ function createTestsTeaserCard(stroke) {
 
   const card = document.createElement('a')
   card.href = url
-  // card.target = '_blank'
   card.classList.add('W_TestTeaser')
 
   const textContent = document.createElement('div')

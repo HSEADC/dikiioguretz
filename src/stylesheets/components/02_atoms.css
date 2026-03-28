@@ -47,6 +47,7 @@
 }
 
 /* _____________________________tests_____________________________ */
+
 .A_TestTeaserHeader {
   color: #0037ff;
   font-size: 28px;
@@ -140,14 +141,6 @@ input[type='radio']:checked + .A_AnswerText {
   box-shadow: 3.74px 4.98px 11.22px 1.25px #192966cc;
 }
 
-.A_TestPageName {
-  font-size: 36rem;
-  font-weight: 600;
-  color: #011970;
-  text-align: center;
-  display: block;
-}
-
 .A_ProgressBarIndicator {
   position: absolute;
   top: 50%;
@@ -169,16 +162,12 @@ input[type='radio']:checked + .A_AnswerText {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
   transition: left 0.3s ease-out;
-
   flex-shrink: 0;
-
   white-space: nowrap;
   min-width: max-content;
   z-index: 10;
   cursor: default;
 }
-
-/* тест */
 
 .A_DecorationTopRight,
 .A_DecorationBottomLeft {

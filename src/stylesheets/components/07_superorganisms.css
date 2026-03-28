@@ -1,4 +1,5 @@
 /* _____________________________index page_____________________________ */
+
 .S_Page404 {
   background-image: url(../../images/404.svg);
   background-size: cover;
@@ -119,6 +120,7 @@
 }
 
 /* _____________________________tests_____________________________ */
+
 .S_DTests {
   background-image: url(../../images/backgr\(rainbow\).webp);
   background-size: cover;
