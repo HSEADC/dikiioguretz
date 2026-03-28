@@ -91,7 +91,8 @@ const htmlPages = [
     './src/pages/archive/websites/website1.html',
     './pages/archive/websites/website1.html',
     ['allStyles']
-  )
+  ),
+  createPages('./src/pages/404.html', './pages/pages/404.html', ['allStyles'])
 ]
 
 module.exports = htmlPages
