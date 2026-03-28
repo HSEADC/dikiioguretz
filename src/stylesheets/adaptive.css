@@ -129,7 +129,7 @@
     height: fit-content !important;
 
     margin: -5% auto 0;
-    padding-bottom: 20%;
+    padding-bottom: 30%;
   }
 
   .O_MAboutProject {
@@ -216,25 +216,29 @@
     font-size: 20px;
     padding: 3%;
   }
-  .O_DYellowNote p,
+  .O_DYellowNote p {
+    font-size: 14px;
+
+    padding: 12% 6% 0 3%;
+  }
+
   .O_DYellowNoteArch p {
     font-size: 14px;
-    padding-right: 10%;
-    padding: 12% 12% 0 3%;
+    padding: 12% 2% 0 3%;
   }
   .Q_M2Coco {
     width: 40%;
     height: auto;
     display: flex;
     position: relative;
-    margin: 20% 0 0 -5%;
+    margin: 5% 0 0 -5%;
   }
 
   .W_IndexCalendar {
     width: 95%;
     left: 0;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 10%;
   }
   .M_IndexCalendar {
     background-image: url(../images/Q.MCALENDAR.svg);
@@ -266,15 +270,14 @@
     align-items: center;
     top: 2%;
     left: 0;
-    margin-bottom: 5%;
-    margin: 0 auto 5%;
+    margin: 0 auto 10%;
   }
 
   .M_MLettersPics {
     width: 80%;
     height: auto;
     position: relative;
-    margin: -30% 0 5% 3%;
+    margin: -30% 0 0 3%;
     display: block;
   }
 
@@ -438,7 +441,7 @@
     height: auto;
     display: flex;
     position: relative;
-    margin: 5% 0 0 -3%;
+    margin: -15% 0 0 -3%;
   }
   .C_ArchiveIcons {
     width: 90%;
@@ -447,7 +450,9 @@
     font-size: 33px;
     padding-bottom: 10%;
   }
-
+  .M_DArchiveIcon figcaption {
+    font-size: 33px !important;
+  }
   .W_Welcome {
     width: 95%;
     margin-bottom: 20%;
